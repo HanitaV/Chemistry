@@ -1,0 +1,117 @@
+{
+  "exercises": [
+    {
+      "id": "c3-form-001",
+      "chapterId": "chapter-3",
+      "lessonId": "formation-enthalpy",
+      "nodeIds": [
+        "formation-enthalpy"
+      ],
+      "difficulty": "medium",
+      "title": "Phân hủy KClO₃: tính ΔH° từ nhiệt tạo thành",
+      "skill": "ΔH° từ ΔH°f",
+      "statement": "(Trang 33.) Tính $\\Delta H^\\circ$ của $\\mathrm{4KClO_3(s) \\to 3KClO_4(s) + KCl(s)}$, biết $\\Delta H^\\circ_f$ (kJ/mol): $\\mathrm{KClO_3}$ −397,7; $\\mathrm{KClO_4}$ −432,8; $\\mathrm{KCl}$ −436,7.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "formula-selection",
+          "prompt": "Chọn công thức.",
+          "options": [
+            {
+              "id": "a",
+              "text": "$\\Delta H^\\circ = \\sum\\nu\\Delta H^\\circ_f(\\text{sp}) - \\sum\\nu\\Delta H^\\circ_f(\\text{cđ})$"
+            },
+            {
+              "id": "b",
+              "text": "$\\Delta H^\\circ = \\sum\\nu\\Delta H^\\circ_f(\\text{cđ}) - \\sum\\nu\\Delta H^\\circ_f(\\text{sp})$"
+            },
+            {
+              "id": "c",
+              "text": "$\\Delta H^\\circ = \\sum\\Delta H^\\circ_f$ (không nhân hệ số)"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Sản phẩm trừ chất đầu, nhân với hệ số tỉ lượng."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Tổng ΔH°f sản phẩm (kJ)?",
+          "correctAnswer": -1735.1,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$3(-432{,}8) + (-436{,}7) = -1735{,}1$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔH° (kJ)?",
+          "correctAnswer": -144.3,
+          "tolerance": {
+            "absolute": 0.5
+          },
+          "explanation": "$-1735{,}1 - 4(-397{,}7) = -144{,}3$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "$$\\Delta H^\\circ = [3(-432{,}8) + (-436{,}7)] - 4(-397{,}7) = -1735{,}1 + 1590{,}8 = -144{,}3\\ \\text{kJ} \\approx -144\\ \\text{kJ}$$",
+      "finalAnswer": "ΔH° ≈ −144 kJ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          33
+        ],
+        "note": "Ví dụ trang 33 bài giảng (có lời giải mẫu)."
+      }
+    },
+    {
+      "id": "c3-form-002",
+      "chapterId": "chapter-3",
+      "lessonId": "formation-enthalpy",
+      "nodeIds": [
+        "formation-enthalpy"
+      ],
+      "difficulty": "medium",
+      "title": "Oxi hóa amoniac",
+      "skill": "ΔH° từ ΔH°f",
+      "statement": "(Ví dụ trang 25.) Tính $\\Delta H^\\circ$ của $\\mathrm{4NH_3(g) + 5O_2(g) \\to 4NO(g) + 6H_2O(g)}$.\n\nSố liệu tham khảo (bổ sung): $\\Delta H^\\circ_f$ (kJ/mol): $\\mathrm{NH_3(g)}$ −45,9; $\\mathrm{NO(g)}$ +90,3; $\\mathrm{H_2O(g)}$ −241,8.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "ΔH°f của O₂(g)?",
+          "correctAnswer": 0.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "Đơn chất bền ở điều kiện chuẩn: ΔH°f = 0.",
+          "unit": "kJ/mol"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔH° (kJ)?",
+          "correctAnswer": -906.0,
+          "tolerance": {
+            "absolute": 0.5
+          },
+          "explanation": "$[4(90{,}3) + 6(-241{,}8)] - [4(-45{,}9) + 0] = -906{,}0$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "$$\\Delta H^\\circ = \\{4\\Delta H^\\circ_f[\\mathrm{NO}] + 6\\Delta H^\\circ_f[\\mathrm{H_2O(g)}]\\} - \\{4\\Delta H^\\circ_f[\\mathrm{NH_3}] + 5\\Delta H^\\circ_f[\\mathrm{O_2}]\\}$$\n\n$$= [4(90{,}3) + 6(-241{,}8)] - [4(-45{,}9) + 0] = 361{,}2 - 1450{,}8 + 183{,}6 = -906{,}0\\ \\text{kJ}$$\n\n> Bài giảng chỉ nêu biểu thức; các giá trị $\\Delta H^\\circ_f$ ở đây là số liệu tham khảo bổ sung, hãy đối chiếu với bảng số liệu của giảng viên.",
+      "finalAnswer": "ΔH° = −906,0 kJ (theo số liệu tham khảo).",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          25
+        ],
+        "note": "Biểu thức từ ví dụ trang 25; số liệu ΔH°f bổ sung."
+      }
+    }
+  ]
+}

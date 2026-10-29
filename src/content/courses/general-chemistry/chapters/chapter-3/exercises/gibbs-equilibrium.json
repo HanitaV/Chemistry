@@ -1,0 +1,322 @@
+{
+  "exercises": [
+    {
+      "id": "c3-eq-001",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs-equilibrium",
+      "nodeIds": [
+        "gibbs-equilibrium"
+      ],
+      "difficulty": "medium",
+      "title": "Bài 22: cân bằng 2NO₂ ⇌ N₂O₄",
+      "skill": "ΔG° và K",
+      "statement": "(Bài 22, trang 42.) Xét phản ứng $\\mathrm{2NO_2 \\rightleftharpoons N_2O_4}$. Cho $\\Delta G^\\circ_f(\\mathrm{N_2O_4}) = 97{,}82$ kJ/mol; $\\Delta G^\\circ_f(\\mathrm{NO_2}) = 51{,}30$ kJ/mol.\n\na) Xác định $\\Delta G^\\circ$ và $K_P$ ở 25 °C.\n\nb) Xác định $\\Delta G^\\circ$ và $K_P$ của phản ứng nghịch $\\mathrm{N_2O_4 \\rightleftharpoons 2NO_2}$.\n\nc) Xác định $\\Delta G^\\circ$ và $K_P$ của phản ứng $\\mathrm{NO_2 \\rightleftharpoons \\tfrac12 N_2O_4}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "ΔG° (a) (kJ)?",
+          "correctAnswer": -4.78,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "$97{,}82 - 2(51{,}30) = -4{,}78$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-2",
+          "type": "formula-selection",
+          "prompt": "Công thức liên hệ ΔG° và K:",
+          "options": [
+            {
+              "id": "a",
+              "text": "$K = e^{-\\Delta G^\\circ/RT}$"
+            },
+            {
+              "id": "b",
+              "text": "$K = e^{\\Delta G^\\circ/RT}$"
+            },
+            {
+              "id": "c",
+              "text": "$K = -RT\\ln\\Delta G^\\circ$"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "$\\Delta G^\\circ = -RT\\ln K$ → $K = e^{-\\Delta G^\\circ/RT}$."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "K_P (a)?",
+          "correctAnswer": 6.87807,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$K = e^{4780/(8{,}314\\times298{,}15)} = 6{,}88$."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "K_P (b)?",
+          "correctAnswer": 0.14539,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "Phản ứng nghịch: $\\Delta G^\\circ = +4{,}78$ kJ; $K = 1/6{,}88 = 0{,}145$."
+        },
+        {
+          "id": "step-5",
+          "type": "numeric",
+          "prompt": "K_P (c)?",
+          "correctAnswer": 2.62261,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "Nhân hệ số ½: $\\Delta G^\\circ = -2{,}39$ kJ; $K = \\sqrt{6{,}88} = 2{,}62$."
+        }
+      ],
+      "solution": "a) $\\Delta G^\\circ = 97{,}82 - 2(51{,}30) = -4{,}78$ kJ;\n$K_P = \\exp\\left(\\dfrac{4780}{8{,}314\\times298{,}15}\\right) = 6{,}88$.\n\nb) Phản ứng nghịch: $\\Delta G^\\circ = +4{,}78$ kJ; $K_P = \\dfrac{1}{6{,}88} = 0{,}145$.\n\nc) Nhân phương trình với ½: $\\Delta G^\\circ = -2{,}39$ kJ; $K_P = (6{,}88)^{1/2} = 2{,}62$.\n\nQuy tắc: đảo chiều → $K' = 1/K$; nhân hệ số n → $K' = K^n$ (tương ứng ΔG° đổi dấu hoặc nhân n).",
+      "finalAnswer": "a) −4,78 kJ, Kp ≈ 6,88; b) +4,78 kJ, Kp ≈ 0,145; c) −2,39 kJ, Kp ≈ 2,62.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          42
+        ],
+        "note": "Bài 22 trang 42 bài giảng."
+      }
+    },
+    {
+      "id": "c3-eq-002",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs-equilibrium",
+      "nodeIds": [
+        "gibbs-equilibrium",
+        "spontaneity"
+      ],
+      "difficulty": "hard",
+      "title": "Bài 7: Hỗn hợp A₂, B₂ và AB",
+      "skill": "ΔG = ΔG° + RT lnQ",
+      "statement": "(Bài 7, trang 43–45.) $\\mathrm{A_2}$ (màu đen) và $\\mathrm{B_2}$ (màu xanh lá) phản ứng tạo AB: $\\mathrm{A_2(g) + B_2(g) \\rightleftharpoons 2AB(g)}$, $\\Delta G^\\circ = -3{,}4$ kJ/mol. Giả thiết mỗi phân tử trong hình đóng góp áp suất riêng phần 0,1 atm.\n\n![Ba hỗn hợp A2, B2, AB](images/chapter-3/bai7-a2-b2.png)\n\nĐếm phân tử: hỗn hợp 1: 2 A₂, 2 B₂, 4 AB; hỗn hợp 2: 3 A₂, 3 B₂, 2 AB; hỗn hợp 3: 1 A₂, 1 B₂, 6 AB.\n\na) Nếu hỗn hợp 1 là trạng thái cân bằng, tính $K_P$.\n\nb) Tính ΔG của các hỗn hợp 1, 2, 3 (dùng nhiệt độ ứng với K ở câu a).\n\nc) Nếu $P_{A_2} = P_{B_2} = P_{AB} = 1$ atm, phản ứng diễn ra theo chiều nào?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "K_P từ hỗn hợp 1?",
+          "correctAnswer": 4.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "$K = \\dfrac{(0{,}40)^2}{(0{,}20)(0{,}20)} = 4{,}0$."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Nhiệt độ ứng với ΔG° = −3,4 kJ/mol và K = 4,0 (K)?",
+          "correctAnswer": 295.0,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$T = \\dfrac{-\\Delta G^\\circ}{R\\ln K} = \\dfrac{3400}{8{,}314\\ln4} = 295$ K.",
+          "unit": "K"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔG của hỗn hợp 2 (J)?",
+          "correctAnswer": -5388.91,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$Q = 0{,}2^2/(0{,}3\\times0{,}3) = 0{,}444$; $\\Delta G = -3400 + 8{,}314\\times295\\ln0{,}444 = -5389$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "ΔG của hỗn hợp 3 (J)?",
+          "correctAnswer": 5389.05,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$Q = 0{,}6^2/(0{,}1\\times0{,}1) = 36$; $\\Delta G = 5389$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-5",
+          "type": "single-choice",
+          "prompt": "Hỗn hợp 3 sẽ dịch chuyển theo chiều:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nghịch (tạo thêm A₂, B₂)"
+            },
+            {
+              "id": "b",
+              "text": "Thuận"
+            },
+            {
+              "id": "c",
+              "text": "Đã cân bằng"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "ΔG > 0 (Q > K) → chiều nghịch."
+        },
+        {
+          "id": "step-6",
+          "type": "single-choice",
+          "prompt": "Câu c (mọi áp suất 1 atm):",
+          "options": [
+            {
+              "id": "a",
+              "text": "Chiều thuận (ΔG = ΔG° = −3,4 kJ < 0)"
+            },
+            {
+              "id": "b",
+              "text": "Chiều nghịch"
+            },
+            {
+              "id": "c",
+              "text": "Cân bằng"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Q = 1 → ΔG = ΔG° < 0."
+        }
+      ],
+      "solution": "a) $K_P = \\dfrac{P_{AB}^2}{P_{A_2}P_{B_2}} = \\dfrac{(0{,}40)^2}{(0{,}20)(0{,}20)} = 4{,}0$ → $T = \\dfrac{3400}{8{,}314\\ln4{,}0} = 295$ K.\n\nb) $\\Delta G = \\Delta G^\\circ + RT\\ln Q$:\n\n| Hỗn hợp | Q | ΔG (J) | Kết luận |\n|---|---|---|---|\n| 1 | 4,0 | 0 | cân bằng |\n| 2 | 0,444 | $-5389$ | chiều thuận |\n| 3 | 36 | $5389$ | chiều nghịch |\n\nc) $Q = \\dfrac{1^2}{1\\cdot1} = 1$ → $\\Delta G = \\Delta G^\\circ = -3{,}4$ kJ < 0 → phản ứng diễn ra theo **chiều thuận**.",
+      "finalAnswer": "a) K = 4,0; b) ΔG₁ = 0, ΔG₂ ≈ -5389 J, ΔG₃ ≈ 5389 J; c) chiều thuận.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          43,
+          44,
+          45
+        ],
+        "note": "Bài 7 trang 43–45 bài giảng (có lời giải mẫu)."
+      }
+    },
+    {
+      "id": "c3-eq-003",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs",
+      "nodeIds": [
+        "spontaneity"
+      ],
+      "difficulty": "medium",
+      "title": "Ảnh hưởng của dấu ΔH, ΔS đến chiều phản ứng",
+      "skill": "Phân tích ΔG = ΔH − TΔS",
+      "statement": "Dựa vào $\\Delta G = \\Delta H - T\\Delta S$, cho biết phản ứng tự diễn biến ở điều kiện nào trong các trường hợp sau (coi ΔH, ΔS không đổi theo T):\n\n1. ΔH < 0, ΔS > 0\n2. ΔH > 0, ΔS < 0\n3. ΔH < 0, ΔS < 0\n4. ΔH > 0, ΔS > 0",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Trường hợp 1 (ΔH < 0, ΔS > 0):",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tự diễn biến ở mọi nhiệt độ"
+            },
+            {
+              "id": "b",
+              "text": "Không bao giờ"
+            },
+            {
+              "id": "c",
+              "text": "Chỉ ở T thấp"
+            },
+            {
+              "id": "d",
+              "text": "Chỉ ở T cao"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Cả hai số hạng đều làm ΔG âm."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Trường hợp 2 (ΔH > 0, ΔS < 0):",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tự diễn biến ở mọi nhiệt độ"
+            },
+            {
+              "id": "b",
+              "text": "Không tự diễn biến ở mọi nhiệt độ"
+            },
+            {
+              "id": "c",
+              "text": "Chỉ ở T thấp"
+            },
+            {
+              "id": "d",
+              "text": "Chỉ ở T cao"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "ΔG luôn dương (ví dụ quang hợp)."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Trường hợp 3 (ΔH < 0, ΔS < 0):",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mọi nhiệt độ"
+            },
+            {
+              "id": "b",
+              "text": "Không bao giờ"
+            },
+            {
+              "id": "c",
+              "text": "Ở nhiệt độ thấp (T < ΔH/ΔS)"
+            },
+            {
+              "id": "d",
+              "text": "Ở nhiệt độ cao"
+            }
+          ],
+          "correctAnswer": "c",
+          "explanation": "Ở T thấp, ΔH âm chiếm ưu thế."
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Trường hợp 4 (ΔH > 0, ΔS > 0):",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mọi nhiệt độ"
+            },
+            {
+              "id": "b",
+              "text": "Không bao giờ"
+            },
+            {
+              "id": "c",
+              "text": "Ở nhiệt độ thấp"
+            },
+            {
+              "id": "d",
+              "text": "Ở nhiệt độ cao (T > ΔH/ΔS)"
+            }
+          ],
+          "correctAnswer": "d",
+          "explanation": "Ở T cao, −TΔS âm chiếm ưu thế (ví dụ phân hủy PCl₅)."
+        }
+      ],
+      "solution": "| ΔH | ΔS | ΔG = ΔH − TΔS | Tự diễn biến |\n|---|---|---|---|\n| < 0 | > 0 | luôn < 0 | mọi nhiệt độ |\n| > 0 | < 0 | luôn > 0 | không bao giờ |\n| < 0 | < 0 | < 0 khi T nhỏ | khi $T < \\Delta H/\\Delta S$ |\n| > 0 | > 0 | < 0 khi T lớn | khi $T > \\Delta H/\\Delta S$ |",
+      "finalAnswer": "1: mọi T; 2: không bao giờ; 3: T thấp; 4: T cao.",
+      "source": {
+        "kind": "supplementary",
+        "note": "Tổng hợp từ tiêu chí ΔG trang 32."
+      }
+    }
+  ]
+}

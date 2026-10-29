@@ -1,0 +1,283 @@
+{
+  "exercises": [
+    {
+      "id": "c1-ec-001",
+      "chapterId": "chapter-1",
+      "lessonId": "electron-configuration",
+      "nodeIds": [
+        "electron-configuration",
+        "aufbau-principle",
+        "hund-rule"
+      ],
+      "difficulty": "medium",
+      "title": "Cấu hình electron của Fe",
+      "skill": "Viết cấu hình electron",
+      "statement": "Viết cấu hình electron của nguyên tử sắt ($Z = 26$) và cho biết số electron độc thân ở trạng thái cơ bản.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Theo nguyên lý vững bền (sơ đồ trang 14), sau 3p electron điền vào phân lớp nào?",
+          "options": [
+            {
+              "id": "a",
+              "text": "3d"
+            },
+            {
+              "id": "b",
+              "text": "4s"
+            },
+            {
+              "id": "c",
+              "text": "4p"
+            },
+            {
+              "id": "d",
+              "text": "3f"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Thứ tự năng lượng: 1s 2s 2p 3s 3p **4s** 3d 4p… — phân lớp 4s có năng lượng thấp hơn 3d nên được điền trước."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Sau khi điền 1s² 2s² 2p⁶ 3s² 3p⁶ 4s², còn lại bao nhiêu electron điền vào 3d?",
+          "correctAnswer": 6.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$26 - (2+2+6+2+6+2) = 26 - 20 = 6$ → 3d⁶."
+        },
+        {
+          "id": "step-3",
+          "type": "short-answer",
+          "prompt": "Viết cấu hình electron đầy đủ hoặc rút gọn (ví dụ: [Ar]3d64s2).",
+          "correctAnswer": [
+            "1s22s22p63s23p63d64s2",
+            "1s22s22p63s23p64s23d6",
+            "[Ar]3d64s2",
+            "[Ar]4s23d6"
+          ],
+          "explanation": "Fe: $1s^2 2s^2 2p^6 3s^2 3p^6 3d^6 4s^2$, rút gọn $[\\mathrm{Ar}]\\,3d^6 4s^2$.",
+          "hint": "Có thể gõ số mũ ngay sau phân lớp, ví dụ 3d6."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Theo quy tắc Hund, phân lớp 3d⁶ có bao nhiêu electron độc thân?",
+          "correctAnswer": 4.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "5 orbital 3d: điền mỗi orbital 1 electron (5 e), electron thứ 6 ghép đôi → còn 4 electron độc thân.",
+          "hint": "Vẽ 5 ô lượng tử, điền lần lượt mỗi ô một electron trước khi ghép đôi."
+        }
+      ],
+      "solution": "Thứ tự điền: 1s 2s 2p 3s 3p 4s 3d…\n\n$$\\mathrm{Fe}: 1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^6\\,3d^6\\,4s^2 \\quad\\equiv\\quad [\\mathrm{Ar}]\\,3d^6\\,4s^2$$\n\nPhân lớp 3d⁶ trên 5 orbital: $\\uparrow\\downarrow\\ \\uparrow\\ \\uparrow\\ \\uparrow\\ \\uparrow$ → **4 electron độc thân** (quy tắc Hund).",
+      "finalAnswer": "[Ar] 3d⁶ 4s², 4 electron độc thân.",
+      "source": {
+        "kind": "supplementary",
+        "note": "Bổ sung; dựa trên sơ đồ thứ tự mức năng lượng trang 14."
+      }
+    },
+    {
+      "id": "c1-ec-002",
+      "chapterId": "chapter-1",
+      "lessonId": "electron-configuration",
+      "nodeIds": [
+        "hund-rule",
+        "pauli-principle"
+      ],
+      "difficulty": "easy",
+      "title": "Electron độc thân của các nguyên tố chu kỳ 3",
+      "skill": "Quy tắc Hund",
+      "statement": "Bảng ở trang 15 của bài giảng cho cấu hình electron từ Na đến Ar. Dựa vào quy tắc Hund, xác định số electron độc thân của nguyên tử P ($Z = 15$) và S ($Z = 16$).",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "short-answer",
+          "prompt": "Cấu hình electron lớp ngoài cùng của P (ví dụ: 3s23p1)?",
+          "correctAnswer": [
+            "3s23p3",
+            "[Ne]3s23p3"
+          ],
+          "explanation": "P: $[\\mathrm{Ne}]\\,3s^2 3p^3$."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Số electron độc thân của P?",
+          "correctAnswer": 3.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "3 electron 3p phân bố vào 3 orbital p khác nhau, spin song song → 3 electron độc thân."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Số electron độc thân của S ($3s^2 3p^4$)?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "3p⁴: một orbital ghép đôi, hai orbital còn 1 electron → 2 electron độc thân."
+        }
+      ],
+      "solution": "- P: $[\\mathrm{Ne}]\\,3s^2 3p^3$ → 3p: $\\uparrow\\ \\uparrow\\ \\uparrow$ → **3** electron độc thân.\n- S: $[\\mathrm{Ne}]\\,3s^2 3p^4$ → 3p: $\\uparrow\\downarrow\\ \\uparrow\\ \\uparrow$ → **2** electron độc thân.\n\nQuy tắc Hund: electron điền vào các orbital cùng năng lượng sao cho số electron độc thân là lớn nhất.",
+      "finalAnswer": "P có 3, S có 2 electron độc thân.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          15
+        ],
+        "note": "Biên soạn lại từ bảng cấu hình electron Na–Ar."
+      }
+    },
+    {
+      "id": "c1-ec-003",
+      "chapterId": "chapter-1",
+      "lessonId": "electron-configuration",
+      "nodeIds": [
+        "electron-configuration",
+        "atoms-and-ions"
+      ],
+      "difficulty": "medium",
+      "title": "Cấu hình electron của ion Fe²⁺ và Fe³⁺",
+      "skill": "Cấu hình electron của ion",
+      "statement": "Từ cấu hình của Fe ($[\\mathrm{Ar}]\\,3d^6 4s^2$), viết cấu hình electron của $\\mathrm{Fe^{2+}}$ và $\\mathrm{Fe^{3+}}$. Ion nào có nhiều electron độc thân hơn?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Khi tạo ion dương, electron bị tách khỏi phân lớp nào trước?",
+          "options": [
+            {
+              "id": "a",
+              "text": "3d (điền sau cùng)"
+            },
+            {
+              "id": "b",
+              "text": "4s (lớp ngoài cùng, n lớn nhất)"
+            },
+            {
+              "id": "c",
+              "text": "3p"
+            },
+            {
+              "id": "d",
+              "text": "Ngẫu nhiên"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Electron bị tách khỏi lớp có n lớn nhất (lớp ngoài cùng) trước, tức là 4s — dù 4s được điền trước 3d."
+        },
+        {
+          "id": "step-2",
+          "type": "short-answer",
+          "prompt": "Cấu hình của Fe²⁺ (dạng rút gọn, ví dụ [Ar]3d5)?",
+          "correctAnswer": [
+            "[Ar]3d6",
+            "1s22s22p63s23p63d6"
+          ],
+          "explanation": "Fe²⁺: mất 2 electron 4s → $[\\mathrm{Ar}]\\,3d^6$."
+        },
+        {
+          "id": "step-3",
+          "type": "short-answer",
+          "prompt": "Cấu hình của Fe³⁺?",
+          "correctAnswer": [
+            "[Ar]3d5",
+            "1s22s22p63s23p63d5"
+          ],
+          "explanation": "Fe³⁺: mất thêm 1 electron 3d → $[\\mathrm{Ar}]\\,3d^5$."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Số electron độc thân của Fe³⁺?",
+          "correctAnswer": 5.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "3d⁵: mỗi orbital 1 electron → 5 electron độc thân (Fe²⁺ chỉ có 4)."
+        }
+      ],
+      "solution": "Khi tạo cation, electron lớp ngoài cùng (4s) bị tách trước:\n\n- $\\mathrm{Fe^{2+}}: [\\mathrm{Ar}]\\,3d^6$ → 4 electron độc thân.\n- $\\mathrm{Fe^{3+}}: [\\mathrm{Ar}]\\,3d^5$ → 5 electron độc thân (phân lớp d bán bão hòa).\n\n$\\mathrm{Fe^{3+}}$ có nhiều electron độc thân hơn.",
+      "finalAnswer": "Fe²⁺: [Ar]3d⁶ (4 e độc thân); Fe³⁺: [Ar]3d⁵ (5 e độc thân).",
+      "source": {
+        "kind": "supplementary"
+      }
+    },
+    {
+      "id": "c1-ec-004",
+      "chapterId": "chapter-1",
+      "lessonId": "electron-configuration",
+      "nodeIds": [
+        "electron-configuration",
+        "aufbau-principle"
+      ],
+      "difficulty": "hard",
+      "title": "Trường hợp ngoại lệ: Cr và Cu",
+      "skill": "Cấu hình electron ngoại lệ",
+      "statement": "Theo thứ tự điền thông thường, Cr ($Z = 24$) sẽ có cấu hình $[\\mathrm{Ar}]\\,3d^4 4s^2$. Tuy nhiên thực nghiệm cho thấy cấu hình khác. Hãy viết cấu hình thực tế của Cr và Cu ($Z = 29$) và giải thích.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "short-answer",
+          "prompt": "Cấu hình thực tế của Cr?",
+          "correctAnswer": [
+            "[Ar]3d54s1",
+            "[Ar]4s13d5",
+            "1s22s22p63s23p63d54s1"
+          ],
+          "explanation": "Cr: $[\\mathrm{Ar}]\\,3d^5 4s^1$ — một electron 4s chuyển sang 3d."
+        },
+        {
+          "id": "step-2",
+          "type": "short-answer",
+          "prompt": "Cấu hình thực tế của Cu?",
+          "correctAnswer": [
+            "[Ar]3d104s1",
+            "[Ar]4s13d10",
+            "1s22s22p63s23p63d104s1"
+          ],
+          "explanation": "Cu: $[\\mathrm{Ar}]\\,3d^{10} 4s^1$."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Nguyên nhân chính?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Phân lớp d bán bão hòa (d⁵) hoặc bão hòa (d¹⁰) có năng lượng thấp, bền hơn"
+            },
+            {
+              "id": "b",
+              "text": "4s có năng lượng cao hơn 3p"
+            },
+            {
+              "id": "c",
+              "text": "Nguyên lý Pauli bị vi phạm"
+            },
+            {
+              "id": "d",
+              "text": "Do số neutron"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "3d và 4s có năng lượng rất gần nhau; cấu hình d⁵, d¹⁰ bền hơn nên electron 4s chuyển sang 3d."
+        }
+      ],
+      "solution": "- $\\mathrm{Cr}: [\\mathrm{Ar}]\\,3d^5 4s^1$ (không phải $3d^4 4s^2$).\n- $\\mathrm{Cu}: [\\mathrm{Ar}]\\,3d^{10} 4s^1$ (không phải $3d^9 4s^2$).\n\nNăng lượng của 3d và 4s rất gần nhau; cấu hình phân lớp d **bán bão hòa** ($d^5$) hoặc **bão hòa** ($d^{10}$) có năng lượng thấp hơn nên bền hơn.\n\n> Đây là kiến thức bổ sung, không có trong slide bài giảng; cần kiểm tra yêu cầu của giảng viên.",
+      "finalAnswer": "Cr: [Ar]3d⁵4s¹; Cu: [Ar]3d¹⁰4s¹.",
+      "source": {
+        "kind": "supplementary",
+        "note": "Kiến thức mở rộng ngoài slide bài giảng."
+      }
+    }
+  ]
+}

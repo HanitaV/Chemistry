@@ -1,0 +1,53 @@
+{
+  "id": "chapter-3",
+  "courseId": "general-chemistry",
+  "order": 3,
+  "title": "Nhiệt động hóa học",
+  "description": "Hệ nhiệt động, nguyên lý I, enthalpy, định luật Hess, nhiệt tạo thành, entropy, năng lượng tự do Gibbs và cân bằng.",
+  "lessonIds": [
+    "thermo-systems",
+    "first-law",
+    "enthalpy",
+    "hess-law",
+    "formation-enthalpy",
+    "entropy",
+    "gibbs",
+    "gibbs-equilibrium"
+  ],
+  "exerciseIds": [
+    "c3-enth-001",
+    "c3-enth-002",
+    "c3-enth-003",
+    "c3-enth-004",
+    "c3-enth-005",
+    "c3-ent-001",
+    "c3-ent-002",
+    "c3-ent-003",
+    "c3-first-001",
+    "c3-first-002",
+    "c3-form-001",
+    "c3-form-002",
+    "c3-eq-001",
+    "c3-eq-002",
+    "c3-eq-003",
+    "c3-gibbs-001",
+    "c3-gibbs-002",
+    "c3-gibbs-003",
+    "c3-gibbs-004",
+    "c3-gibbs-005",
+    "c3-gibbs-006",
+    "c3-hess-001",
+    "c3-hess-002",
+    "c3-hess-003",
+    "c3-hess-004",
+    "c3-hess-005",
+    "c3-hess-006",
+    "c3-hess-007",
+    "c3-hess-008",
+    "c3-hess-009",
+    "c3-sys-001"
+  ],
+  "sourceIds": [
+    "doc-ch3-theory"
+  ]
+}

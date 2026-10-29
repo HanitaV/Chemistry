@@ -1,0 +1,629 @@
+{
+  "exercises": [
+    {
+      "id": "c1-photon-001",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "photon-energy",
+        "wavelength"
+      ],
+      "difficulty": "easy",
+      "title": "Năng lượng photon ở các vùng phổ",
+      "skill": "Tính năng lượng photon",
+      "statement": "Tính năng lượng một photon của:\n\na) tia tử ngoại ($\\lambda = 10$ nm); b) ánh sáng nhìn thấy ($\\lambda = 500$ nm); c) tia hồng ngoại ($\\lambda = 5000$ nm); d) sóng radio ($\\lambda = 1{,}2$ cm).\n\nCho $h = 6{,}626\\times10^{-34}$ J·s, $c = 3{,}00\\times10^8$ m/s.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "formula-selection",
+          "prompt": "Chọn công thức tính năng lượng một photon từ bước sóng.",
+          "options": [
+            {
+              "id": "a",
+              "text": "$E = h\\nu = \\dfrac{hc}{\\lambda}$"
+            },
+            {
+              "id": "b",
+              "text": "$E = -13{,}6\\,\\dfrac{Z^2}{n^2}$ eV"
+            },
+            {
+              "id": "c",
+              "text": "$c = \\dfrac{\\lambda}{\\nu}$"
+            },
+            {
+              "id": "d",
+              "text": "$E = mc^2$"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Năng lượng photon $E = h\\nu$, kết hợp $c = \\lambda\\nu$ → $E = hc/\\lambda$."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Đổi $\\lambda = 10$ nm sang mét.",
+          "correctAnswer": 1e-08,
+          "tolerance": {
+            "relative": 0.001
+          },
+          "explanation": "$1$ nm $= 10^{-9}$ m → $10$ nm $= 1{,}0\\times10^{-8}$ m.",
+          "unit": "m"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Năng lượng photon tử ngoại (10 nm)?",
+          "correctAnswer": 1.9878e-17,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = \\dfrac{6{,}626\\times10^{-34}\\cdot3{,}00\\times10^{8}}{1{,}0\\times10^{-8}} = 1{,}99\\times10^{-17}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Năng lượng photon nhìn thấy (500 nm)?",
+          "correctAnswer": 3.9756e-19,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = 3{,}98\\times10^{-19}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-5",
+          "type": "numeric",
+          "prompt": "Năng lượng photon radio ($\\lambda = 1{,}2$ cm $= 1{,}2\\times10^{-2}$ m)?",
+          "correctAnswer": 1.6565e-23,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = 1{,}66\\times10^{-23}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-6",
+          "type": "single-choice",
+          "prompt": "Kết luận nào đúng?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bước sóng càng dài, năng lượng photon càng lớn"
+            },
+            {
+              "id": "b",
+              "text": "Bước sóng càng ngắn, năng lượng photon càng lớn"
+            },
+            {
+              "id": "c",
+              "text": "Năng lượng photon không phụ thuộc bước sóng"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "$E \\propto 1/\\lambda$: tia UV (10 nm) mang năng lượng gấp $10^6$ lần sóng radio (1,2 cm)."
+        }
+      ],
+      "solution": "Công thức: $E = \\dfrac{hc}{\\lambda}$, với $hc = 6{,}626\\times10^{-34}\\cdot3{,}00\\times10^{8} = 1{,}988\\times10^{-25}$ J·m.\n\n| Bức xạ | λ (m) | E (J) |\n|---|---|---|\n| Tử ngoại | $1{,}0\\times10^{-8}$ | $1{,}99\\times10^{-17}$ |\n| Nhìn thấy | $5{,}00\\times10^{-7}$ | $3{,}98\\times10^{-19}$ |\n| Hồng ngoại | $5{,}00\\times10^{-6}$ | $3{,}98\\times10^{-20}$ |\n| Radio | $1{,}2\\times10^{-2}$ | $1{,}66\\times10^{-23}$ |\n\n**Kết luận:** bước sóng càng ngắn, năng lượng photon càng lớn.",
+      "finalAnswer": "UV 1,99×10^-17 J; nhìn thấy 3,98×10^-19 J; hồng ngoại 3,98×10^-20 J; radio 1,66×10^-23 J.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          22
+        ],
+        "note": "Bài 1 trang 22 bài giảng; lời giải do website biên soạn."
+      }
+    },
+    {
+      "id": "c1-photon-002",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "wavelength",
+        "frequency",
+        "photon-energy"
+      ],
+      "difficulty": "easy",
+      "title": "Sóng của đài phát thanh",
+      "skill": "Liên hệ c = λν và E = hν",
+      "statement": "a) Một đài phát thanh phát ở tần số 950 kHz. Tính bước sóng của đài.\n\nb) Một đài khác phát ở tần số 93,5 MHz. Tính năng lượng photon của đài này.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Đổi 950 kHz sang Hz.",
+          "correctAnswer": 950000.0,
+          "tolerance": {
+            "relative": 0.001
+          },
+          "explanation": "$1$ kHz $= 10^3$ Hz → $9{,}50\\times10^5$ Hz.",
+          "unit": "Hz"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Bước sóng của đài 950 kHz?",
+          "correctAnswer": 315.789,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\lambda = c/\\nu = 3{,}00\\times10^8 / 9{,}50\\times10^5 = 316$ m.",
+          "unit": "m"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Năng lượng photon ở 93,5 MHz?",
+          "correctAnswer": 6.19531e-26,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = h\\nu = 6{,}626\\times10^{-34}\\cdot 9{,}35\\times10^{7} = 6{,}20\\times10^{-26}$ J.",
+          "unit": "J",
+          "hint": "1 MHz = 10⁶ Hz."
+        }
+      ],
+      "solution": "a) $\\lambda = \\dfrac{c}{\\nu} = \\dfrac{3{,}00\\times10^8}{9{,}50\\times10^5} = 316$ m.\n\nb) $E = h\\nu = 6{,}626\\times10^{-34}\\times 9{,}35\\times10^{7} = 6{,}20\\times10^{-26}$ J.",
+      "finalAnswer": "a) λ ≈ 316 m; b) E ≈ 6,20×10^-26 J.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          32
+        ],
+        "note": "Bài 4 trang 32 bài giảng."
+      }
+    },
+    {
+      "id": "c1-photon-003",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "photon-energy",
+        "frequency",
+        "wavelength"
+      ],
+      "difficulty": "medium",
+      "title": "Tia γ của đồng vị Co-60",
+      "skill": "Đổi đơn vị eV – J, tính ν và λ",
+      "statement": "Co-60 là đồng vị dùng trong xạ trị ung thư, phát tia γ có năng lượng 1,33 MeV. Tính tần số và bước sóng của tia γ này.\n\nCho $1$ eV $= 1{,}6023\\times10^{-19}$ J.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Năng lượng photon tính bằng J?",
+          "correctAnswer": 2.13106e-13,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = 1{,}33\\times10^{6}$ eV $\\times 1{,}6023\\times10^{-19}$ J/eV $= 2{,}13\\times10^{-13}$ J.",
+          "unit": "J",
+          "hint": "1 MeV = 10⁶ eV."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Tần số?",
+          "correctAnswer": 3.21621e+20,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\nu = E/h = 3{,}22\\times10^{20}$ s⁻¹.",
+          "unit": "Hz"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Bước sóng?",
+          "correctAnswer": 9.32776e-13,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\lambda = c/\\nu = 9{,}33\\times10^{-13}$ m.",
+          "unit": "m"
+        }
+      ],
+      "solution": "$E = 1{,}33\\times10^{6}\\times1{,}6023\\times10^{-19} = 2{,}13\\times10^{-13}$ J\n\n$\\nu = \\dfrac{E}{h} = \\dfrac{2{,}13\\times10^{-13}}{6{,}626\\times10^{-34}} = 3{,}22\\times10^{20}$ Hz\n\n$\\lambda = \\dfrac{c}{\\nu} = 9{,}33\\times10^{-13}$ m (khoảng $10^{-3}$ nm — vùng tia γ).",
+      "finalAnswer": "ν ≈ 3,22×10^20 Hz; λ ≈ 9,33×10^-13 m.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          32
+        ],
+        "note": "Bài 5 trang 32 bài giảng."
+      }
+    },
+    {
+      "id": "c1-photon-004",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "photon-energy",
+        "frequency"
+      ],
+      "difficulty": "easy",
+      "title": "Bức xạ tầng ozone hấp thụ",
+      "skill": "Tính ν và E từ λ",
+      "statement": "Tầng ozone bảo vệ Trái Đất bằng cách hấp thụ bức xạ tử ngoại có bước sóng 242 nm. Tính tần số và năng lượng photon của bước sóng này.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Tần số?",
+          "correctAnswer": 1239670000000000.0,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\nu = c/\\lambda = 3{,}00\\times10^8/2{,}42\\times10^{-7} = 1{,}24\\times10^{15}$ s⁻¹.",
+          "unit": "Hz"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Năng lượng một photon?",
+          "correctAnswer": 8.21405e-19,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = h\\nu = 8{,}21\\times10^{-19}$ J.",
+          "unit": "J"
+        }
+      ],
+      "solution": "$\\nu = \\dfrac{c}{\\lambda} = \\dfrac{3{,}00\\times10^8}{242\\times10^{-9}} = 1{,}24\\times10^{15}$ Hz\n\n$E = h\\nu = 6{,}626\\times10^{-34}\\times1{,}24\\times10^{15} = 8{,}21\\times10^{-19}$ J",
+      "finalAnswer": "ν ≈ 1,24×10^15 Hz; E ≈ 8,21×10^-19 J.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          33
+        ],
+        "note": "Bài 6 trang 33 bài giảng."
+      }
+    },
+    {
+      "id": "c1-photon-005",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "photon-energy"
+      ],
+      "difficulty": "medium",
+      "title": "Số photon kích hoạt xung thần kinh",
+      "skill": "Số photon từ năng lượng tổng",
+      "statement": "Năng lượng tối thiểu để kích hoạt xung thần kinh truyền tới não là $2{,}0\\times10^{-17}$ J. Cần tối thiểu bao nhiêu photon ánh sáng đỏ (700 nm) hoặc ánh sáng xanh (475 nm) để cung cấp năng lượng này?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Năng lượng một photon đỏ (700 nm)?",
+          "correctAnswer": 2.83971e-19,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = hc/\\lambda = 2{,}84\\times10^{-19}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Số photon đỏ tối thiểu (số nguyên)?",
+          "correctAnswer": 71.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$2{,}0\\times10^{-17}/2{,}84\\times10^{-19} = 70{,}4$ → cần ít nhất **71** photon (làm tròn lên).",
+          "hint": "Số photon phải là số nguyên và đủ năng lượng → làm tròn LÊN."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Số photon xanh (475 nm) tối thiểu?",
+          "correctAnswer": 48.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$E = 4{,}18\\times10^{-19}$ J; $2{,}0\\times10^{-17}/4{,}18\\times10^{-19} = 47{,}8$ → **48** photon."
+        }
+      ],
+      "solution": "- Photon đỏ: $E = \\dfrac{hc}{700\\times10^{-9}} = 2{,}84\\times10^{-19}$ J → $n = \\dfrac{2{,}0\\times10^{-17}}{2{,}84\\times10^{-19}} = 70{,}4$ → **71 photon**.\n- Photon xanh: $E = 4{,}18\\times10^{-19}$ J → $n = 47{,}8$ → **48 photon**.\n\nPhoton xanh có năng lượng lớn hơn nên cần ít photon hơn.",
+      "finalAnswer": "Đỏ: 71 photon; xanh: 48 photon.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          33
+        ],
+        "note": "Bài 7 trang 33 bài giảng."
+      }
+    },
+    {
+      "id": "c1-photon-006",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "wavelength",
+        "photon-energy"
+      ],
+      "difficulty": "medium",
+      "title": "Liên kết Hb–CO hấp thụ bức xạ hồng ngoại",
+      "skill": "Số sóng – bước sóng – năng lượng",
+      "statement": "CO rất độc vì liên kết với hemoglobin mạnh hơn $\\mathrm{O_2}$. Liên kết Hb–CO hấp thụ bức xạ có số sóng 1953 cm⁻¹. Tính bước sóng và năng lượng photon hấp thụ.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Bước sóng tính bằng cm?",
+          "correctAnswer": 0.000512033,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\lambda = 1/\\tilde{\\nu} = 1/1953 = 5{,}12\\times10^{-4}$ cm.",
+          "unit": "cm"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Bước sóng tính bằng m?",
+          "correctAnswer": 5.12033e-06,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\lambda = 5{,}12\\times10^{-6}$ m (≈ 5,12 µm, vùng hồng ngoại).",
+          "unit": "m"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Năng lượng một photon?",
+          "correctAnswer": 3.88217e-20,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = hc/\\lambda = 3{,}88\\times10^{-20}$ J.",
+          "unit": "J"
+        }
+      ],
+      "solution": "$\\lambda = \\dfrac{1}{1953\\ \\text{cm}^{-1}} = 5{,}12\\times10^{-4}$ cm $= 5{,}12\\times10^{-6}$ m\n\n$E = \\dfrac{hc}{\\lambda} = 3{,}88\\times10^{-20}$ J/photon (≈ $23{,}4$ kJ/mol).",
+      "finalAnswer": "λ ≈ 5,12×10^-6 m; E ≈ 3,88×10^-20 J.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          33
+        ],
+        "note": "Bài 9 trang 33 bài giảng."
+      }
+    },
+    {
+      "id": "c1-photon-007",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "photon-energy"
+      ],
+      "difficulty": "medium",
+      "title": "Hâm nóng súp bằng lò vi sóng",
+      "skill": "Số photon từ nhiệt lượng",
+      "statement": "Một bát súp chứa 252 g $\\mathrm{H_2O}$ được làm nóng bằng lò vi sóng từ 20 °C lên 98 °C, bức xạ có bước sóng $1{,}55\\times10^{-2}$ m. Tính số photon mà bát súp hấp thụ. Biết $Q = m\\,C\\,\\Delta t$ với $C = 4{,}184$ J/(g·°C).",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Nhiệt lượng nước nhận Q?",
+          "correctAnswer": 82240.7,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$Q = 252\\cdot4{,}184\\cdot(98-20) = 82241$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Năng lượng một photon vi sóng?",
+          "correctAnswer": 1.28245e-23,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = hc/\\lambda = 1{,}28\\times10^{-23}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Số photon?",
+          "correctAnswer": 6.41277e+27,
+          "tolerance": {
+            "relative": 0.03
+          },
+          "explanation": "$n = Q/E = 6{,}41\\times10^{27}$ photon."
+        }
+      ],
+      "solution": "$Q = 252 \\times 4{,}184 \\times 78 = 82241$ J\n\n$E_\\text{photon} = \\dfrac{6{,}626\\times10^{-34}\\times3{,}00\\times10^8}{1{,}55\\times10^{-2}} = 1{,}28\\times10^{-23}$ J\n\n$n = \\dfrac{Q}{E} = 6{,}41\\times10^{27}$ photon.",
+      "finalAnswer": "≈ 6,41×10^27 photon.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          35
+        ],
+        "note": "Bài 12 trang 35 bài giảng."
+      }
+    },
+    {
+      "id": "c1-photon-008",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "photon-energy"
+      ],
+      "difficulty": "medium",
+      "title": "Photon từ bóng đèn sợi đốt",
+      "skill": "Công suất và số photon",
+      "statement": "Một bóng đèn sợi đốt 75 W chuyển 95% điện năng thành nhiệt và 5% thành ánh sáng. Nếu 10% lượng ánh sáng đó chiếu vào cuốn sách, mỗi giây có bao nhiêu photon chiếu vào sách? Giả sử photon có bước sóng 550 nm. ($1$ W $= 1$ J/s)",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Năng lượng ánh sáng chiếu vào sách mỗi giây?",
+          "correctAnswer": 0.375,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$75 \\times 0{,}05 \\times 0{,}10 = 0{,}375$ J/s.",
+          "unit": "J"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Năng lượng một photon 550 nm?",
+          "correctAnswer": 3.61418e-19,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = hc/\\lambda = 3{,}61\\times10^{-19}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Số photon mỗi giây?",
+          "correctAnswer": 1.03758e+18,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$n = 0{,}375/3{,}61\\times10^{-19} = 1{,}04\\times10^{18}$ photon/s."
+        }
+      ],
+      "solution": "Năng lượng ánh sáng tới sách mỗi giây: $75 \\times 5\\% \\times 10\\% = 0{,}375$ J.\n\n$E_\\text{photon} = \\dfrac{hc}{550\\times10^{-9}} = 3{,}61\\times10^{-19}$ J → $n = \\dfrac{0{,}375}{3{,}61\\times10^{-19}} = 1{,}04\\times10^{18}$ photon/s.",
+      "finalAnswer": "≈ 1,04×10^18 photon/s.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          36
+        ],
+        "note": "Bài 16 trang 36 bài giảng."
+      }
+    },
+    {
+      "id": "c1-photon-009",
+      "chapterId": "chapter-1",
+      "lessonId": "light-photon",
+      "nodeIds": [
+        "wavelength",
+        "frequency"
+      ],
+      "difficulty": "medium",
+      "title": "Vụ án trong trò chơi Clue",
+      "skill": "Suy luận bước sóng – màu sắc",
+      "statement": "Trong trò chơi “Clue”, bà White bị sát hại trong phòng nhạc. Máy quang phổ ở mỗi phòng ghi lại ánh sáng phản xạ từ trang phục của người có mặt (ví dụ người mặc màu vàng phản xạ 580 nm). Các nghi phạm: Đại tá Mustard (vàng), GS. Plum (tím), ông Green (xanh lá), bà Peacock (xanh lam) và bà Scarlet (đỏ).\n\nLúc xảy ra án: phòng ăn ghi phản xạ 520 nm; phòng khách và phòng làm việc ghi **tần số thấp hơn**; thư viện ghi **bước sóng ngắn nhất có thể**. Ai là thủ phạm?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "520 nm thuộc màu nào? Ai ở phòng ăn?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Xanh lá — ông Green"
+            },
+            {
+              "id": "b",
+              "text": "Đỏ — bà Scarlet"
+            },
+            {
+              "id": "c",
+              "text": "Tím — GS. Plum"
+            },
+            {
+              "id": "d",
+              "text": "Vàng — Đại tá Mustard"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Vùng xanh lá khoảng 500–560 nm → ông Green ở phòng ăn."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "“Tần số thấp hơn” nghĩa là bước sóng thế nào so với 520 nm?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ngắn hơn"
+            },
+            {
+              "id": "b",
+              "text": "Dài hơn"
+            },
+            {
+              "id": "c",
+              "text": "Bằng nhau"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "$\\nu = c/\\lambda$: tần số thấp hơn ↔ bước sóng dài hơn → màu vàng (580 nm) và đỏ (~700 nm): Mustard và Scarlet."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Bước sóng ngắn nhất trong ánh sáng nhìn thấy là màu gì? Ai ở thư viện?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tím — GS. Plum"
+            },
+            {
+              "id": "b",
+              "text": "Xanh lam — bà Peacock"
+            },
+            {
+              "id": "c",
+              "text": "Đỏ — bà Scarlet"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Tím (~400–450 nm) là bước sóng ngắn nhất của vùng nhìn thấy → GS. Plum ở thư viện."
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Vậy ai ở phòng nhạc?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bà Peacock"
+            },
+            {
+              "id": "b",
+              "text": "Ông Green"
+            },
+            {
+              "id": "c",
+              "text": "Đại tá Mustard"
+            },
+            {
+              "id": "d",
+              "text": "GS. Plum"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Người duy nhất chưa được xác định vị trí là bà Peacock (xanh lam ~490 nm)."
+        }
+      ],
+      "solution": "- Phòng ăn: 520 nm (xanh lá) → **ông Green**.\n- Phòng khách, phòng làm việc: tần số thấp hơn → bước sóng dài hơn 520 nm → vàng (580 nm) và đỏ (~700 nm) → **Đại tá Mustard** và **bà Scarlet**.\n- Thư viện: bước sóng ngắn nhất (tím) → **GS. Plum**.\n\nCòn lại **bà Peacock** (xanh lam, ~490 nm) — người có mặt ở phòng nhạc → thủ phạm.",
+      "finalAnswer": "Bà Peacock.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          37
+        ],
+        "note": "Bài 17 trang 37 bài giảng."
+      }
+    }
+  ]
+}

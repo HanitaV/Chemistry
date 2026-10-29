@@ -1,0 +1,330 @@
+{
+  "videos": [
+    {
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "General Chemistry – Full University Course"
+    }
+  ],
+  "segments": [
+    {
+      "id": "atomic-theory-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Atomic Theory and Structure",
+      "titleVi": "Thuyết nguyên tử và cấu tạo nguyên tử",
+      "chapterId": "chapter-1",
+      "startSeconds": 4766,
+      "endSeconds": 6486,
+      "topicIds": [
+        "atomic-structure",
+        "subatomic-particles",
+        "atomic-number",
+        "mass-number",
+        "atoms-and-ions"
+      ]
+    },
+    {
+      "id": "nature-of-light-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Nature of Light",
+      "titleVi": "Bản chất của ánh sáng",
+      "chapterId": "chapter-1",
+      "startSeconds": 25540,
+      "endSeconds": 27121,
+      "topicIds": [
+        "photon-radiation",
+        "frequency",
+        "wavelength",
+        "photon-energy"
+      ]
+    },
+    {
+      "id": "electronic-transitions-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Electronic Transitions",
+      "titleVi": "Chuyển mức năng lượng electron",
+      "chapterId": "chapter-1",
+      "startSeconds": 27121,
+      "endSeconds": 28460,
+      "topicIds": [
+        "bohr-model",
+        "energy-levels",
+        "ground-state",
+        "excited-state",
+        "energy-transitions",
+        "emission",
+        "absorption",
+        "atomic-spectrum"
+      ]
+    },
+    {
+      "id": "quantum-numbers-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Quantum Numbers",
+      "titleVi": "Số lượng tử",
+      "chapterId": "chapter-1",
+      "startSeconds": 29049,
+      "endSeconds": 30739,
+      "topicIds": [
+        "quantum-numbers",
+        "principal-quantum-number",
+        "angular-quantum-number",
+        "magnetic-quantum-number",
+        "spin-quantum-number"
+      ]
+    },
+    {
+      "id": "electron-configuration-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Electron Configuration",
+      "titleVi": "Cấu hình electron",
+      "chapterId": "chapter-1",
+      "startSeconds": 30739,
+      "endSeconds": 33317,
+      "topicIds": [
+        "electron-configuration",
+        "electron-shells",
+        "subshells",
+        "aufbau-principle",
+        "pauli-principle",
+        "hund-rule"
+      ]
+    },
+    {
+      "id": "ionization-energy-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Ionization Energy",
+      "titleVi": "Năng lượng ion hóa",
+      "chapterId": "chapter-1",
+      "startSeconds": 36311,
+      "endSeconds": 37173,
+      "topicIds": [
+        "ionization-energy"
+      ]
+    },
+    {
+      "id": "ionic-bonding-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Ionic Bonding",
+      "titleVi": "Liên kết ion",
+      "chapterId": "chapter-2",
+      "startSeconds": 39372,
+      "endSeconds": 40284,
+      "topicIds": [
+        "ionic-bond"
+      ]
+    },
+    {
+      "id": "lewis-structures-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Lewis Structures",
+      "titleVi": "Công thức Lewis",
+      "chapterId": "chapter-2",
+      "startSeconds": 40703,
+      "endSeconds": 44688,
+      "topicIds": [
+        "lewis-structure",
+        "octet-rule",
+        "covalent-bond"
+      ]
+    },
+    {
+      "id": "bond-enthalpy-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Bond Enthalpy",
+      "titleVi": "Năng lượng liên kết",
+      "chapterId": "chapter-2",
+      "startSeconds": 44688,
+      "endSeconds": 45712,
+      "topicIds": [
+        "bond-energy-length"
+      ]
+    },
+    {
+      "id": "vsepr-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "VSEPR",
+      "titleVi": "Mô hình VSEPR",
+      "chapterId": "chapter-2",
+      "startSeconds": 45712,
+      "endSeconds": 47691,
+      "topicIds": [
+        "molecular-geometry"
+      ]
+    },
+    {
+      "id": "polarity-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Polarity",
+      "titleVi": "Độ phân cực",
+      "chapterId": "chapter-2",
+      "startSeconds": 47691,
+      "endSeconds": 48956,
+      "topicIds": [
+        "polarity"
+      ]
+    },
+    {
+      "id": "hybridization-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Hybridization",
+      "titleVi": "Lai hóa orbital",
+      "chapterId": "chapter-2",
+      "startSeconds": 48956,
+      "endSeconds": 49928,
+      "topicIds": [
+        "hybridization",
+        "hybrid-sp",
+        "hybrid-sp2",
+        "hybrid-sp3"
+      ]
+    },
+    {
+      "id": "sigma-pi-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Sigma and Pi Bonds",
+      "titleVi": "Liên kết sigma và pi",
+      "chapterId": "chapter-2",
+      "startSeconds": 49928,
+      "endSeconds": 50366,
+      "topicIds": [
+        "sigma-pi-bonds"
+      ]
+    },
+    {
+      "id": "mo-theory-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Molecular Orbital Theory",
+      "titleVi": "Thuyết orbital phân tử (MO)",
+      "chapterId": "chapter-2",
+      "startSeconds": 50366,
+      "endSeconds": 53079,
+      "topicIds": [
+        "mo-theory",
+        "bonding-mo",
+        "antibonding-mo",
+        "mo-energy-diagram",
+        "mo-configuration",
+        "bond-order",
+        "magnetism",
+        "bond-strength-comparison"
+      ]
+    },
+    {
+      "id": "first-law-enthalpy-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "First Law and Enthalpy",
+      "titleVi": "Nguyên lý I và enthalpy",
+      "chapterId": "chapter-3",
+      "startSeconds": 19360,
+      "endSeconds": 21129,
+      "topicIds": [
+        "internal-energy",
+        "first-law",
+        "heat-and-work",
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "pv-work-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "PV Work",
+      "titleVi": "Công giãn nở (công PV)",
+      "chapterId": "chapter-3",
+      "startSeconds": 21129,
+      "endSeconds": 21593,
+      "topicIds": [
+        "expansion-work"
+      ]
+    },
+    {
+      "id": "calorimetry-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Calorimetry",
+      "titleVi": "Nhiệt lượng kế và nhiệt dung",
+      "chapterId": "chapter-3",
+      "startSeconds": 21593,
+      "endSeconds": 23304,
+      "topicIds": [
+        "heat-and-work",
+        "exo-endothermic"
+      ]
+    },
+    {
+      "id": "hess-law-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Hess's Law",
+      "titleVi": "Định luật Hess",
+      "chapterId": "chapter-3",
+      "startSeconds": 23304,
+      "endSeconds": 25540,
+      "topicIds": [
+        "hess-law",
+        "formation-enthalpy"
+      ]
+    },
+    {
+      "id": "laws-of-thermodynamics-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Laws of Thermodynamics",
+      "titleVi": "Các nguyên lý nhiệt động học",
+      "chapterId": "chapter-3",
+      "startSeconds": 98200,
+      "endSeconds": 98766,
+      "topicIds": [
+        "first-law",
+        "entropy"
+      ]
+    },
+    {
+      "id": "entropy-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Entropy",
+      "titleVi": "Entropy",
+      "chapterId": "chapter-3",
+      "startSeconds": 98766,
+      "endSeconds": 100250,
+      "topicIds": [
+        "entropy"
+      ]
+    },
+    {
+      "id": "gibbs-free-energy-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Gibbs Free Energy",
+      "titleVi": "Năng lượng tự do Gibbs",
+      "chapterId": "chapter-3",
+      "startSeconds": 100250,
+      "endSeconds": 102140,
+      "topicIds": [
+        "gibbs-energy",
+        "spontaneity"
+      ]
+    },
+    {
+      "id": "calculating-dg-dh-ds-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Calculating Delta G, H, S",
+      "titleVi": "Tính ΔG, ΔH, ΔS",
+      "chapterId": "chapter-3",
+      "startSeconds": 102140,
+      "endSeconds": 103192,
+      "topicIds": [
+        "gibbs-energy",
+        "spontaneity",
+        "formation-enthalpy"
+      ]
+    },
+    {
+      "id": "gibbs-equilibrium-video",
+      "youtubeId": "6OV3tmt9uhs",
+      "title": "Gibbs and Equilibrium",
+      "titleVi": "Gibbs và cân bằng",
+      "chapterId": "chapter-3",
+      "startSeconds": 103192,
+      "endSeconds": 104635,
+      "topicIds": [
+        "gibbs-equilibrium"
+      ]
+    }
+  ]
+}

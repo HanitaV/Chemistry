@@ -1,0 +1,93 @@
+{
+  "exercises": [
+    {
+      "id": "c3-first-001",
+      "chapterId": "chapter-3",
+      "lessonId": "first-law",
+      "nodeIds": [
+        "first-law",
+        "heat-and-work"
+      ],
+      "difficulty": "easy",
+      "title": "Áp dụng nguyên lý I với quy ước dấu",
+      "skill": "Nguyên lý I: ΔU = Q + A",
+      "statement": "Một hệ khí nhận 250 J nhiệt từ môi trường và đồng thời giãn nở, sinh công 120 J ra môi trường. Tính biến thiên nội năng của hệ.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Q (theo quy ước: hệ nhận là dương)?",
+          "correctAnswer": 250.0,
+          "tolerance": {
+            "absolute": 0.5
+          },
+          "explanation": "Hệ nhận nhiệt → Q = +250 J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "A (công hệ NHẬN)?",
+          "correctAnswer": -120.0,
+          "tolerance": {
+            "absolute": 0.5
+          },
+          "explanation": "Hệ sinh công ra ngoài → hệ nhận công âm: A = −120 J.",
+          "unit": "J",
+          "hint": "Hệ sinh công thì công hệ nhận mang dấu âm."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔU?",
+          "correctAnswer": 130.0,
+          "tolerance": {
+            "absolute": 0.5
+          },
+          "explanation": "$\\Delta U = Q + A = 250 + (-120) = 130$ J.",
+          "unit": "J"
+        }
+      ],
+      "solution": "Quy ước của bài giảng: $\\Delta U = Q + A$, với Q và A là nhiệt và công **hệ nhận**.\n\n- Hệ nhận nhiệt: $Q = +250$ J.\n- Hệ sinh công 120 J: $A = -120$ J.\n\n$$\\Delta U = 250 + (-120) = +130\\ \\text{J}$$\n\nNội năng của hệ tăng 130 J.",
+      "finalAnswer": "ΔU = +130 J.",
+      "source": {
+        "kind": "supplementary"
+      }
+    },
+    {
+      "id": "c3-first-002",
+      "chapterId": "chapter-3",
+      "lessonId": "first-law",
+      "nodeIds": [
+        "first-law"
+      ],
+      "difficulty": "easy",
+      "title": "Đổi đơn vị năng lượng calo – joule",
+      "skill": "Đơn vị năng lượng",
+      "statement": "Một gói bánh ghi giá trị năng lượng 250 kcal. Đổi giá trị này sang kJ. (Bài giảng trang 7: 1 cal = 4,184 J.)",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "250 kcal bằng bao nhiêu kJ?",
+          "correctAnswer": 1046.0,
+          "tolerance": {
+            "relative": 0.002
+          },
+          "explanation": "$250 \\times 4{,}184 = 1046$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "$$250\\ \\text{kcal} \\times 4{,}184\\ \\frac{\\text{kJ}}{\\text{kcal}} = 1046\\ \\text{kJ}$$",
+      "finalAnswer": "1046 kJ.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          7
+        ],
+        "note": "Hệ số đổi đơn vị trang 7."
+      }
+    }
+  ]
+}

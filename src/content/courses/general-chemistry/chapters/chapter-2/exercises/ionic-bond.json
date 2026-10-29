@@ -1,0 +1,168 @@
+{
+  "exercises": [
+    {
+      "id": "c2-ionic-001",
+      "chapterId": "chapter-2",
+      "lessonId": "ionic-bond",
+      "nodeIds": [
+        "ionic-bond"
+      ],
+      "difficulty": "easy",
+      "title": "Năng lượng mạng lưới và nhiệt độ nóng chảy của muối natri halogenua",
+      "skill": "Liên kết ion – năng lượng mạng",
+      "statement": "Bảng số liệu (bài giảng trang 8):\n\n| Tinh thể | NaF | NaCl | NaBr | NaI |\n|---|---|---|---|---|\n| $U_{ml}$ (kcal/mol) | 217 | 183 | 176 | 164 |\n| t° sôi (°C) | 1695 | 1441 | 1393 | 1300 |\n| t° nóng chảy (°C) | 993 | 801 | 766 | 665 |\n\nNhận xét và giải thích xu hướng biến đổi.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Từ NaF đến NaI, năng lượng mạng lưới:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Giảm dần"
+            },
+            {
+              "id": "b",
+              "text": "Tăng dần"
+            },
+            {
+              "id": "c",
+              "text": "Không đổi"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "217 → 183 → 176 → 164 kcal/mol."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Nguyên nhân chính?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bán kính anion tăng từ F⁻ đến I⁻ → khoảng cách giữa các ion tăng → lực hút tĩnh điện giảm"
+            },
+            {
+              "id": "b",
+              "text": "Điện tích anion tăng"
+            },
+            {
+              "id": "c",
+              "text": "Số electron của Na⁺ thay đổi"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Lực hút tĩnh điện tỉ lệ $q^+q^-/r$; cùng điện tích nhưng $r$ tăng nên năng lượng mạng giảm."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Quan hệ giữa năng lượng mạng và nhiệt độ nóng chảy:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Năng lượng mạng càng lớn, nhiệt độ nóng chảy và sôi càng cao"
+            },
+            {
+              "id": "b",
+              "text": "Không liên quan"
+            },
+            {
+              "id": "c",
+              "text": "Tỉ lệ nghịch"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Cần nhiều năng lượng hơn để phá vỡ mạng tinh thể bền hơn."
+        }
+      ],
+      "solution": "- Từ NaF → NaI: năng lượng mạng lưới **giảm**, nhiệt độ sôi và nóng chảy cũng **giảm**.\n- Giải thích: các ion đều có điện tích ±1; bán kính anion tăng (F⁻ < Cl⁻ < Br⁻ < I⁻) nên khoảng cách giữa tâm các ion tăng, lực hút tĩnh điện giảm → mạng tinh thể kém bền → cần ít năng lượng hơn để nóng chảy, sôi.",
+      "finalAnswer": "U giảm từ NaF đến NaI do bán kính anion tăng; nhiệt độ nóng chảy, sôi giảm theo.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          8
+        ],
+        "note": "Bảng số liệu trang 8 bài giảng."
+      }
+    },
+    {
+      "id": "c2-ionic-002",
+      "chapterId": "chapter-2",
+      "lessonId": "ionic-bond",
+      "nodeIds": [
+        "ionic-bond",
+        "octet-rule"
+      ],
+      "difficulty": "easy",
+      "title": "Sự hình thành MgCl₂",
+      "skill": "Liên kết ion – quy tắc bát tử",
+      "statement": "Mô tả sự hình thành liên kết trong $\\mathrm{MgCl_2}$ (Mg: $Z = 12$; Cl: $Z = 17$) theo thuyết Kossel.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Mỗi nguyên tử Mg nhường bao nhiêu electron?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "Mg: $[\\mathrm{Ne}]3s^2$ → nhường 2 electron để đạt cấu hình Ne."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Mỗi nguyên tử Cl nhận bao nhiêu electron?",
+          "correctAnswer": 1.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "Cl: $[\\mathrm{Ne}]3s^23p^5$ → nhận 1 electron để đạt cấu hình Ar."
+        },
+        {
+          "id": "step-3",
+          "type": "short-answer",
+          "prompt": "Công thức các ion tạo thành (ví dụ: Na+, O2-)? Ghi ion của Mg.",
+          "correctAnswer": [
+            "Mg2+",
+            "Mg^2+",
+            "Mg(2+)"
+          ],
+          "explanation": "Mg nhường 2e → $\\mathrm{Mg^{2+}}$."
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Vì sao tỉ lệ là 1 Mg : 2 Cl?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tổng số electron nhường = tổng số electron nhận (trung hòa điện)"
+            },
+            {
+              "id": "b",
+              "text": "Do khối lượng mol"
+            },
+            {
+              "id": "c",
+              "text": "Do Cl là khí"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "1 Mg nhường 2e cần 2 Cl, mỗi Cl nhận 1e."
+        }
+      ],
+      "solution": "$$\\mathrm{Mg} \\to \\mathrm{Mg^{2+}} + 2e \\qquad 2\\,\\mathrm{Cl} + 2e \\to 2\\,\\mathrm{Cl^-}$$\n\nIon $\\mathrm{Mg^{2+}}$ (cấu hình Ne) và 2 ion $\\mathrm{Cl^-}$ (cấu hình Ar) hút nhau bằng lực tĩnh điện → $\\mathrm{MgCl_2}$. Tỉ lệ 1 : 2 đảm bảo số electron nhường bằng số electron nhận.",
+      "finalAnswer": "Mg → Mg²⁺ + 2e; 2Cl + 2e → 2Cl⁻; liên kết ion trong MgCl₂.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          7
+        ],
+        "note": "Biên soạn lại từ ví dụ MgCl₂ trang 7."
+      }
+    }
+  ]
+}

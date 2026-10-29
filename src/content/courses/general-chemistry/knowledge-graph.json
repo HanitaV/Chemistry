@@ -1,0 +1,1380 @@
+{
+  "nodes": [
+    {
+      "id": "ch1-atomic-structure",
+      "chapterId": "chapter-1",
+      "kind": "chapter",
+      "category": "tong-quan",
+      "label": "Chương 1: Cấu tạo nguyên tử",
+      "description": "Thành phần nguyên tử, cấu hình electron, mô hình Bohr, quang phổ và năng lượng ion hóa.",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [
+        "atomic-structure"
+      ],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "atomic-structure",
+      "chapterId": "chapter-1",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Cấu tạo nguyên tử",
+      "description": "Nguyên tử gồm hạt nhân (proton, neutron) và lớp vỏ electron; kích thước nguyên tử ~10⁻¹⁰ m, hạt nhân ~10⁻¹⁵ m.",
+      "parentId": "ch1-atomic-structure",
+      "lessonId": "atomic-structure",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [
+        "quantum-numbers"
+      ],
+      "videoSegmentIds": [
+        "atomic-theory-video"
+      ]
+    },
+    {
+      "id": "subatomic-particles",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Proton, neutron, electron",
+      "description": "Điện tích và khối lượng của ba loại hạt cơ bản.",
+      "parentId": "atomic-structure",
+      "lessonId": "atomic-structure",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "atomic-theory-video"
+      ]
+    },
+    {
+      "id": "atomic-number",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Số hiệu nguyên tử Z",
+      "description": "Z = số proton = điện tích hạt nhân; xác định nguyên tố.",
+      "parentId": "atomic-structure",
+      "lessonId": "atomic-structure",
+      "prerequisites": [
+        "subatomic-particles"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "atomic-theory-video"
+      ]
+    },
+    {
+      "id": "mass-number",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Số khối A",
+      "description": "A = Z + N (số proton + số neutron); phân biệt các đồng vị.",
+      "parentId": "atomic-structure",
+      "lessonId": "atomic-structure",
+      "prerequisites": [
+        "subatomic-particles"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "atomic-theory-video"
+      ]
+    },
+    {
+      "id": "atoms-and-ions",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Nguyên tử và ion",
+      "description": "Ion hình thành khi nguyên tử nhường hoặc nhận electron; số proton không đổi.",
+      "parentId": "atomic-structure",
+      "lessonId": "atomic-structure",
+      "prerequisites": [
+        "subatomic-particles"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "atomic-theory-video"
+      ]
+    },
+    {
+      "id": "quantum-numbers",
+      "chapterId": "chapter-1",
+      "kind": "topic",
+      "category": "mo-hinh",
+      "label": "Số lượng tử",
+      "description": "Bốn số lượng tử n, l, mₗ, mₛ mô tả trạng thái của một electron trong nguyên tử.",
+      "parentId": "ch1-atomic-structure",
+      "lessonId": "quantum-numbers",
+      "prerequisites": [
+        "atomic-structure"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "electron-configuration"
+      ],
+      "videoSegmentIds": [
+        "quantum-numbers-video"
+      ]
+    },
+    {
+      "id": "principal-quantum-number",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Số lượng tử chính n",
+      "description": "n = 1, 2, 3…: xác định lớp electron và phần lớn năng lượng.",
+      "parentId": "quantum-numbers",
+      "lessonId": "quantum-numbers",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "quantum-numbers-video"
+      ]
+    },
+    {
+      "id": "angular-quantum-number",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Số lượng tử phụ l",
+      "description": "l = 0 … n−1: xác định phân lớp s, p, d, f và hình dạng orbital.",
+      "parentId": "quantum-numbers",
+      "lessonId": "quantum-numbers",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "quantum-numbers-video"
+      ]
+    },
+    {
+      "id": "magnetic-quantum-number",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Số lượng tử từ mₗ",
+      "description": "mₗ = −l … +l: xác định định hướng orbital; số giá trị = số orbital của phân lớp.",
+      "parentId": "quantum-numbers",
+      "lessonId": "quantum-numbers",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "quantum-numbers-video"
+      ]
+    },
+    {
+      "id": "spin-quantum-number",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Số lượng tử spin mₛ",
+      "description": "mₛ = +½ hoặc −½: chiều tự quay của electron.",
+      "parentId": "quantum-numbers",
+      "lessonId": "quantum-numbers",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "quantum-numbers-video"
+      ]
+    },
+    {
+      "id": "electron-configuration",
+      "chapterId": "chapter-1",
+      "kind": "topic",
+      "category": "nguyen-ly",
+      "label": "Cấu hình electron",
+      "description": "Cách phân bố electron vào các lớp và phân lớp theo nguyên lý vững bền, nguyên lý Pauli và quy tắc Hund.",
+      "parentId": "ch1-atomic-structure",
+      "lessonId": "electron-configuration",
+      "prerequisites": [
+        "quantum-numbers"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "photon-radiation"
+      ],
+      "videoSegmentIds": [
+        "electron-configuration-video"
+      ]
+    },
+    {
+      "id": "electron-shells",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Các lớp electron",
+      "description": "Lớp K, L, M, N… ứng với n = 1, 2, 3, 4…",
+      "parentId": "electron-configuration",
+      "lessonId": "electron-configuration",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electron-configuration-video"
+      ]
+    },
+    {
+      "id": "subshells",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Phân lớp s, p, d, f",
+      "description": "Phân lớp s, p, d, f chứa tối đa 2, 6, 10, 14 electron.",
+      "parentId": "electron-configuration",
+      "lessonId": "electron-configuration",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electron-configuration-video"
+      ]
+    },
+    {
+      "id": "aufbau-principle",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "nguyen-ly",
+      "label": "Nguyên lý vững bền",
+      "description": "Electron chiếm orbital có năng lượng thấp trước: 1s 2s 2p 3s 3p 4s 3d 4p…",
+      "parentId": "electron-configuration",
+      "lessonId": "electron-configuration",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electron-configuration-video"
+      ]
+    },
+    {
+      "id": "pauli-principle",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "nguyen-ly",
+      "label": "Nguyên lý Pauli",
+      "description": "Mỗi orbital chứa tối đa 2 electron có spin ngược chiều.",
+      "parentId": "electron-configuration",
+      "lessonId": "electron-configuration",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electron-configuration-video"
+      ]
+    },
+    {
+      "id": "hund-rule",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "nguyen-ly",
+      "label": "Quy tắc Hund",
+      "description": "Trong một phân lớp, electron phân bố sao cho số electron độc thân là lớn nhất.",
+      "parentId": "electron-configuration",
+      "lessonId": "electron-configuration",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electron-configuration-video"
+      ]
+    },
+    {
+      "id": "valence-electrons",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Electron hóa trị",
+      "description": "Electron lớp ngoài cùng (và phân lớp sát ngoài chưa bão hòa) quyết định khả năng liên kết.",
+      "parentId": "electron-configuration",
+      "lessonId": "electron-configuration",
+      "prerequisites": [
+        "electron-configuration"
+      ],
+      "related": [],
+      "applications": [
+        "lewis-structure",
+        "bond-concept"
+      ],
+      "next": [],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "photon-radiation",
+      "chapterId": "chapter-1",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Photon và bức xạ",
+      "description": "Ánh sáng là sóng điện từ, đồng thời là dòng photon mang năng lượng E = hν.",
+      "parentId": "ch1-atomic-structure",
+      "lessonId": "light-photon",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [
+        "bohr-model"
+      ],
+      "videoSegmentIds": [
+        "nature-of-light-video"
+      ]
+    },
+    {
+      "id": "frequency",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Tần số",
+      "description": "ν (Hz = s⁻¹): số dao động trong một giây.",
+      "parentId": "photon-radiation",
+      "lessonId": "light-photon",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "nature-of-light-video"
+      ]
+    },
+    {
+      "id": "wavelength",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Bước sóng",
+      "description": "λ: quãng đường sóng truyền trong một chu kỳ; c = λν.",
+      "parentId": "photon-radiation",
+      "lessonId": "light-photon",
+      "prerequisites": [
+        "frequency"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "nature-of-light-video"
+      ]
+    },
+    {
+      "id": "photon-energy",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "tinh-toan",
+      "label": "Năng lượng photon",
+      "description": "E = hν = hc/λ; bước sóng càng ngắn, năng lượng càng lớn.",
+      "parentId": "photon-radiation",
+      "lessonId": "light-photon",
+      "prerequisites": [
+        "frequency",
+        "wavelength"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "nature-of-light-video"
+      ]
+    },
+    {
+      "id": "bohr-model",
+      "chapterId": "chapter-1",
+      "kind": "topic",
+      "category": "mo-hinh",
+      "label": "Mẫu nguyên tử Bohr",
+      "description": "Electron chuyển động trên các quỹ đạo có năng lượng xác định Eₙ = −13,6·Z²/n² eV (chỉ cho hệ một electron).",
+      "parentId": "ch1-atomic-structure",
+      "lessonId": "bohr-model",
+      "prerequisites": [
+        "atomic-structure",
+        "photon-energy"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "energy-transitions"
+      ],
+      "videoSegmentIds": [
+        "electronic-transitions-video"
+      ]
+    },
+    {
+      "id": "energy-levels",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Mức năng lượng",
+      "description": "Eₙ = −2,18×10⁻¹⁸·Z²/n² J; năng lượng bị lượng tử hóa.",
+      "parentId": "bohr-model",
+      "lessonId": "bohr-model",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electronic-transitions-video"
+      ]
+    },
+    {
+      "id": "ground-state",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Trạng thái cơ bản",
+      "description": "n = 1: trạng thái năng lượng thấp nhất, bền nhất.",
+      "parentId": "bohr-model",
+      "lessonId": "bohr-model",
+      "prerequisites": [
+        "energy-levels"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electronic-transitions-video"
+      ]
+    },
+    {
+      "id": "excited-state",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Trạng thái kích thích",
+      "description": "n > 1: electron đã nhận năng lượng và chuyển lên mức cao hơn.",
+      "parentId": "bohr-model",
+      "lessonId": "bohr-model",
+      "prerequisites": [
+        "energy-levels"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electronic-transitions-video"
+      ]
+    },
+    {
+      "id": "energy-transitions",
+      "chapterId": "chapter-1",
+      "kind": "topic",
+      "category": "tinh-toan",
+      "label": "Chuyển mức năng lượng",
+      "description": "ΔE = E_cuối − E_đầu; hấp thụ khi ΔE > 0, phát xạ khi ΔE < 0; |ΔE| = hc/λ.",
+      "parentId": "ch1-atomic-structure",
+      "lessonId": "electronic-transitions",
+      "prerequisites": [
+        "bohr-model"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "ionization-energy"
+      ],
+      "videoSegmentIds": [
+        "electronic-transitions-video"
+      ]
+    },
+    {
+      "id": "emission",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Phát xạ",
+      "description": "Electron chuyển từ mức cao xuống mức thấp, phát ra photon.",
+      "parentId": "energy-transitions",
+      "lessonId": "electronic-transitions",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electronic-transitions-video"
+      ]
+    },
+    {
+      "id": "absorption",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Hấp thụ",
+      "description": "Electron hấp thụ photon có năng lượng đúng bằng hiệu hai mức để chuyển lên mức cao.",
+      "parentId": "energy-transitions",
+      "lessonId": "electronic-transitions",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electronic-transitions-video"
+      ]
+    },
+    {
+      "id": "atomic-spectrum",
+      "chapterId": "chapter-1",
+      "kind": "concept",
+      "category": "tinh-toan",
+      "label": "Phổ nguyên tử",
+      "description": "Phổ vạch: dãy Lyman (n→1), Balmer (n→2), Paschen (n→3), Brackett (n→4); công thức Rydberg.",
+      "parentId": "energy-transitions",
+      "lessonId": "electronic-transitions",
+      "prerequisites": [
+        "emission",
+        "absorption"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "electronic-transitions-video"
+      ]
+    },
+    {
+      "id": "ionization-energy",
+      "chapterId": "chapter-1",
+      "kind": "topic",
+      "category": "tinh-toan",
+      "label": "Năng lượng ion hóa",
+      "description": "Năng lượng tối thiểu để tách electron khỏi nguyên tử/ion ở trạng thái khí; với ion một electron IE = 13,6·Z² eV (từ n = 1).",
+      "parentId": "ch1-atomic-structure",
+      "lessonId": "ionization-energy",
+      "prerequisites": [
+        "energy-transitions",
+        "electron-configuration"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "bond-concept"
+      ],
+      "videoSegmentIds": [
+        "ionization-energy-video"
+      ]
+    },
+    {
+      "id": "ch2-molecular-structure",
+      "chapterId": "chapter-2",
+      "kind": "chapter",
+      "category": "tong-quan",
+      "label": "Chương 2: Cấu tạo phân tử",
+      "description": "Liên kết hóa học: liên kết ion, cộng hóa trị, thuyết VB, lai hóa, hình học phân tử và thuyết MO.",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [
+        "bond-concept"
+      ],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "bond-concept",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Khái niệm liên kết hóa học",
+      "description": "Liên kết hình thành khi hệ các nguyên tử có năng lượng thấp hơn các nguyên tử cô lập.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "bond-concepts",
+      "prerequisites": [
+        "valence-electrons"
+      ],
+      "related": [
+        "bond-energy-length"
+      ],
+      "applications": [],
+      "next": [
+        "bond-energy-length"
+      ],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "bond-energy-length",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Năng lượng và độ dài liên kết",
+      "description": "Năng lượng liên kết, độ dài liên kết, góc liên kết, bậc liên kết; bậc tăng → năng lượng tăng, độ dài giảm.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "bond-concepts",
+      "prerequisites": [
+        "bond-concept"
+      ],
+      "related": [
+        "bond-order"
+      ],
+      "applications": [
+        "formation-enthalpy"
+      ],
+      "next": [
+        "octet-rule"
+      ],
+      "videoSegmentIds": [
+        "bond-enthalpy-video"
+      ]
+    },
+    {
+      "id": "octet-rule",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "nguyen-ly",
+      "label": "Quy tắc bát tử",
+      "description": "Nguyên tử có xu hướng đạt cấu hình 8 electron lớp ngoài cùng như khí hiếm; có nhiều ngoại lệ (PF₅, SF₆, phân tử số lẻ electron).",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "ionic-bond",
+      "prerequisites": [
+        "valence-electrons"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "ionic-bond"
+      ],
+      "videoSegmentIds": [
+        "lewis-structures-video"
+      ]
+    },
+    {
+      "id": "ionic-bond",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Liên kết ion",
+      "description": "Electron chuyển hẳn từ nguyên tử này sang nguyên tử kia; các ion trái dấu hút nhau bằng lực tĩnh điện (thuyết Kossel).",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "ionic-bond",
+      "prerequisites": [
+        "octet-rule",
+        "bond-concept"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "covalent-bond"
+      ],
+      "videoSegmentIds": [
+        "ionic-bonding-video"
+      ]
+    },
+    {
+      "id": "covalent-bond",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Liên kết cộng hóa trị",
+      "description": "Liên kết bằng cặp electron dùng chung (thuyết Lewis): không phân cực, phân cực, cho–nhận.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "covalent-lewis",
+      "prerequisites": [
+        "octet-rule"
+      ],
+      "related": [
+        "ionic-bond"
+      ],
+      "applications": [],
+      "next": [
+        "lewis-structure"
+      ],
+      "videoSegmentIds": [
+        "lewis-structures-video"
+      ]
+    },
+    {
+      "id": "lewis-structure",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "tinh-toan",
+      "label": "Công thức Lewis",
+      "description": "Biểu diễn electron hóa trị, cặp liên kết và cặp electron tự do trong phân tử.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "covalent-lewis",
+      "prerequisites": [
+        "covalent-bond",
+        "valence-electrons"
+      ],
+      "related": [],
+      "applications": [
+        "molecular-geometry"
+      ],
+      "next": [
+        "vb-theory"
+      ],
+      "videoSegmentIds": [
+        "lewis-structures-video"
+      ]
+    },
+    {
+      "id": "vb-theory",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "mo-hinh",
+      "label": "Thuyết VB",
+      "description": "Liên kết cộng hóa trị hình thành do xen phủ hai AO chứa electron độc thân có spin ngược chiều; xen phủ càng lớn liên kết càng bền.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "vb-theory",
+      "prerequisites": [
+        "covalent-bond",
+        "quantum-numbers"
+      ],
+      "related": [
+        "mo-theory"
+      ],
+      "applications": [],
+      "next": [
+        "sigma-pi-bonds"
+      ],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "sigma-pi-bonds",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Liên kết sigma và pi",
+      "description": "σ: xen phủ trục; π: xen phủ bên của AO p; liên kết đôi = 1σ + 1π, liên kết ba = 1σ + 2π.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "vb-theory",
+      "prerequisites": [
+        "vb-theory"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "hybridization"
+      ],
+      "videoSegmentIds": [
+        "sigma-pi-video"
+      ]
+    },
+    {
+      "id": "hybridization",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "mo-hinh",
+      "label": "Lai hóa orbital",
+      "description": "Các AO hóa trị tổ hợp thành các orbital lai hóa giống nhau, phân bố đối xứng trong không gian.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "hybridization",
+      "prerequisites": [
+        "vb-theory"
+      ],
+      "related": [],
+      "applications": [
+        "molecular-geometry"
+      ],
+      "next": [
+        "molecular-geometry"
+      ],
+      "videoSegmentIds": [
+        "hybridization-video"
+      ]
+    },
+    {
+      "id": "molecular-geometry",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "tinh-toan",
+      "label": "Hình học phân tử",
+      "description": "Dạng hình học dự đoán từ trạng thái lai hóa/số vùng electron T = số nguyên tử liên kết + số cặp electron tự do.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "molecular-geometry",
+      "prerequisites": [
+        "hybridization",
+        "lewis-structure"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "polarity"
+      ],
+      "videoSegmentIds": [
+        "vsepr-video"
+      ]
+    },
+    {
+      "id": "polarity",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Độ phân cực",
+      "description": "Liên kết phân cực do chênh lệch độ âm điện; phân tử phân cực khi tổng moment lưỡng cực ≠ 0 (phụ thuộc hình học).",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "molecular-geometry",
+      "prerequisites": [
+        "molecular-geometry"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "mo-theory"
+      ],
+      "videoSegmentIds": [
+        "polarity-video"
+      ]
+    },
+    {
+      "id": "mo-theory",
+      "chapterId": "chapter-2",
+      "kind": "topic",
+      "category": "mo-hinh",
+      "label": "Thuyết MO",
+      "description": "Phân tử là khối thống nhất; electron chiếm các orbital phân tử (MO) tạo từ tổ hợp tuyến tính các AO.",
+      "parentId": "ch2-molecular-structure",
+      "lessonId": "mo-theory",
+      "prerequisites": [
+        "electron-configuration",
+        "vb-theory"
+      ],
+      "related": [
+        "vb-theory"
+      ],
+      "applications": [
+        "magnetism"
+      ],
+      "next": [
+        "mo-configuration"
+      ],
+      "videoSegmentIds": [
+        "mo-theory-video"
+      ]
+    },
+    {
+      "id": "hybrid-sp",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Lai hóa sp",
+      "description": "1 AO s + 1 AO p → 2 AO lai hóa sp, góc 180° (BeH₂, BeCl₂, C₂H₂).",
+      "parentId": "hybridization",
+      "lessonId": "hybridization",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "hybridization-video"
+      ]
+    },
+    {
+      "id": "hybrid-sp2",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Lai hóa sp²",
+      "description": "1 AO s + 2 AO p → 3 AO sp², tam giác phẳng 120° (BF₃, C₂H₄).",
+      "parentId": "hybridization",
+      "lessonId": "hybridization",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "hybridization-video"
+      ]
+    },
+    {
+      "id": "hybrid-sp3",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Lai hóa sp³",
+      "description": "1 AO s + 3 AO p → 4 AO sp³, tứ diện 109,5° (CH₄, NH₃, H₂O).",
+      "parentId": "hybridization",
+      "lessonId": "hybridization",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "hybridization-video"
+      ]
+    },
+    {
+      "id": "bonding-mo",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Orbital liên kết",
+      "description": "MO tạo bởi xen phủ cùng dấu (S > 0), năng lượng thấp hơn AO ban đầu.",
+      "parentId": "mo-theory",
+      "lessonId": "mo-theory",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "mo-theory-video"
+      ]
+    },
+    {
+      "id": "antibonding-mo",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Orbital phản liên kết",
+      "description": "MO* tạo bởi xen phủ khác dấu (S < 0), có mặt nút giữa hai hạt nhân, năng lượng cao hơn AO ban đầu.",
+      "parentId": "mo-theory",
+      "lessonId": "mo-theory",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "mo-theory-video"
+      ]
+    },
+    {
+      "id": "mo-energy-diagram",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Sơ đồ năng lượng MO",
+      "description": "Thứ tự MO của phân tử hai nguyên tử chu kỳ 2: có/không có tương tác 2s–2p.",
+      "parentId": "mo-theory",
+      "lessonId": "mo-theory",
+      "prerequisites": [
+        "bonding-mo",
+        "antibonding-mo"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "mo-theory-video"
+      ]
+    },
+    {
+      "id": "mo-configuration",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "tinh-toan",
+      "label": "Cấu hình electron MO",
+      "description": "Điền electron vào MO theo nguyên lý vững bền, Pauli, Hund.",
+      "parentId": "mo-theory",
+      "lessonId": "mo-bond-order",
+      "prerequisites": [
+        "mo-energy-diagram"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "mo-theory-video"
+      ]
+    },
+    {
+      "id": "bond-order",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "tinh-toan",
+      "label": "Bậc liên kết",
+      "description": "N = (số e trên MO liên kết − số e trên MO phản liên kết)/2; N = 0 → phân tử không tồn tại.",
+      "parentId": "mo-theory",
+      "lessonId": "mo-bond-order",
+      "prerequisites": [
+        "mo-configuration"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "mo-theory-video"
+      ]
+    },
+    {
+      "id": "magnetism",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "mo-hinh",
+      "label": "Thuận từ và nghịch từ",
+      "description": "Còn electron độc thân trên MO → thuận từ; không còn → nghịch từ (ví dụ O₂ thuận từ).",
+      "parentId": "mo-theory",
+      "lessonId": "mo-bond-order",
+      "prerequisites": [
+        "mo-configuration"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "mo-theory-video"
+      ]
+    },
+    {
+      "id": "bond-strength-comparison",
+      "chapterId": "chapter-2",
+      "kind": "concept",
+      "category": "tinh-toan",
+      "label": "So sánh độ bền liên kết",
+      "description": "Bậc liên kết lớn hơn → năng lượng liên kết lớn hơn, độ dài liên kết ngắn hơn.",
+      "parentId": "mo-theory",
+      "lessonId": "mo-bond-order",
+      "prerequisites": [
+        "bond-order"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "mo-theory-video"
+      ]
+    },
+    {
+      "id": "ch3-thermodynamics",
+      "chapterId": "chapter-3",
+      "kind": "chapter",
+      "category": "tong-quan",
+      "label": "Chương 3: Nhiệt động hóa học",
+      "description": "Hệ nhiệt động, nguyên lý I, enthalpy, định luật Hess, entropy và năng lượng tự do Gibbs.",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [
+        "thermo-system"
+      ],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "thermo-system",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Hệ nhiệt động",
+      "description": "Đối tượng được nghiên cứu, ngăn cách với môi trường xung quanh bởi bề mặt thực hoặc tưởng tượng.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "thermo-systems",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [
+        "internal-energy"
+      ],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "internal-energy",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Nội năng",
+      "description": "U: năng lượng chuyển động và tương tác của các tiểu phân trong hệ; thường chỉ xét ΔU.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "first-law",
+      "prerequisites": [
+        "thermo-system"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "first-law"
+      ],
+      "videoSegmentIds": [
+        "first-law-enthalpy-video"
+      ]
+    },
+    {
+      "id": "first-law",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "nguyen-ly",
+      "label": "Nguyên lý I nhiệt động học",
+      "description": "Bảo toàn năng lượng: ΔU = Q + A (A là công hệ nhận).",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "first-law",
+      "prerequisites": [
+        "internal-energy"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "heat-and-work"
+      ],
+      "videoSegmentIds": [
+        "first-law-enthalpy-video",
+        "laws-of-thermodynamics-video"
+      ]
+    },
+    {
+      "id": "heat-and-work",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "tinh-toan",
+      "label": "Nhiệt và công",
+      "description": "Hai hình thức trao đổi năng lượng; quy ước dấu: hệ nhận là dương. Nhiệt lượng q = m·c·ΔT.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "first-law",
+      "prerequisites": [
+        "first-law"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "expansion-work"
+      ],
+      "videoSegmentIds": [
+        "first-law-enthalpy-video",
+        "calorimetry-video"
+      ]
+    },
+    {
+      "id": "expansion-work",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "tinh-toan",
+      "label": "Công giãn nở",
+      "description": "Ở áp suất ngoài không đổi: A = −PΔV; với khí lý tưởng PΔV = ΔnRT.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "enthalpy",
+      "prerequisites": [
+        "heat-and-work"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "enthalpy"
+      ],
+      "videoSegmentIds": [
+        "pv-work-video"
+      ]
+    },
+    {
+      "id": "enthalpy",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Enthalpy",
+      "description": "H = U + PV; trong quá trình đẳng áp Q_p = ΔH; ΔH = ΔU + ΔnRT.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "enthalpy",
+      "prerequisites": [
+        "first-law",
+        "expansion-work"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "exo-endothermic"
+      ],
+      "videoSegmentIds": [
+        "first-law-enthalpy-video"
+      ]
+    },
+    {
+      "id": "exo-endothermic",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Phản ứng thu nhiệt và tỏa nhiệt",
+      "description": "ΔH < 0: tỏa nhiệt; ΔH > 0: thu nhiệt.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "enthalpy",
+      "prerequisites": [
+        "enthalpy"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "hess-law"
+      ],
+      "videoSegmentIds": [
+        "calorimetry-video"
+      ]
+    },
+    {
+      "id": "hess-law",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "nguyen-ly",
+      "label": "Định luật Hess",
+      "description": "Hiệu ứng nhiệt chỉ phụ thuộc trạng thái đầu và cuối, không phụ thuộc con đường phản ứng.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "hess-law",
+      "prerequisites": [
+        "enthalpy"
+      ],
+      "related": [],
+      "applications": [
+        "formation-enthalpy"
+      ],
+      "next": [
+        "formation-enthalpy"
+      ],
+      "videoSegmentIds": [
+        "hess-law-video"
+      ]
+    },
+    {
+      "id": "formation-enthalpy",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "tinh-toan",
+      "label": "Nhiệt tạo thành",
+      "description": "ΔH°f: nhiệt của phản ứng tạo 1 mol chất từ đơn chất bền ở điều kiện chuẩn; ΔH°pư = ΣνΔH°f(sp) − ΣνΔH°f(cđ).",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "formation-enthalpy",
+      "prerequisites": [
+        "hess-law"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "entropy"
+      ],
+      "videoSegmentIds": [
+        "hess-law-video",
+        "calculating-dg-dh-ds-video"
+      ]
+    },
+    {
+      "id": "entropy",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Entropy",
+      "description": "S = k lnW đặc trưng cho độ hỗn độn; ΔS°pư = ΣνS°(sp) − ΣνS°(cđ).",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "entropy",
+      "prerequisites": [
+        "thermo-system"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "gibbs-energy"
+      ],
+      "videoSegmentIds": [
+        "laws-of-thermodynamics-video",
+        "entropy-video"
+      ]
+    },
+    {
+      "id": "gibbs-energy",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "khai-niem",
+      "label": "Năng lượng tự do Gibbs",
+      "description": "G = H − TS; ΔG = ΔH − TΔS.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "gibbs",
+      "prerequisites": [
+        "enthalpy",
+        "entropy"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "spontaneity"
+      ],
+      "videoSegmentIds": [
+        "gibbs-free-energy-video",
+        "calculating-dg-dh-ds-video"
+      ]
+    },
+    {
+      "id": "spontaneity",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "nguyen-ly",
+      "label": "Điều kiện tự diễn biến",
+      "description": "Ở T, P không đổi: ΔG < 0 phản ứng tự diễn biến; ΔG = 0 cân bằng; ΔG > 0 chiều nghịch tự diễn biến.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "gibbs",
+      "prerequisites": [
+        "gibbs-energy"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [
+        "gibbs-equilibrium"
+      ],
+      "videoSegmentIds": [
+        "gibbs-free-energy-video",
+        "calculating-dg-dh-ds-video"
+      ]
+    },
+    {
+      "id": "gibbs-equilibrium",
+      "chapterId": "chapter-3",
+      "kind": "topic",
+      "category": "tinh-toan",
+      "label": "Quan hệ Gibbs và cân bằng",
+      "description": "ΔG = ΔG° + RT lnQ; ΔG° = −RT lnK.",
+      "parentId": "ch3-thermodynamics",
+      "lessonId": "gibbs-equilibrium",
+      "prerequisites": [
+        "spontaneity"
+      ],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": [
+        "gibbs-equilibrium-video"
+      ]
+    },
+    {
+      "id": "open-system",
+      "chapterId": "chapter-3",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Hệ mở",
+      "description": "Trao đổi cả chất và năng lượng với môi trường.",
+      "parentId": "thermo-system",
+      "lessonId": "thermo-systems",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "closed-system",
+      "chapterId": "chapter-3",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Hệ kín",
+      "description": "Chỉ trao đổi năng lượng, không trao đổi chất.",
+      "parentId": "thermo-system",
+      "lessonId": "thermo-systems",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": []
+    },
+    {
+      "id": "isolated-system",
+      "chapterId": "chapter-3",
+      "kind": "concept",
+      "category": "khai-niem",
+      "label": "Hệ cô lập",
+      "description": "Không trao đổi chất và năng lượng.",
+      "parentId": "thermo-system",
+      "lessonId": "thermo-systems",
+      "prerequisites": [],
+      "related": [],
+      "applications": [],
+      "next": [],
+      "videoSegmentIds": []
+    }
+  ]
+}

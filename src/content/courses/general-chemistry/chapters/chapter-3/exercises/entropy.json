@@ -1,0 +1,178 @@
+{
+  "exercises": [
+    {
+      "id": "c3-ent-001",
+      "chapterId": "chapter-3",
+      "lessonId": "entropy",
+      "nodeIds": [
+        "entropy"
+      ],
+      "difficulty": "easy",
+      "title": "Dự đoán dấu của ΔS",
+      "skill": "Dấu của ΔS",
+      "statement": "(Trang 30–31.) Dự đoán dấu của $\\Delta S$ cho các phản ứng:\n\n(a) $\\mathrm{H_2(g) + I_2(s) \\to 2HI(g)}$\n\n(b) $\\mathrm{N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)}$\n\n(c) $\\mathrm{C_6H_{12}O_6(s) + 6O_2(g) \\to 6CO_2(g) + 6H_2O(g)}$",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "(a):",
+          "options": [
+            {
+              "id": "a",
+              "text": "ΔS > 0"
+            },
+            {
+              "id": "b",
+              "text": "ΔS < 0"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Số mol khí tăng từ 1 lên 2 (và chất rắn chuyển thành khí) → ΔS > 0."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "(b):",
+          "options": [
+            {
+              "id": "a",
+              "text": "ΔS > 0"
+            },
+            {
+              "id": "b",
+              "text": "ΔS < 0"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Số mol khí giảm từ 4 xuống 2 → ΔS < 0."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "(c):",
+          "options": [
+            {
+              "id": "a",
+              "text": "ΔS > 0"
+            },
+            {
+              "id": "b",
+              "text": "ΔS < 0"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Số mol khí tăng từ 6 lên 12 → ΔS > 0."
+        }
+      ],
+      "solution": "Quy tắc nhanh: số mol **khí** tăng → $\\Delta S > 0$; giảm → $\\Delta S < 0$.\n\n| Phản ứng | $\\Delta n_\\text{khí}$ | Dấu ΔS |\n|---|---|---|\n| (a) | $2 - 1 = +1$ | **> 0** |\n| (b) | $2 - 4 = -2$ | **< 0** |\n| (c) | $12 - 6 = +6$ | **> 0** |",
+      "finalAnswer": "(a) ΔS > 0; (b) ΔS < 0; (c) ΔS > 0.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          30,
+          31
+        ],
+        "note": "Các phản ứng ở trang 30–31 bài giảng."
+      }
+    },
+    {
+      "id": "c3-ent-002",
+      "chapterId": "chapter-3",
+      "lessonId": "entropy",
+      "nodeIds": [
+        "entropy"
+      ],
+      "difficulty": "easy",
+      "title": "Tính ΔS° của phản ứng tổng hợp NH₃",
+      "skill": "ΔS° từ S°",
+      "statement": "(Ví dụ trang 31.) Tính $\\Delta S^\\circ$ của $\\mathrm{N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)}$, biết $S^\\circ$ (J/(mol·K)): $\\mathrm{NH_3}$ 193; $\\mathrm{N_2}$ 191,5; $\\mathrm{H_2}$ 130,6.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Entropy chuẩn của đơn chất (N₂, H₂):",
+          "options": [
+            {
+              "id": "a",
+              "text": "Khác 0, phải đưa vào tính"
+            },
+            {
+              "id": "b",
+              "text": "Bằng 0 như ΔH°f"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Khác với $\\Delta H^\\circ_f$, entropy tuyệt đối $S^\\circ$ của đơn chất khác 0."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔS° (J/K)?",
+          "correctAnswer": -197.3,
+          "tolerance": {
+            "absolute": 0.5
+          },
+          "explanation": "$2(193) - [191{,}5 + 3(130{,}6)] = -197{,}3$ J/K.",
+          "unit": "J/K"
+        }
+      ],
+      "solution": "$$\\Delta S^\\circ = 2S^\\circ(\\mathrm{NH_3}) - [S^\\circ(\\mathrm{N_2}) + 3S^\\circ(\\mathrm{H_2})] = 2(193) - [191{,}5 + 3(130{,}6)] = -197\\ \\text{J/K}$$\n\nΔS° < 0, phù hợp với việc số mol khí giảm.",
+      "finalAnswer": "ΔS° ≈ −197 J/K.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          31
+        ],
+        "note": "Ví dụ trang 31 bài giảng (có lời giải mẫu)."
+      }
+    },
+    {
+      "id": "c3-ent-003",
+      "chapterId": "chapter-3",
+      "lessonId": "entropy",
+      "nodeIds": [
+        "entropy"
+      ],
+      "difficulty": "medium",
+      "title": "ΔS° của phản ứng phân hủy KClO₃",
+      "skill": "ΔS° từ S°",
+      "statement": "(Trang 33.) Tính $\\Delta S^\\circ$ của $\\mathrm{4KClO_3(s) \\to 3KClO_4(s) + KCl(s)}$, biết $S^\\circ$ (J/(mol·K)): $\\mathrm{KClO_3}$ 143,1; $\\mathrm{KClO_4}$ 151,0; $\\mathrm{KCl}$ 82,6.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Tổng S° sản phẩm (J/K)?",
+          "correctAnswer": 535.6,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$3(151{,}0) + 82{,}6 = 535{,}6$ J/K.",
+          "unit": "J/K"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔS° (J/K)?",
+          "correctAnswer": -36.8,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$535{,}6 - 4(143{,}1) = -36{,}8$ J/K.",
+          "unit": "J/K"
+        }
+      ],
+      "solution": "$$\\Delta S^\\circ = [3(151{,}0) + 82{,}6] - 4(143{,}1) = 535{,}6 - 572{,}4 = -36{,}8\\ \\text{J/K}$$",
+      "finalAnswer": "ΔS° = −36,8 J/K.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          33
+        ],
+        "note": "Ví dụ trang 33 bài giảng (có lời giải mẫu)."
+      }
+    }
+  ]
+}

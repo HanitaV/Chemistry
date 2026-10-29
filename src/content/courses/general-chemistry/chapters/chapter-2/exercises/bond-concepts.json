@@ -1,0 +1,139 @@
+{
+  "exercises": [
+    {
+      "id": "c2-bond-001",
+      "chapterId": "chapter-2",
+      "lessonId": "bond-concepts",
+      "nodeIds": [
+        "bond-energy-length"
+      ],
+      "difficulty": "easy",
+      "title": "Bậc liên kết, năng lượng và độ dài liên kết C–C",
+      "skill": "Quan hệ bậc – năng lượng – độ dài liên kết",
+      "statement": "Bảng số liệu (bài giảng trang 4):\n\n| Liên kết | C–C | C=C | C≡C |\n|---|---|---|---|\n| E (kcal/mol) | 83 | 143 | 194 |\n| d (Å) | 1,54 | 1,34 | 1,20 |\n\na) Nhận xét quan hệ giữa bậc liên kết với năng lượng và độ dài liên kết.\n\nb) Năng lượng liên kết π trong C=C xấp xỉ bao nhiêu kcal/mol?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Khi bậc liên kết tăng (đơn → đôi → ba):",
+          "options": [
+            {
+              "id": "a",
+              "text": "Năng lượng liên kết tăng, độ dài liên kết giảm"
+            },
+            {
+              "id": "b",
+              "text": "Năng lượng giảm, độ dài tăng"
+            },
+            {
+              "id": "c",
+              "text": "Cả hai cùng tăng"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Bảng cho thấy E: 83 → 143 → 194 kcal/mol và d: 1,54 → 1,34 → 1,20 Å."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Ước lượng năng lượng của liên kết π trong C=C (kcal/mol).",
+          "correctAnswer": 60.0,
+          "tolerance": {
+            "absolute": 1
+          },
+          "explanation": "C=C gồm 1σ + 1π: $E_\\pi \\approx 143 - 83 = 60$ kcal/mol.",
+          "unit": "kcal/mol",
+          "hint": "Liên kết đôi = 1 liên kết σ + 1 liên kết π."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "So sánh độ bền liên kết π và liên kết σ giữa hai nguyên tử C:",
+          "options": [
+            {
+              "id": "a",
+              "text": "π kém bền hơn σ"
+            },
+            {
+              "id": "b",
+              "text": "π bền hơn σ"
+            },
+            {
+              "id": "c",
+              "text": "Bằng nhau"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "$E_\\pi \\approx 60 < E_\\sigma \\approx 83$ kcal/mol: xen phủ bên (π) kém hiệu quả hơn xen phủ trục (σ)."
+        }
+      ],
+      "solution": "a) Bậc liên kết tăng → **năng lượng liên kết tăng**, **độ dài liên kết giảm**.\n\nb) Liên kết đôi C=C gồm 1σ + 1π. Coi năng lượng σ gần bằng liên kết đơn C–C:\n\n$$E_\\pi \\approx E_{C=C} - E_{C-C} = 143 - 83 = 60\\ \\text{kcal/mol}$$\n\nLiên kết π kém bền hơn liên kết σ (xen phủ bên nhỏ hơn xen phủ trục) — đó là lý do liên kết π dễ bị phá vỡ trong phản ứng cộng.",
+      "finalAnswer": "Bậc tăng → E tăng, d giảm; E(π) ≈ 60 kcal/mol < E(σ).",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          4
+        ],
+        "note": "Số liệu từ bảng trang 4; câu b là phần mở rộng."
+      }
+    },
+    {
+      "id": "c2-bond-002",
+      "chapterId": "chapter-2",
+      "lessonId": "bond-concepts",
+      "nodeIds": [
+        "bond-energy-length",
+        "bond-concept"
+      ],
+      "difficulty": "medium",
+      "title": "Năng lượng liên kết C–H từ nhiệt nguyên tử hóa CH₄",
+      "skill": "Tính năng lượng liên kết trung bình",
+      "statement": "Theo bài giảng (trang 2), với $\\mathrm{CH_4(k) \\xrightarrow{Q} C(k) + 4H(k)}$ thì $E_{C-H} = \\dfrac{1}{4}Q$.\n\nBiết nhiệt nguyên tử hóa của metan $Q = 1662$ kJ/mol. Tính năng lượng liên kết C–H trung bình.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Vì sao chia Q cho 4?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Phân tử CH₄ có 4 liên kết C–H tương đương bị phá vỡ"
+            },
+            {
+              "id": "b",
+              "text": "Có 4 nguyên tử trong CH₄"
+            },
+            {
+              "id": "c",
+              "text": "C có 4 electron lớp ngoài"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Nguyên tử hóa CH₄ phá vỡ đồng thời 4 liên kết C–H; năng lượng trung bình mỗi liên kết = Q/4."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "$E_{C-H}$ trung bình (kJ/mol)?",
+          "correctAnswer": 415.5,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$1662/4 = 415{,}5$ kJ/mol.",
+          "unit": "kJ/mol"
+        }
+      ],
+      "solution": "Quá trình nguyên tử hóa phá vỡ 4 liên kết C–H:\n\n$$E_{C-H} = \\frac{Q}{4} = \\frac{1662}{4} = 415{,}5\\ \\text{kJ/mol}$$\n\n(Bài giảng quy ước năng lượng liên kết là năng lượng **giải phóng** khi tạo liên kết, nên có thể viết $E_{C-H} = -415{,}5$ kJ/mol, tương tự $E_{H-H} = -414{,}4$ kJ/mol ở trang 2.)",
+      "finalAnswer": "E(C–H) ≈ 415,5 kJ/mol (về độ lớn).",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          2
+        ],
+        "note": "Công thức từ trang 2; giá trị Q = 1662 kJ/mol là số liệu bổ sung."
+      }
+    }
+  ]
+}

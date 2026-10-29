@@ -1,0 +1,748 @@
+{
+  "formulas": [
+    {
+      "id": "mass-number-formula",
+      "chapterId": "chapter-1",
+      "name": "Số khối",
+      "latex": "A = Z + N",
+      "symbols": [
+        {
+          "symbol": "A",
+          "meaning": "số khối"
+        },
+        {
+          "symbol": "Z",
+          "meaning": "số proton (số hiệu nguyên tử)"
+        },
+        {
+          "symbol": "N",
+          "meaning": "số neutron"
+        }
+      ],
+      "unit": "không có đơn vị (số nguyên)",
+      "conditions": [
+        "Áp dụng cho mọi hạt nhân nguyên tử."
+      ],
+      "example": "$^{235}_{92}\\mathrm{U}$: $N = 235 - 92 = 143$ neutron.",
+      "lessonIds": [
+        "atomic-structure"
+      ]
+    },
+    {
+      "id": "wave-relation",
+      "chapterId": "chapter-1",
+      "name": "Liên hệ tốc độ – tần số – bước sóng",
+      "latex": "c = \\lambda \\nu",
+      "symbols": [
+        {
+          "symbol": "c",
+          "meaning": "tốc độ ánh sáng trong chân không",
+          "unit": "m/s"
+        },
+        {
+          "symbol": "\\lambda",
+          "meaning": "bước sóng",
+          "unit": "m"
+        },
+        {
+          "symbol": "\\nu",
+          "meaning": "tần số",
+          "unit": "Hz = s⁻¹"
+        }
+      ],
+      "unit": "m/s",
+      "conditions": [
+        "Sóng điện từ truyền trong chân không (gần đúng trong không khí).",
+        "Dùng $c \\approx 3{,}00\\times10^{8}$ m/s như tài liệu bài giảng."
+      ],
+      "example": "Đài phát thanh $\\nu = 950$ kHz: $\\lambda = c/\\nu = 3{,}00\\times10^8/9{,}50\\times10^5 \\approx 316$ m.",
+      "lessonIds": [
+        "light-photon"
+      ]
+    },
+    {
+      "id": "wavenumber",
+      "chapterId": "chapter-1",
+      "name": "Số sóng",
+      "latex": "\\tilde{\\nu} = \\frac{1}{\\lambda}",
+      "symbols": [
+        {
+          "symbol": "\\tilde{\\nu}",
+          "meaning": "số sóng",
+          "unit": "cm⁻¹ hoặc m⁻¹"
+        },
+        {
+          "symbol": "\\lambda",
+          "meaning": "bước sóng",
+          "unit": "cm hoặc m"
+        }
+      ],
+      "unit": "cm⁻¹",
+      "conditions": [
+        "Đổi λ sang cm nếu muốn số sóng theo cm⁻¹."
+      ],
+      "example": "$\\tilde{\\nu} = 1953$ cm⁻¹ → $\\lambda = 5{,}12\\times10^{-4}$ cm $= 5{,}12$ µm.",
+      "lessonIds": [
+        "light-photon"
+      ]
+    },
+    {
+      "id": "photon-energy-formula",
+      "chapterId": "chapter-1",
+      "name": "Năng lượng photon (Planck)",
+      "latex": "E = h\\nu = \\frac{hc}{\\lambda}",
+      "symbols": [
+        {
+          "symbol": "E",
+          "meaning": "năng lượng một photon",
+          "unit": "J"
+        },
+        {
+          "symbol": "h",
+          "meaning": "hằng số Planck $6{,}626\\times10^{-34}$",
+          "unit": "J·s"
+        },
+        {
+          "symbol": "\\nu",
+          "meaning": "tần số",
+          "unit": "s⁻¹"
+        },
+        {
+          "symbol": "\\lambda",
+          "meaning": "bước sóng",
+          "unit": "m"
+        }
+      ],
+      "unit": "J (cho một photon)",
+      "conditions": [
+        "Áp dụng cho một photon; nhân với $N_A$ để có năng lượng cho 1 mol photon.",
+        "λ phải đổi về mét trước khi thay số."
+      ],
+      "example": "$\\lambda = 500$ nm: $E = \\dfrac{6{,}626\\times10^{-34}\\cdot 3{,}00\\times10^{8}}{500\\times10^{-9}} = 3{,}98\\times10^{-19}$ J.",
+      "lessonIds": [
+        "light-photon",
+        "electronic-transitions"
+      ]
+    },
+    {
+      "id": "bohr-energy",
+      "chapterId": "chapter-1",
+      "name": "Năng lượng mức n (mẫu Bohr)",
+      "latex": "E_n = -2{,}18\\times10^{-18}\\,\\frac{Z^2}{n^2}\\ \\mathrm{J} = -13{,}6\\,\\frac{Z^2}{n^2}\\ \\mathrm{eV}",
+      "symbols": [
+        {
+          "symbol": "E_n",
+          "meaning": "năng lượng electron ở mức n",
+          "unit": "J hoặc eV"
+        },
+        {
+          "symbol": "Z",
+          "meaning": "điện tích hạt nhân"
+        },
+        {
+          "symbol": "n",
+          "meaning": "số lượng tử chính (1, 2, 3, …)"
+        }
+      ],
+      "unit": "J/nguyên tử hoặc eV",
+      "conditions": [
+        "CHỈ áp dụng chính xác cho nguyên tử H và ion một electron (He⁺, Li²⁺, Be³⁺, …).",
+        "Mốc năng lượng 0 là electron ở xa vô cùng (n = ∞)."
+      ],
+      "example": "He⁺ ($Z=2$), $n=1$: $E_1 = -13{,}6\\cdot 4 = -54{,}4$ eV.",
+      "lessonIds": [
+        "bohr-model",
+        "electronic-transitions",
+        "ionization-energy"
+      ],
+      "warning": "Không dùng công thức này để tính chính xác năng lượng của nguyên tử nhiều electron (He, Na, F…): tương tác giữa các electron làm sai lệch lớn."
+    },
+    {
+      "id": "transition-energy",
+      "chapterId": "chapter-1",
+      "name": "Biến thiên năng lượng khi chuyển mức",
+      "latex": "\\Delta E = E_{\\text{cuối}} - E_{\\text{đầu}} = -2{,}18\\times10^{-18}\\,Z^2\\left(\\frac{1}{n_{\\text{cuối}}^2}-\\frac{1}{n_{\\text{đầu}}^2}\\right)\\ \\mathrm{J}",
+      "symbols": [
+        {
+          "symbol": "\\Delta E",
+          "meaning": "biến thiên năng lượng của nguyên tử",
+          "unit": "J"
+        },
+        {
+          "symbol": "n_{\\text{đầu}},\\ n_{\\text{cuối}}",
+          "meaning": "mức đầu và mức cuối"
+        },
+        {
+          "symbol": "Z",
+          "meaning": "điện tích hạt nhân"
+        }
+      ],
+      "unit": "J",
+      "conditions": [
+        "Hệ một electron (mẫu Bohr).",
+        "ΔE > 0: hấp thụ photon; ΔE < 0: phát xạ photon; năng lượng photon $= |\\Delta E|$."
+      ],
+      "example": "H: $n=1 \\to n=4$: $\\Delta E = -2{,}18\\times10^{-18}(1/16 - 1) = 2{,}04\\times10^{-18}$ J (hấp thụ).",
+      "lessonIds": [
+        "electronic-transitions"
+      ]
+    },
+    {
+      "id": "rydberg-formula",
+      "chapterId": "chapter-1",
+      "name": "Công thức Rydberg",
+      "latex": "\\frac{1}{\\lambda} = R\\,Z^2\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right)",
+      "symbols": [
+        {
+          "symbol": "\\lambda",
+          "meaning": "bước sóng vạch phổ",
+          "unit": "m"
+        },
+        {
+          "symbol": "R",
+          "meaning": "hằng số Rydberg $1{,}096776\\times10^{7}$",
+          "unit": "m⁻¹"
+        },
+        {
+          "symbol": "n_1 < n_2",
+          "meaning": "mức thấp và mức cao"
+        },
+        {
+          "symbol": "Z",
+          "meaning": "điện tích hạt nhân (Z = 1 với H)"
+        }
+      ],
+      "unit": "m⁻¹",
+      "conditions": [
+        "Hệ một electron; tài liệu viết cho H (Z = 1), dạng có $Z^2$ dùng cho ion giống hydro.",
+        "Luôn chọn $n_1 < n_2$ để λ dương."
+      ],
+      "example": "Vạch đầu dãy Lyman của H ($2\\to1$): $1/\\lambda = R(1 - 1/4)$ → $\\lambda = 121{,}6$ nm.",
+      "lessonIds": [
+        "electronic-transitions"
+      ]
+    },
+    {
+      "id": "ionization-energy-formula",
+      "chapterId": "chapter-1",
+      "name": "Năng lượng ion hóa của ion một electron",
+      "latex": "IE = E_\\infty - E_1 = 2{,}18\\times10^{-18}\\,Z^2\\ \\mathrm{J} = 13{,}6\\,Z^2\\ \\mathrm{eV}",
+      "symbols": [
+        {
+          "symbol": "IE",
+          "meaning": "năng lượng ion hóa (từ trạng thái cơ bản)",
+          "unit": "J/nguyên tử"
+        },
+        {
+          "symbol": "Z",
+          "meaning": "điện tích hạt nhân"
+        }
+      ],
+      "unit": "J/nguyên tử; nhân $N_A$ → J/mol",
+      "conditions": [
+        "Electron ở trạng thái cơ bản n = 1 của hệ một electron.",
+        "Với nguyên tử nhiều electron, giá trị này là năng lượng tách electron CUỐI CÙNG (IE thứ Z), không phải IE₁."
+      ],
+      "example": "H: $IE = 2{,}18\\times10^{-18}\\cdot 6{,}022\\times10^{23} = 1{,}31\\times10^{3}$ kJ/mol.",
+      "lessonIds": [
+        "ionization-energy"
+      ],
+      "warning": "IE₁ thực nghiệm của He là 24,6 eV, khác xa 13,6·2² = 54,4 eV (đó là IE₂, ứng với He⁺ → He²⁺)."
+    },
+    {
+      "id": "hybridization-number",
+      "chapterId": "chapter-2",
+      "name": "Số vùng electron quanh nguyên tử trung tâm",
+      "latex": "T = \\text{số nguyên tử liên kết} + \\text{số cặp electron tự do}",
+      "symbols": [
+        {
+          "symbol": "T",
+          "meaning": "số vùng electron (steric number)"
+        }
+      ],
+      "unit": "không có đơn vị",
+      "conditions": [
+        "Áp dụng cho nguyên tử trung tâm; liên kết bội (đôi, ba) chỉ tính là 1 vùng.",
+        "T = 2 → sp; T = 3 → sp²; T = 4 → sp³ (theo tài liệu)."
+      ],
+      "example": "NH₃: 3 nguyên tử H + 1 cặp tự do → $T = 4$ → N lai hóa sp³, phân tử tháp tam giác.",
+      "lessonIds": [
+        "hybridization",
+        "molecular-geometry"
+      ]
+    },
+    {
+      "id": "bond-order-formula",
+      "chapterId": "chapter-2",
+      "name": "Bậc liên kết (thuyết MO)",
+      "latex": "N = \\frac{n_{\\text{lk}} - n_{\\text{plk}}}{2}",
+      "symbols": [
+        {
+          "symbol": "N",
+          "meaning": "bậc liên kết (số liên kết)"
+        },
+        {
+          "symbol": "n_{\\text{lk}}",
+          "meaning": "số electron trên các MO liên kết"
+        },
+        {
+          "symbol": "n_{\\text{plk}}",
+          "meaning": "số electron trên các MO phản liên kết"
+        }
+      ],
+      "unit": "không có đơn vị (có thể là số bán nguyên)",
+      "conditions": [
+        "Đếm electron trên toàn bộ MO được xét (thường là MO hóa trị).",
+        "N = 0 → phân tử không bền, không tồn tại (He₂, Be₂, Ne₂)."
+      ],
+      "example": "O₂: 8 e liên kết, 4 e phản liên kết (MO hóa trị) → $N = (8-4)/2 = 2$.",
+      "lessonIds": [
+        "mo-theory",
+        "mo-bond-order"
+      ]
+    },
+    {
+      "id": "first-law-formula",
+      "chapterId": "chapter-3",
+      "name": "Nguyên lý I nhiệt động học",
+      "latex": "\\Delta U = Q + A",
+      "symbols": [
+        {
+          "symbol": "\\Delta U",
+          "meaning": "biến thiên nội năng của hệ",
+          "unit": "J"
+        },
+        {
+          "symbol": "Q",
+          "meaning": "nhiệt hệ nhận",
+          "unit": "J"
+        },
+        {
+          "symbol": "A",
+          "meaning": "công hệ nhận",
+          "unit": "J"
+        }
+      ],
+      "unit": "J hoặc kJ",
+      "conditions": [
+        "Quy ước dấu của tài liệu: Q, A > 0 khi hệ NHẬN; < 0 khi hệ nhường.",
+        "Một số giáo trình dùng ΔU = Q − W (W là công hệ sinh) — cùng nội dung, khác quy ước dấu."
+      ],
+      "example": "Hệ nhận 50 J nhiệt và sinh công 20 J: $\\Delta U = 50 + (-20) = 30$ J.",
+      "lessonIds": [
+        "first-law"
+      ]
+    },
+    {
+      "id": "expansion-work-formula",
+      "chapterId": "chapter-3",
+      "name": "Công giãn nở ở áp suất ngoài không đổi",
+      "latex": "A = -P\\,\\Delta V",
+      "symbols": [
+        {
+          "symbol": "A",
+          "meaning": "công hệ nhận",
+          "unit": "J"
+        },
+        {
+          "symbol": "P",
+          "meaning": "áp suất ngoài (không đổi)",
+          "unit": "Pa"
+        },
+        {
+          "symbol": "\\Delta V",
+          "meaning": "biến thiên thể tích",
+          "unit": "m³"
+        }
+      ],
+      "unit": "J (1 L·atm = 101,3 J)",
+      "conditions": [
+        "Áp suất ngoài không đổi.",
+        "Hệ giãn nở (ΔV > 0) → A < 0: hệ sinh công."
+      ],
+      "example": "Khí giãn từ 1,0 L lên 3,0 L dưới $P = 1{,}0$ atm: $A = -2{,}0$ L·atm $= -203$ J.",
+      "lessonIds": [
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "heat-capacity-formula",
+      "chapterId": "chapter-3",
+      "name": "Nhiệt lượng theo nhiệt dung riêng",
+      "latex": "q = m\\,c\\,\\Delta T",
+      "symbols": [
+        {
+          "symbol": "q",
+          "meaning": "nhiệt lượng",
+          "unit": "J"
+        },
+        {
+          "symbol": "m",
+          "meaning": "khối lượng",
+          "unit": "g"
+        },
+        {
+          "symbol": "c",
+          "meaning": "nhiệt dung riêng",
+          "unit": "J/(g·K)"
+        },
+        {
+          "symbol": "\\Delta T",
+          "meaning": "biến thiên nhiệt độ",
+          "unit": "K (= °C)"
+        }
+      ],
+      "unit": "J",
+      "conditions": [
+        "Không có chuyển pha trong khoảng nhiệt độ xét.",
+        "c coi như không đổi theo nhiệt độ."
+      ],
+      "example": "Nước: $q = 252 \\cdot 4{,}184 \\cdot 78 = 8{,}22\\times10^{4}$ J.",
+      "lessonIds": [
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "enthalpy-definition",
+      "chapterId": "chapter-3",
+      "name": "Enthalpy và nhiệt đẳng áp",
+      "latex": "H = U + PV,\\qquad Q_p = \\Delta H,\\qquad Q_V = \\Delta U",
+      "symbols": [
+        {
+          "symbol": "H",
+          "meaning": "enthalpy",
+          "unit": "J"
+        },
+        {
+          "symbol": "Q_p",
+          "meaning": "nhiệt của quá trình đẳng áp",
+          "unit": "J"
+        },
+        {
+          "symbol": "Q_V",
+          "meaning": "nhiệt của quá trình đẳng tích",
+          "unit": "J"
+        }
+      ],
+      "unit": "J hoặc kJ",
+      "conditions": [
+        "$Q_p = \\Delta H$ khi áp suất không đổi và chỉ có công giãn nở.",
+        "$Q_V = \\Delta U$ khi thể tích không đổi."
+      ],
+      "example": "Phản ứng trong bình kín cứng (V = const): nhiệt đo được chính là ΔU.",
+      "lessonIds": [
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "dh-du-relation",
+      "chapterId": "chapter-3",
+      "name": "Liên hệ ΔH và ΔU",
+      "latex": "\\Delta H = \\Delta U + \\Delta n_{\\text{khí}}\\,RT",
+      "symbols": [
+        {
+          "symbol": "\\Delta n_{\\text{khí}}",
+          "meaning": "số mol khí sản phẩm − số mol khí chất đầu",
+          "unit": "mol"
+        },
+        {
+          "symbol": "R",
+          "meaning": "8,314",
+          "unit": "J/(mol·K)"
+        },
+        {
+          "symbol": "T",
+          "meaning": "nhiệt độ",
+          "unit": "K"
+        }
+      ],
+      "unit": "J",
+      "conditions": [
+        "Khí coi là lý tưởng; T không đổi.",
+        "Thể tích chất rắn, lỏng bỏ qua."
+      ],
+      "example": "$\\mathrm{N_2(g) + 3H_2(g) \\to 2NH_3(g)}$: $\\Delta n = -2$ → $\\Delta H - \\Delta U = -2 \\cdot 8{,}314 \\cdot 298 = -4{,}96$ kJ.",
+      "lessonIds": [
+        "enthalpy"
+      ]
+    },
+    {
+      "id": "hess-combination",
+      "chapterId": "chapter-3",
+      "name": "Tổ hợp phương trình nhiệt hóa học (Hess)",
+      "latex": "\\Delta H_{\\text{tổng}} = \\sum_i k_i\\,\\Delta H_i",
+      "symbols": [
+        {
+          "symbol": "k_i",
+          "meaning": "hệ số nhân phương trình i (âm nếu đảo chiều)"
+        },
+        {
+          "symbol": "\\Delta H_i",
+          "meaning": "hiệu ứng nhiệt phương trình i",
+          "unit": "kJ"
+        }
+      ],
+      "unit": "kJ",
+      "conditions": [
+        "Đảo chiều phản ứng → đổi dấu ΔH.",
+        "Nhân hệ số n → nhân ΔH với n.",
+        "Trạng thái chất (s, l, g) phải khớp nhau."
+      ],
+      "example": "$\\Delta H_3 = \\Delta H_1 + \\tfrac12\\Delta H_2 = -296{,}8 - 99{,}2 = -396{,}0$ kJ.",
+      "lessonIds": [
+        "hess-law"
+      ]
+    },
+    {
+      "id": "reaction-enthalpy-formation",
+      "chapterId": "chapter-3",
+      "name": "Enthalpy phản ứng từ nhiệt tạo thành",
+      "latex": "\\Delta H^\\circ_{\\text{pư}} = \\sum \\nu\\,\\Delta H^\\circ_f(\\text{sp}) - \\sum \\nu\\,\\Delta H^\\circ_f(\\text{cđ})",
+      "symbols": [
+        {
+          "symbol": "\\Delta H^\\circ_f",
+          "meaning": "nhiệt tạo thành chuẩn",
+          "unit": "kJ/mol"
+        },
+        {
+          "symbol": "\\nu",
+          "meaning": "hệ số tỉ lượng"
+        }
+      ],
+      "unit": "kJ",
+      "conditions": [
+        "Điều kiện chuẩn (tài liệu: 1 atm, 25 °C).",
+        "Quy ước: $\\Delta H^\\circ_f$ của đơn chất bền = 0.",
+        "Chú ý trạng thái: $\\Delta H^\\circ_f[\\mathrm{H_2O(l)}] \\ne \\Delta H^\\circ_f[\\mathrm{H_2O(g)}]$."
+      ],
+      "example": "$4\\mathrm{KClO_3} \\to 3\\mathrm{KClO_4} + \\mathrm{KCl}$: $\\Delta H^\\circ = [3(-432{,}8) + (-436{,}7)] - 4(-397{,}7) = -144$ kJ.",
+      "lessonIds": [
+        "formation-enthalpy",
+        "hess-law"
+      ]
+    },
+    {
+      "id": "boltzmann-entropy",
+      "chapterId": "chapter-3",
+      "name": "Entropy theo Boltzmann",
+      "latex": "S = k\\ln W",
+      "symbols": [
+        {
+          "symbol": "S",
+          "meaning": "entropy",
+          "unit": "J/K"
+        },
+        {
+          "symbol": "k",
+          "meaning": "hằng số Boltzmann $= R/N_A = 1{,}38\\times10^{-23}$",
+          "unit": "J/K"
+        },
+        {
+          "symbol": "W",
+          "meaning": "số trạng thái vi mô của hệ"
+        }
+      ],
+      "unit": "J/K",
+      "conditions": [
+        "Diễn giải vi mô: W càng lớn (hệ càng hỗn độn) thì S càng lớn."
+      ],
+      "example": "Một nguyên tử có 2 cách sắp xếp: $S = k\\ln 2$.",
+      "lessonIds": [
+        "entropy"
+      ]
+    },
+    {
+      "id": "reaction-entropy",
+      "chapterId": "chapter-3",
+      "name": "Biến thiên entropy của phản ứng",
+      "latex": "\\Delta S^\\circ_{\\text{pư}} = \\sum \\nu\\,S^\\circ(\\text{sp}) - \\sum \\nu\\,S^\\circ(\\text{cđ})",
+      "symbols": [
+        {
+          "symbol": "S^\\circ",
+          "meaning": "entropy chuẩn",
+          "unit": "J/(mol·K)"
+        },
+        {
+          "symbol": "\\nu",
+          "meaning": "hệ số tỉ lượng"
+        }
+      ],
+      "unit": "J/K",
+      "conditions": [
+        "Entropy chuẩn của đơn chất KHÁC 0 (khác với ΔH°f).",
+        "Phản ứng tăng số mol khí thường có ΔS > 0."
+      ],
+      "example": "$\\mathrm{N_2 + 3H_2 \\to 2NH_3}$: $\\Delta S^\\circ = 2(193) - [191{,}5 + 3(130{,}6)] = -197$ J/K.",
+      "lessonIds": [
+        "entropy"
+      ]
+    },
+    {
+      "id": "gibbs-formula",
+      "chapterId": "chapter-3",
+      "name": "Năng lượng tự do Gibbs",
+      "latex": "\\Delta G = \\Delta H - T\\Delta S",
+      "symbols": [
+        {
+          "symbol": "\\Delta G",
+          "meaning": "biến thiên năng lượng tự do",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "\\Delta H",
+          "meaning": "biến thiên enthalpy",
+          "unit": "kJ"
+        },
+        {
+          "symbol": "T",
+          "meaning": "nhiệt độ tuyệt đối",
+          "unit": "K"
+        },
+        {
+          "symbol": "\\Delta S",
+          "meaning": "biến thiên entropy",
+          "unit": "kJ/K"
+        }
+      ],
+      "unit": "kJ",
+      "conditions": [
+        "Nhiệt độ và áp suất không đổi.",
+        "Đổi ΔS từ J/K sang kJ/K trước khi nhân với T (chia 1000).",
+        "Tiêu chí: ΔG < 0 tự diễn biến; ΔG = 0 cân bằng; ΔG > 0 không tự diễn biến theo chiều thuận."
+      ],
+      "example": "$\\Delta G^\\circ = -144 - 298\\cdot(-0{,}0368) = -133$ kJ.",
+      "lessonIds": [
+        "gibbs",
+        "gibbs-equilibrium"
+      ],
+      "warning": "ΔG < 0 chỉ cho biết phản ứng có thể tự xảy ra về mặt nhiệt động, không cho biết tốc độ phản ứng."
+    },
+    {
+      "id": "gibbs-formation",
+      "chapterId": "chapter-3",
+      "name": "ΔG° phản ứng từ ΔG°f",
+      "latex": "\\Delta G^\\circ_{\\text{pư}} = \\sum \\nu\\,\\Delta G^\\circ_f(\\text{sp}) - \\sum \\nu\\,\\Delta G^\\circ_f(\\text{cđ})",
+      "symbols": [
+        {
+          "symbol": "\\Delta G^\\circ_f",
+          "meaning": "năng lượng tự do tạo thành chuẩn",
+          "unit": "kJ/mol"
+        }
+      ],
+      "unit": "kJ",
+      "conditions": [
+        "Điều kiện chuẩn, 25 °C.",
+        "$\\Delta G^\\circ_f$ của đơn chất bền = 0."
+      ],
+      "example": "$2\\mathrm{NO_2} \\rightleftharpoons \\mathrm{N_2O_4}$: $\\Delta G^\\circ = 97{,}82 - 2(51{,}30) = -4{,}78$ kJ.",
+      "lessonIds": [
+        "gibbs",
+        "gibbs-equilibrium"
+      ]
+    },
+    {
+      "id": "crossover-temperature",
+      "chapterId": "chapter-3",
+      "name": "Nhiệt độ đổi chiều phản ứng",
+      "latex": "T = \\frac{\\Delta H^\\circ}{\\Delta S^\\circ}",
+      "symbols": [
+        {
+          "symbol": "T",
+          "meaning": "nhiệt độ tại đó ΔG° = 0",
+          "unit": "K"
+        }
+      ],
+      "unit": "K",
+      "conditions": [
+        "Giả sử ΔH° và ΔS° không phụ thuộc nhiệt độ.",
+        "Chỉ có nghĩa khi ΔH° và ΔS° cùng dấu."
+      ],
+      "example": "$\\mathrm{PCl_5 \\to PCl_3 + Cl_2}$: $T = 90{,}37\\ \\text{kJ} / 0{,}1824\\ \\text{kJ/K} = 495$ K.",
+      "lessonIds": [
+        "gibbs"
+      ]
+    },
+    {
+      "id": "gibbs-q",
+      "chapterId": "chapter-3",
+      "name": "ΔG ở điều kiện bất kỳ",
+      "latex": "\\Delta G = \\Delta G^\\circ + RT\\ln Q",
+      "symbols": [
+        {
+          "symbol": "Q",
+          "meaning": "thương số phản ứng (cùng dạng biểu thức với K)"
+        },
+        {
+          "symbol": "R",
+          "meaning": "8,314",
+          "unit": "J/(mol·K)"
+        }
+      ],
+      "unit": "J hoặc kJ (thống nhất đơn vị với RT)",
+      "conditions": [
+        "T không đổi; Q tính bằng áp suất riêng phần (atm) hoặc nồng độ (M).",
+        "Ở điều kiện chuẩn Q = 1 → ΔG = ΔG°."
+      ],
+      "example": "$Q = 0{,}44$, $T = 295$ K: $\\Delta G = -3400 + 8{,}314\\cdot295\\cdot\\ln 0{,}44 = -5{,}4\\times10^{3}$ J.",
+      "lessonIds": [
+        "gibbs-equilibrium"
+      ]
+    },
+    {
+      "id": "gibbs-k",
+      "chapterId": "chapter-3",
+      "name": "Quan hệ ΔG° và hằng số cân bằng",
+      "latex": "\\Delta G^\\circ = -RT\\ln K \\quad\\Longleftrightarrow\\quad K = e^{-\\Delta G^\\circ/RT}",
+      "symbols": [
+        {
+          "symbol": "K",
+          "meaning": "hằng số cân bằng (Kp hoặc Kc)"
+        },
+        {
+          "symbol": "R",
+          "meaning": "8,314",
+          "unit": "J/(mol·K)"
+        },
+        {
+          "symbol": "T",
+          "meaning": "nhiệt độ",
+          "unit": "K"
+        }
+      ],
+      "unit": "J/mol",
+      "conditions": [
+        "Đổi ΔG° sang J trước khi chia cho RT (R tính theo J).",
+        "ΔG° < 0 ⇔ K > 1."
+      ],
+      "example": "$\\Delta G^\\circ = -4{,}78$ kJ, $T = 298$ K → $K = e^{4780/(8{,}314\\cdot298)} = 6{,}9$.",
+      "lessonIds": [
+        "gibbs-equilibrium"
+      ]
+    },
+    {
+      "id": "vant-hoff",
+      "chapterId": "chapter-3",
+      "name": "Phương trình van ’t Hoff (dạng tích phân)",
+      "latex": "\\ln\\frac{K_2}{K_1} = \\frac{\\Delta H^\\circ}{R}\\left(\\frac{1}{T_1}-\\frac{1}{T_2}\\right)",
+      "symbols": [
+        {
+          "symbol": "K_1, K_2",
+          "meaning": "hằng số cân bằng ở $T_1$, $T_2$"
+        },
+        {
+          "symbol": "\\Delta H^\\circ",
+          "meaning": "enthalpy chuẩn của phản ứng",
+          "unit": "J/mol"
+        }
+      ],
+      "unit": "không có đơn vị",
+      "conditions": [
+        "Giả sử ΔH° và ΔS° không phụ thuộc nhiệt độ trong khoảng $T_1$–$T_2$."
+      ],
+      "example": "Phản ứng thu nhiệt (ΔH° > 0): tăng T → $K_2 > K_1$.",
+      "lessonIds": [
+        "gibbs-equilibrium"
+      ]
+    }
+  ]
+}

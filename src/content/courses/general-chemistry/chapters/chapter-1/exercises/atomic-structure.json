@@ -1,0 +1,152 @@
+{
+  "exercises": [
+    {
+      "id": "c1-atom-001",
+      "chapterId": "chapter-1",
+      "lessonId": "atomic-structure",
+      "nodeIds": [
+        "mass-number",
+        "atomic-number"
+      ],
+      "difficulty": "easy",
+      "title": "Đồng vị uranium-235 và uranium-238",
+      "skill": "Xác định số hạt trong nguyên tử",
+      "statement": "Bài giảng (trang 13) minh họa hai nguyên tử $^{235}_{92}\\mathrm{U}$ và $^{238}_{92}\\mathrm{U}$.\n\na) Xác định số proton, số neutron và số electron của mỗi nguyên tử.\n\nb) Hai nguyên tử này có quan hệ gì với nhau?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Trong kí hiệu $^{A}_{Z}\\mathrm{X}$, số ở dưới (Z) cho biết điều gì?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Số proton (số hiệu nguyên tử)"
+            },
+            {
+              "id": "b",
+              "text": "Số neutron"
+            },
+            {
+              "id": "c",
+              "text": "Số khối"
+            },
+            {
+              "id": "d",
+              "text": "Số electron hóa trị"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Z là số hiệu nguyên tử = số proton trong hạt nhân. Với nguyên tử trung hòa, số electron cũng bằng Z."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Số neutron của $^{235}\\mathrm{U}$ là bao nhiêu?",
+          "correctAnswer": 143.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$N = A - Z = 235 - 92 = 143$.",
+          "hint": "Dùng $N = A - Z$."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Số neutron của $^{238}\\mathrm{U}$ là bao nhiêu?",
+          "correctAnswer": 146.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$N = 238 - 92 = 146$."
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Hai nguyên tử $^{235}\\mathrm{U}$ và $^{238}\\mathrm{U}$ là:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hai nguyên tố khác nhau"
+            },
+            {
+              "id": "b",
+              "text": "Hai đồng vị của cùng một nguyên tố"
+            },
+            {
+              "id": "c",
+              "text": "Hai ion của uranium"
+            },
+            {
+              "id": "d",
+              "text": "Hai dạng thù hình"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Cùng Z = 92 (cùng nguyên tố) nhưng khác số neutron → là các đồng vị."
+        }
+      ],
+      "solution": "Với kí hiệu $^{A}_{Z}\\mathrm{X}$: số proton $= Z$, số neutron $N = A - Z$; nguyên tử trung hòa có số electron $= Z$.\n\n| Nguyên tử | Proton | Neutron | Electron |\n|---|---|---|---|\n| $^{235}_{92}\\mathrm{U}$ | 92 | $235 - 92 = 143$ | 92 |\n| $^{238}_{92}\\mathrm{U}$ | 92 | $238 - 92 = 146$ | 92 |\n\nHai nguyên tử có cùng số proton nhưng khác số neutron nên là **hai đồng vị** của uranium.",
+      "finalAnswer": "U-235: 92p, 143n, 92e; U-238: 92p, 146n, 92e — hai đồng vị.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          13
+        ],
+        "note": "Biên soạn lại từ hình minh họa nguyên tử uranium trong bài giảng."
+      }
+    },
+    {
+      "id": "c1-atom-002",
+      "chapterId": "chapter-1",
+      "lessonId": "atomic-structure",
+      "nodeIds": [
+        "atoms-and-ions",
+        "mass-number"
+      ],
+      "difficulty": "easy",
+      "title": "Số hạt trong ion Fe³⁺",
+      "skill": "Xác định số hạt trong ion",
+      "statement": "Xác định số proton, neutron và electron trong ion $^{56}_{26}\\mathrm{Fe}^{3+}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Số proton?",
+          "correctAnswer": 26.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "Số proton = Z = 26; không thay đổi khi tạo ion."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Số neutron?",
+          "correctAnswer": 30.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$N = A - Z = 56 - 26 = 30$."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Số electron?",
+          "correctAnswer": 23.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "Ion mang điện tích +3 → nguyên tử đã nhường 3 electron: $26 - 3 = 23$.",
+          "hint": "Điện tích dương nghĩa là thiếu electron so với proton."
+        }
+      ],
+      "solution": "- Proton: $Z = 26$.\n- Neutron: $N = 56 - 26 = 30$.\n- Electron: ion $3+$ thiếu 3 electron so với nguyên tử trung hòa: $26 - 3 = 23$.",
+      "finalAnswer": "26 proton, 30 neutron, 23 electron.",
+      "source": {
+        "kind": "supplementary",
+        "note": "Bài bổ sung luyện kỹ năng."
+      }
+    }
+  ]
+}

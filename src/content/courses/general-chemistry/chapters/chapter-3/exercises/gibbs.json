@@ -1,0 +1,478 @@
+{
+  "exercises": [
+    {
+      "id": "c3-gibbs-001",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs",
+      "nodeIds": [
+        "gibbs-energy",
+        "spontaneity"
+      ],
+      "difficulty": "medium",
+      "title": "ΔG° của phản ứng phân hủy KClO₃",
+      "skill": "ΔG = ΔH − TΔS",
+      "statement": "(Trang 33.) Với $\\mathrm{4KClO_3(s) \\to 3KClO_4(s) + KCl(s)}$: $\\Delta H^\\circ = -144$ kJ; $\\Delta S^\\circ = -36{,}8$ J/K. Tính $\\Delta G^\\circ$ ở 298 K và kết luận.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Đổi ΔS° sang kJ/K.",
+          "correctAnswer": -0.0368,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$-36{,}8$ J/K $= -0{,}0368$ kJ/K.",
+          "unit": "kJ/K",
+          "hint": "Chia cho 1000 để thống nhất đơn vị với ΔH (kJ)."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "TΔS° (kJ)?",
+          "correctAnswer": -10.9664,
+          "tolerance": {
+            "relative": 0.01
+          },
+          "explanation": "$298 \\times (-0{,}0368) = -10{,}97$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔG° (kJ)?",
+          "correctAnswer": -133.034,
+          "tolerance": {
+            "relative": 0.01
+          },
+          "explanation": "$-144 - (-10{,}97) = -133$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Kết luận:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Phản ứng tự diễn biến ở 298 K"
+            },
+            {
+              "id": "b",
+              "text": "Phản ứng không tự diễn biến"
+            },
+            {
+              "id": "c",
+              "text": "Hệ ở trạng thái cân bằng"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "ΔG° < 0."
+        }
+      ],
+      "solution": "$$\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ = -144 - 298\\times\\left(\\frac{-36{,}8}{1000}\\right) = -144 + 11{,}0 = -133\\ \\text{kJ}$$\n\n$\\Delta G^\\circ < 0$ → phản ứng tự diễn biến ở điều kiện chuẩn, 298 K.",
+      "finalAnswer": "ΔG° ≈ −133 kJ → tự diễn biến.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          33
+        ],
+        "note": "Ví dụ trang 33 bài giảng (có lời giải mẫu)."
+      }
+    },
+    {
+      "id": "c3-gibbs-002",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs",
+      "nodeIds": [
+        "gibbs-energy",
+        "spontaneity"
+      ],
+      "difficulty": "medium",
+      "title": "Bài 18: Hỗn hợp O₂ và H₂S có bền không?",
+      "skill": "Xét chiều phản ứng bằng ΔG°",
+      "statement": "(Bài 18, trang 40.) Cho:\n\n| Chất | $\\Delta H^\\circ_{298}$ (kJ/mol) | $S^\\circ_{298}$ (J/(mol·K)) |\n|---|---|---|\n| $\\mathrm{O_2(k)}$ | 0 | 205,058 |\n| $\\mathrm{S(r)}$ | 0 | 31,882 |\n| $\\mathrm{H_2O(k)}$ | −241,835 | 188,824 |\n| $\\mathrm{H_2S(k)}$ | −20,083 | 205,434 |\n\nHỗn hợp oxi và $\\mathrm{H_2S}$ ở điều kiện tiêu chuẩn có bền không, giả thiết có phản ứng $\\mathrm{H_2S(k) + \\tfrac12O_2(k) \\to H_2O(k) + S(r)}$?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "ΔH° (kJ)?",
+          "correctAnswer": -221.752,
+          "tolerance": {
+            "relative": 0.002
+          },
+          "explanation": "$-241{,}835 - (-20{,}083) = -221{,}75$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔS° (J/K)?",
+          "correctAnswer": -87.257,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$(188{,}824 + 31{,}882) - (205{,}434 + \\tfrac12 \\cdot 205{,}058) = -87{,}26$ J/K.",
+          "unit": "J/K"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔG° ở 298 K (kJ)?",
+          "correctAnswer": -195.736,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$\\Delta G^\\circ = -221{,}75 - 298{,}15\\times(-0{,}08726) = -195{,}7$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Kết luận về hỗn hợp:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Không bền về mặt nhiệt động: phản ứng có xu hướng tự xảy ra"
+            },
+            {
+              "id": "b",
+              "text": "Bền về mặt nhiệt động"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "ΔG° < 0 → phản ứng tự diễn biến; hỗn hợp chỉ có thể tồn tại nếu tốc độ phản ứng rất chậm (yếu tố động học)."
+        }
+      ],
+      "solution": "$$\\Delta H^\\circ = (-241{,}835 + 0) - (-20{,}083 + 0) = -221{,}75\\ \\text{kJ}$$\n\n$$\\Delta S^\\circ = (188{,}824 + 31{,}882) - \\left(205{,}434 + \\tfrac12\\times205{,}058\\right) = -87{,}26\\ \\text{J/K}$$\n\n$$\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ = -221{,}75 - 298{,}15\\times(-0{,}08726) = -195{,}7\\ \\text{kJ}$$\n\n$\\Delta G^\\circ \\ll 0$ → hỗn hợp $\\mathrm{H_2S}$ và $\\mathrm{O_2}$ **không bền về mặt nhiệt động**. (Nhiệt động học không cho biết tốc độ — trên thực tế phản ứng có thể chậm ở nhiệt độ thường.)",
+      "finalAnswer": "ΔG° ≈ -195,7 kJ < 0 → hỗn hợp không bền về mặt nhiệt động.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          40
+        ],
+        "note": "Bài 18 trang 40 bài giảng."
+      }
+    },
+    {
+      "id": "c3-gibbs-003",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs",
+      "nodeIds": [
+        "gibbs-energy",
+        "spontaneity"
+      ],
+      "difficulty": "medium",
+      "title": "Bài 19: Nhiệt độ bắt đầu phân hủy PCl₅",
+      "skill": "Nhiệt độ đổi chiều phản ứng",
+      "statement": "(Bài 19, trang 41.) Ở nhiệt độ nào phản ứng $\\mathrm{PCl_5 \\to PCl_3 + Cl_2}$ bắt đầu xảy ra? Cho:\n\n| Chất | $\\Delta H^\\circ_{298}$ (kJ/mol) | $S^\\circ_{298}$ (J/(mol·K)) |\n|---|---|---|\n| $\\mathrm{PCl_5}$ | −369,447 | 352,7 |\n| $\\mathrm{PCl_3}$ | −279,073 | 312,1 |\n| $\\mathrm{Cl_2}$ | 0 | 223,0 |",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "ΔH° (kJ)?",
+          "correctAnswer": 90.374,
+          "tolerance": {
+            "relative": 0.002
+          },
+          "explanation": "$-279{,}073 - (-369{,}447) = 90{,}37$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔS° (J/K)?",
+          "correctAnswer": 182.4,
+          "tolerance": {
+            "relative": 0.002
+          },
+          "explanation": "$312{,}1 + 223{,}0 - 352{,}7 = 182{,}4$ J/K.",
+          "unit": "J/K"
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "ΔH° > 0 và ΔS° > 0 nên phản ứng tự diễn biến khi:",
+          "options": [
+            {
+              "id": "a",
+              "text": "T > ΔH°/ΔS°"
+            },
+            {
+              "id": "b",
+              "text": "T < ΔH°/ΔS°"
+            },
+            {
+              "id": "c",
+              "text": "Mọi nhiệt độ"
+            },
+            {
+              "id": "d",
+              "text": "Không bao giờ"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "ΔG = ΔH − TΔS < 0 ⇔ T > ΔH/ΔS (số hạng −TΔS thắng ΔH ở nhiệt độ cao)."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Nhiệt độ bắt đầu xảy ra (K)?",
+          "correctAnswer": 495.471,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$T = 90374/182{,}4 = 495$ K.",
+          "unit": "K"
+        }
+      ],
+      "solution": "$$\\Delta H^\\circ = -279{,}073 + 0 - (-369{,}447) = 90{,}37\\ \\text{kJ}$$\n\n$$\\Delta S^\\circ = 312{,}1 + 223{,}0 - 352{,}7 = 182{,}4\\ \\text{J/K}$$\n\nPhản ứng bắt đầu tự diễn biến khi $\\Delta G^\\circ < 0$:\n\n$$T > \\frac{\\Delta H^\\circ}{\\Delta S^\\circ} = \\frac{90374\\ \\text{J}}{182{,}4\\ \\text{J/K}} \\approx 495\\ \\text{K}\\ (\\approx 222\\ ^\\circ\\text{C})$$\n\n(Giả thiết ΔH° và ΔS° không phụ thuộc nhiệt độ.)",
+      "finalAnswer": "T > 495 K.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          41
+        ],
+        "note": "Bài 19 trang 41 bài giảng."
+      }
+    },
+    {
+      "id": "c3-gibbs-004",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs",
+      "nodeIds": [
+        "gibbs-energy"
+      ],
+      "difficulty": "easy",
+      "title": "Tổ hợp ΔG: khử Cu₂O bằng C",
+      "skill": "Tính chất cộng tính của ΔG",
+      "statement": "(Trang 34.) Ở 375 K:\n\n(1) $\\mathrm{Cu_2O(s) \\to 2Cu(s) + \\tfrac12O_2(g)}$, $\\Delta G_{375} = 140{,}0$ kJ\n\n(2) $\\mathrm{C(s) + \\tfrac12O_2(g) \\to CO(g)}$, $\\Delta G_{375} = -143{,}8$ kJ\n\nTính $\\Delta G_{375}$ của $\\mathrm{Cu_2O(s) + C(s) \\to 2Cu(s) + CO(g)}$. Phản ứng có tự diễn biến ở 375 K không?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "ΔG₃₇₅ (kJ)?",
+          "correctAnswer": -3.8,
+          "tolerance": {
+            "absolute": 0.05
+          },
+          "explanation": "(1) + (2): $140{,}0 - 143{,}8 = -3{,}8$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Kết luận:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tự diễn biến (ΔG < 0)"
+            },
+            {
+              "id": "b",
+              "text": "Không tự diễn biến"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Phản ứng (1) không tự xảy ra nhưng được “ghép” với phản ứng (2) có ΔG âm hơn."
+        }
+      ],
+      "solution": "Cộng (1) và (2) (½O₂ triệt tiêu):\n\n$$\\Delta G_{375} = 140{,}0 + (-143{,}8) = -3{,}8\\ \\text{kJ} < 0$$\n\nPhản ứng tự diễn biến ở 375 K. Đây là nguyên tắc **ghép cặp phản ứng**: phản ứng không thuận lợi được thúc đẩy bởi phản ứng rất thuận lợi.",
+      "finalAnswer": "ΔG₃₇₅ = −3,8 kJ → tự diễn biến.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          34
+        ],
+        "note": "Ví dụ trang 34 bài giảng."
+      }
+    },
+    {
+      "id": "c3-gibbs-005",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs",
+      "nodeIds": [
+        "gibbs-energy",
+        "spontaneity",
+        "exo-endothermic"
+      ],
+      "difficulty": "medium",
+      "title": "Câu 3: tổng hợp etanol từ etilen",
+      "skill": "ΔG°, ΔS°, ΔH° từ bảng số liệu",
+      "statement": "(Câu 3, trang 47.) Trong công nghiệp, $\\mathrm{C_2H_5OH}$ được tổng hợp theo phản ứng $\\mathrm{C_2H_4(k) + H_2O(k) \\rightleftharpoons C_2H_5OH(k)}$. Cho:\n\n| | $\\mathrm{C_2H_5OH(k)}$ | $\\mathrm{C_2H_4(k)}$ | $\\mathrm{H_2O(k)}$ |\n|---|---|---|---|\n| $\\Delta G^\\circ_{298}$ (kJ/mol) | −168,6 | 68,12 | −228,59 |\n| $S^\\circ_{298}$ (J/(mol·K)) | 282 | 219,45 | 188,72 |\n\na) Ở điều kiện chuẩn, phản ứng xảy ra theo chiều nào?\n\nb) Tính $\\Delta H^\\circ_{298}$ và cho biết phản ứng tỏa nhiệt hay thu nhiệt.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "ΔG° (kJ)?",
+          "correctAnswer": -8.13,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$-168{,}6 - (68{,}12 - 228{,}59) = -8{,}13$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Chiều phản ứng ở điều kiện chuẩn:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Chiều thuận"
+            },
+            {
+              "id": "b",
+              "text": "Chiều nghịch"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "ΔG° < 0 → chiều thuận."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔS° (J/K)?",
+          "correctAnswer": -126.17,
+          "tolerance": {
+            "relative": 0.002
+          },
+          "explanation": "$282 - 219{,}45 - 188{,}72 = -126{,}17$ J/K.",
+          "unit": "J/K"
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "ΔH° (kJ)?",
+          "correctAnswer": -45.7287,
+          "tolerance": {
+            "relative": 0.01
+          },
+          "explanation": "$\\Delta H^\\circ = \\Delta G^\\circ + T\\Delta S^\\circ = -8{,}13 + 298(-0{,}1262) = -45{,}7$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-5",
+          "type": "single-choice",
+          "prompt": "Phản ứng:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tỏa nhiệt"
+            },
+            {
+              "id": "b",
+              "text": "Thu nhiệt"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "ΔH° < 0."
+        }
+      ],
+      "solution": "a) $\\Delta G^\\circ = -168{,}6 - (68{,}12 - 228{,}59) = -8{,}13$ kJ < 0 → phản ứng xảy ra theo **chiều thuận**.\n\nb) $\\Delta S^\\circ = 282 - (219{,}45 + 188{,}72) = -126{,}17$ J/K.\n\n$$\\Delta H^\\circ = \\Delta G^\\circ + T\\Delta S^\\circ = -8{,}13 + 298\\times(-0{,}1262) = -45{,}7\\ \\text{kJ}$$\n\n$\\Delta H^\\circ < 0$ → phản ứng **tỏa nhiệt**.",
+      "finalAnswer": "a) ΔG° = -8,13 kJ → chiều thuận; b) ΔH° ≈ -45,7 kJ → tỏa nhiệt.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          47
+        ],
+        "note": "Câu 3 trang 47 bài giảng."
+      }
+    },
+    {
+      "id": "c3-gibbs-006",
+      "chapterId": "chapter-3",
+      "lessonId": "gibbs",
+      "nodeIds": [
+        "gibbs-energy",
+        "spontaneity",
+        "photon-energy"
+      ],
+      "difficulty": "hard",
+      "title": "Quang hợp: không tự xảy ra nhưng nhờ ánh sáng",
+      "skill": "Gibbs kết hợp năng lượng photon",
+      "statement": "(Trang 46.) Quá trình quang hợp chuyển $\\mathrm{CO_2}$ và $\\mathrm{H_2O}$ thành glucose và $\\mathrm{O_2}$.\n\na) Viết phương trình quang hợp tạo $\\mathrm{C_6H_{12}O_6(s)}$ và $\\mathrm{O_2(g)}$.\n\nb) Tính $\\Delta G^\\circ$ và chứng minh quá trình không tự xảy ra.\n\nc) Cây hấp thụ ánh sáng $\\lambda = 560$ nm. Tính số mol photon cần để tạo 1 mol glucose nếu hiệu suất chuyển hóa năng lượng là 32%.\n\n| | $\\mathrm{C_6H_{12}O_6(s)}$ | $\\mathrm{O_2(g)}$ | $\\mathrm{CO_2(g)}$ | $\\mathrm{H_2O(g)}$ |\n|---|---|---|---|---|\n| $\\Delta H^\\circ$ (kJ/mol) | −1268 | 0 | −393,5 | −241,8 |\n| $S^\\circ$ (J/(mol·K)) | 212 | 205,14 | 213,74* | 188,83 |\n\n\\*Slide ghi $S^\\circ(\\mathrm{CO_2}) = -213{,}74$; entropy tuyệt đối không thể âm, lời giải dùng giá trị **+213,74**.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Hệ số của CO₂ trong phương trình cân bằng (1 mol glucose)?",
+          "correctAnswer": 6.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$\\mathrm{6CO_2 + 6H_2O \\to C_6H_{12}O_6 + 6O_2}$."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔH° (kJ)?",
+          "correctAnswer": 2543.8,
+          "tolerance": {
+            "relative": 0.002
+          },
+          "explanation": "$-1268 - [6(-393{,}5) + 6(-241{,}8)] = 2543{,}8$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔS° (J/K)?",
+          "correctAnswer": -972.58,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$[212 + 6(205{,}14)] - [6(213{,}74) + 6(188{,}83)] = -972{,}6$ J/K.",
+          "unit": "J/K"
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "ΔG° ở 298 K (kJ)?",
+          "correctAnswer": 2833.63,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$\\Delta G^\\circ = 2543{,}8 - 298(-0{,}9726) = 2834$ kJ > 0.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-5",
+          "type": "numeric",
+          "prompt": "Năng lượng 1 mol photon 560 nm (kJ/mol)?",
+          "correctAnswer": 213.759,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$hcN_A/\\lambda = 213{,}8$ kJ/mol.",
+          "unit": "kJ/mol"
+        },
+        {
+          "id": "step-6",
+          "type": "numeric",
+          "prompt": "Số mol photon cần (hiệu suất 32%)?",
+          "correctAnswer": 41.4255,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\dfrac{2834}{0{,}32\\times213{,}8} = 41{,}4$ mol.",
+          "unit": "mol"
+        }
+      ],
+      "solution": "a) $\\mathrm{6CO_2(g) + 6H_2O(g) \\to C_6H_{12}O_6(s) + 6O_2(g)}$\n\nb)\n$$\\Delta H^\\circ = -1268 - [6(-393{,}5) + 6(-241{,}8)] = 2543{,}8\\ \\text{kJ}$$\n\n$$\\Delta S^\\circ = [212 + 6(205{,}14)] - [6(213{,}74) + 6(188{,}83)] = -972{,}6\\ \\text{J/K}$$\n\n$$\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ = 2543{,}8 - 298\\times(-0{,}9726) = 2834\\ \\text{kJ} > 0$$\n\nΔH° > 0 và ΔS° < 0 nên ΔG° > 0 ở **mọi** nhiệt độ → quang hợp không tự xảy ra; cần năng lượng ánh sáng.\n\nc) Năng lượng 1 mol photon: $E = \\dfrac{hcN_A}{\\lambda} = \\dfrac{6{,}626\\times10^{-34}\\times3{,}00\\times10^8\\times6{,}022\\times10^{23}}{560\\times10^{-9}} = 213{,}8$ kJ/mol.\n\nCoi năng lượng cần tích trữ là $\\Delta G^\\circ$; với hiệu suất 32%:\n\n$$n_\\text{photon} = \\frac{2834}{0{,}32\\times213{,}8} \\approx 41{,}4\\ \\text{mol photon}$$\n\n> Câu c có thể được hiểu theo ΔH° thay vì ΔG°; nếu dùng ΔH° thì kết quả là ≈ 37{,}2 mol photon. Hãy đối chiếu với cách hiểu của giảng viên.",
+      "finalAnswer": "ΔG° ≈ 2834 kJ > 0 (không tự xảy ra); cần ≈ 41,4 mol photon (theo ΔG°).",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          46
+        ],
+        "note": "Bài trang 46; sửa dấu S°(CO₂) bị in nhầm."
+      }
+    }
+  ]
+}

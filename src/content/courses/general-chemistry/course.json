@@ -1,0 +1,8 @@
+{
+  "id": "general-chemistry",
+  "title": "Hóa học đại cương",
+  "shortTitle": "Hóa ĐC",
+  "description": "Nền tảng học tập Hóa học đại cương: cấu tạo nguyên tử, cấu tạo phân tử và liên kết hóa học, nhiệt động hóa học.",
+  "language": "vi",
+  "chapters": ["chapter-1", "chapter-2", "chapter-3"]
+}

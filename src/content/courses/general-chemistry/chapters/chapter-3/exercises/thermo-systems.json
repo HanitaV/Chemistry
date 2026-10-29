@@ -1,0 +1,90 @@
+{
+  "exercises": [
+    {
+      "id": "c3-sys-001",
+      "chapterId": "chapter-3",
+      "lessonId": "thermo-systems",
+      "nodeIds": [
+        "thermo-system",
+        "open-system",
+        "closed-system",
+        "isolated-system"
+      ],
+      "difficulty": "easy",
+      "title": "Phân loại hệ nhiệt động",
+      "skill": "Phân loại hệ",
+      "statement": "Phân loại các hệ sau thành hệ mở, hệ kín hoặc hệ cô lập (gần đúng):\n\n1. Cốc nước nóng để hở trên bàn.\n2. Bình thủy tinh kín chứa khí, đặt trong phòng.\n3. Bình giữ nhiệt (phích) lý tưởng đậy kín.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Cốc nước nóng để hở:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hệ mở"
+            },
+            {
+              "id": "b",
+              "text": "Hệ kín"
+            },
+            {
+              "id": "c",
+              "text": "Hệ cô lập"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Trao đổi cả chất (hơi nước bay ra) và năng lượng (tỏa nhiệt) → hệ mở."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Bình thủy tinh kín chứa khí:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hệ mở"
+            },
+            {
+              "id": "b",
+              "text": "Hệ kín"
+            },
+            {
+              "id": "c",
+              "text": "Hệ cô lập"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Không trao đổi chất nhưng vẫn trao đổi nhiệt qua thành bình → hệ kín."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Phích giữ nhiệt lý tưởng đậy kín:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hệ mở"
+            },
+            {
+              "id": "b",
+              "text": "Hệ kín"
+            },
+            {
+              "id": "c",
+              "text": "Hệ cô lập"
+            }
+          ],
+          "correctAnswer": "c",
+          "explanation": "Không trao đổi chất và (lý tưởng) không trao đổi năng lượng → hệ cô lập."
+        }
+      ],
+      "solution": "| Hệ | Trao đổi chất | Trao đổi năng lượng | Loại |\n|---|---|---|---|\n| Cốc nước để hở | có | có | **hệ mở** |\n| Bình kín chứa khí | không | có | **hệ kín** |\n| Phích lý tưởng | không | không | **hệ cô lập** |",
+      "finalAnswer": "1 — hệ mở; 2 — hệ kín; 3 — hệ cô lập.",
+      "source": {
+        "kind": "supplementary",
+        "note": "Bổ sung, dựa trên định nghĩa trang 3."
+      }
+    }
+  ]
+}

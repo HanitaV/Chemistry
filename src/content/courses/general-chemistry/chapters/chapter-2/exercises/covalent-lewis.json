@@ -1,0 +1,209 @@
+{
+  "exercises": [
+    {
+      "id": "c2-lewis-001",
+      "chapterId": "chapter-2",
+      "lessonId": "covalent-lewis",
+      "nodeIds": [
+        "lewis-structure",
+        "valence-electrons"
+      ],
+      "difficulty": "medium",
+      "title": "Công thức Lewis của CO₂",
+      "skill": "Viết công thức Lewis",
+      "statement": "Xây dựng công thức Lewis của $\\mathrm{CO_2}$ (C là nguyên tử trung tâm).",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Tổng số electron hóa trị?",
+          "correctAnswer": 16.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "C: 4; O: 6 × 2 = 12 → tổng 16."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Số cặp electron dùng chung (liên kết) trong phân tử?",
+          "correctAnswer": 4.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "Mỗi liên kết C=O dùng 2 cặp → 2 liên kết đôi = 4 cặp liên kết (8 electron).",
+          "hint": "Thử liên kết đơn trước: C chỉ có 4 electron xung quanh → phải tạo liên kết đôi."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Số cặp electron tự do trên mỗi nguyên tử O?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "16 − 8 = 8 electron còn lại → 4 cặp, chia đều 2 cặp cho mỗi O."
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Công thức Lewis đúng:",
+          "options": [
+            {
+              "id": "a",
+              "text": "O=C=O, mỗi O có 2 cặp e tự do"
+            },
+            {
+              "id": "b",
+              "text": "O–C–O, mỗi O có 3 cặp e tự do"
+            },
+            {
+              "id": "c",
+              "text": "O≡C–O"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "O=C=O: mỗi nguyên tử đều đạt bát tử, điện tích hình thức bằng 0."
+        }
+      ],
+      "solution": "1. Electron hóa trị: $4 + 2\\times6 = 16$.\n2. Khung O–C–O dùng 4 e; điền bát tử cho O: dùng hết 12 e còn lại → C chỉ có 4 e ⇒ chuyển cặp tự do của O thành liên kết đôi.\n3. Kết quả: $\\mathrm{O{=}C{=}O}$, mỗi O còn 2 cặp electron tự do; C và O đều đạt bát tử.\n\n> Quy trình viết công thức Lewis chi tiết là nội dung bổ sung (bài giảng nêu thuyết Lewis ở trang 9–10).",
+      "finalAnswer": "O=C=O, mỗi O có 2 cặp electron tự do (16 e hóa trị).",
+      "source": {
+        "kind": "supplementary"
+      }
+    },
+    {
+      "id": "c2-lewis-002",
+      "chapterId": "chapter-2",
+      "lessonId": "covalent-lewis",
+      "nodeIds": [
+        "covalent-bond"
+      ],
+      "difficulty": "easy",
+      "title": "Liên kết cho – nhận trong ion NH₄⁺",
+      "skill": "Phân loại liên kết cộng hóa trị",
+      "statement": "Trong ion amoni $\\mathrm{NH_4^+}$, cả 4 liên kết N–H đều giống nhau. Hãy giải thích sự hình thành ion từ $\\mathrm{NH_3}$ và $\\mathrm{H^+}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Liên kết thứ tư N–H trong NH₄⁺ thuộc loại nào?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Liên kết cho – nhận (phối trí)"
+            },
+            {
+              "id": "b",
+              "text": "Liên kết ion"
+            },
+            {
+              "id": "c",
+              "text": "Liên kết cộng hóa trị không phân cực"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Cặp electron dùng chung chỉ do một nguyên tử (N) đóng góp → liên kết cho – nhận."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Nguyên tử nào cho cặp electron?",
+          "options": [
+            {
+              "id": "a",
+              "text": "N (cặp electron tự do của NH₃)"
+            },
+            {
+              "id": "b",
+              "text": "H⁺"
+            },
+            {
+              "id": "c",
+              "text": "Cả hai cùng góp"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "N trong NH₃ còn một cặp electron tự do; H⁺ có orbital 1s trống nhận cặp này."
+        }
+      ],
+      "solution": "$\\mathrm{NH_3}$ có một cặp electron tự do trên N; $\\mathrm{H^+}$ có orbital 1s trống. N cho cặp electron vào orbital trống của $\\mathrm{H^+}$ → **liên kết cho – nhận**:\n\n$$\\mathrm{H_3N{:} + H^+ \\to [H_3N{\\to}H]^+}$$\n\nSau khi hình thành, liên kết cho – nhận không khác các liên kết N–H còn lại → 4 liên kết tương đương (ion tứ diện).",
+      "finalAnswer": "Liên kết cho – nhận: N (của NH₃) cho cặp electron vào orbital trống của H⁺.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          10
+        ],
+        "note": "Dựa trên định nghĩa liên kết cho – nhận trang 10."
+      }
+    },
+    {
+      "id": "c2-lewis-003",
+      "chapterId": "chapter-2",
+      "lessonId": "covalent-lewis",
+      "nodeIds": [
+        "octet-rule"
+      ],
+      "difficulty": "medium",
+      "title": "Hạn chế của quy tắc bát tử",
+      "skill": "Nhận diện ngoại lệ quy tắc bát tử",
+      "statement": "Bài giảng (trang 11) liệt kê các hạn chế của quy tắc bát tử. Trong các phân tử sau, phân tử nào **không** tuân theo quy tắc bát tử: $\\mathrm{PF_5}$, $\\mathrm{SF_6}$, $\\mathrm{CH_4}$, $\\mathrm{NO}$, $\\mathrm{H_2O}$?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "multiple-choice",
+          "prompt": "Chọn TẤT CẢ phân tử không tuân theo quy tắc bát tử.",
+          "options": [
+            {
+              "id": "pf5",
+              "text": "PF₅"
+            },
+            {
+              "id": "sf6",
+              "text": "SF₆"
+            },
+            {
+              "id": "ch4",
+              "text": "CH₄"
+            },
+            {
+              "id": "no",
+              "text": "NO"
+            },
+            {
+              "id": "h2o",
+              "text": "H₂O"
+            }
+          ],
+          "correctAnswer": [
+            "pf5",
+            "sf6",
+            "no"
+          ],
+          "explanation": "PF₅ (P có 10 e), SF₆ (S có 12 e): vượt bát tử; NO có số lẻ electron (11 e hóa trị) nên không thể mọi nguyên tử đều đạt 8."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Số electron xung quanh S trong SF₆?",
+          "correctAnswer": 12.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "6 liên kết S–F × 2 = 12 electron."
+        }
+      ],
+      "solution": "- $\\mathrm{PF_5}$: P có 5 liên kết → 10 electron (vượt bát tử).\n- $\\mathrm{SF_6}$: S có 6 liên kết → 12 electron (vượt bát tử).\n- $\\mathrm{NO}$: tổng 11 electron hóa trị (số lẻ) → không thể tất cả các nguyên tử đều có 8 electron.\n- $\\mathrm{CH_4}$, $\\mathrm{H_2O}$: tuân theo quy tắc bát tử (H tuân theo quy tắc “bộ đôi”).\n\nNhững trường hợp này được giải thích bởi thuyết cơ học lượng tử (VB, MO).",
+      "finalAnswer": "PF₅, SF₆, NO.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          11
+        ],
+        "note": "Các ví dụ PF₅, SF₆ và phân tử số lẻ electron ở trang 11."
+      }
+    }
+  ]
+}

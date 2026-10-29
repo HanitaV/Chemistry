@@ -1,0 +1,52 @@
+{
+  "id": "chapter-1",
+  "courseId": "general-chemistry",
+  "order": 1,
+  "title": "Cấu tạo nguyên tử",
+  "description": "Thành phần nguyên tử, số lượng tử, cấu hình electron, ánh sáng và photon, mẫu nguyên tử Bohr, phổ nguyên tử và năng lượng ion hóa.",
+  "lessonIds": [
+    "atomic-structure",
+    "quantum-numbers",
+    "electron-configuration",
+    "light-photon",
+    "bohr-model",
+    "electronic-transitions",
+    "ionization-energy"
+  ],
+  "exerciseIds": [
+    "c1-atom-001",
+    "c1-atom-002",
+    "c1-ec-001",
+    "c1-ec-002",
+    "c1-ec-003",
+    "c1-ec-004",
+    "c1-ion-001",
+    "c1-ion-002",
+    "c1-ion-003",
+    "c1-photon-001",
+    "c1-photon-002",
+    "c1-photon-003",
+    "c1-photon-004",
+    "c1-photon-005",
+    "c1-photon-006",
+    "c1-photon-007",
+    "c1-photon-008",
+    "c1-photon-009",
+    "c1-qn-001",
+    "c1-qn-002",
+    "c1-qn-003",
+    "c1-bohr-001",
+    "c1-bohr-002",
+    "c1-trans-001",
+    "c1-trans-002",
+    "c1-trans-003",
+    "c1-trans-004",
+    "c1-trans-005",
+    "c1-trans-006",
+    "c1-trans-007"
+  ],
+  "sourceIds": [
+    "doc-ch1-theory",
+    "doc-ch1-exercises"
+  ]
+}

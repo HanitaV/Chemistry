@@ -1,0 +1,164 @@
+{
+  "exercises": [
+    {
+      "id": "c2-vb-001",
+      "chapterId": "chapter-2",
+      "lessonId": "vb-theory",
+      "nodeIds": [
+        "sigma-pi-bonds"
+      ],
+      "difficulty": "easy",
+      "title": "Đếm liên kết σ và π",
+      "skill": "Liên kết sigma và pi",
+      "statement": "Xác định số liên kết σ và π trong các phân tử: $\\mathrm{C_2H_4}$ (etilen), $\\mathrm{C_2H_2}$ (axetilen), $\\mathrm{HCN}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Một liên kết ba gồm:",
+          "options": [
+            {
+              "id": "a",
+              "text": "1σ + 2π"
+            },
+            {
+              "id": "b",
+              "text": "3σ"
+            },
+            {
+              "id": "c",
+              "text": "2σ + 1π"
+            },
+            {
+              "id": "d",
+              "text": "3π"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Giữa hai nguyên tử chỉ có một liên kết σ (xen phủ trục); các liên kết còn lại là π (xen phủ bên)."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Số liên kết σ trong C₂H₄?",
+          "correctAnswer": 5.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "4 liên kết C–H (σ) + 1σ trong C=C = 5σ."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Số liên kết π trong C₂H₂?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "C≡C có 2 liên kết π."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Số liên kết σ trong HCN?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "H–C (σ) + 1σ trong C≡N = 2σ (và 2π)."
+        }
+      ],
+      "solution": "| Phân tử | Cấu tạo | σ | π |\n|---|---|---|---|\n| $\\mathrm{C_2H_4}$ | $\\mathrm{H_2C{=}CH_2}$ | 5 | 1 |\n| $\\mathrm{C_2H_2}$ | $\\mathrm{HC{\\equiv}CH}$ | 3 | 2 |\n| $\\mathrm{HCN}$ | $\\mathrm{H{-}C{\\equiv}N}$ | 2 | 2 |\n\nQuy tắc: liên kết đơn = 1σ; liên kết đôi = 1σ + 1π; liên kết ba = 1σ + 2π.",
+      "finalAnswer": "C₂H₄: 5σ, 1π; C₂H₂: 3σ, 2π; HCN: 2σ, 2π.",
+      "source": {
+        "kind": "supplementary",
+        "note": "Bổ sung, dựa trên phân loại σ/π trang 15–16."
+      }
+    },
+    {
+      "id": "c2-vb-002",
+      "chapterId": "chapter-2",
+      "lessonId": "vb-theory",
+      "nodeIds": [
+        "vb-theory"
+      ],
+      "difficulty": "medium",
+      "title": "Thuyết VB và góc liên kết",
+      "skill": "Ưu – nhược điểm thuyết VB",
+      "statement": "Theo thuyết VB thuần túy (không lai hóa), liên kết trong $\\mathrm{H_2S}$ và $\\mathrm{H_2O}$ tạo bởi xen phủ AO 1s của H với hai AO p của S hoặc O. Bài giảng (trang 17) cho góc liên kết thực tế: $\\mathrm{H_2S}$ 92°, $\\mathrm{H_2O}$ 105,5°, $\\mathrm{NH_3}$ 107,3°, $\\mathrm{CH_4}$ 109,5°.\n\na) Thuyết VB thuần túy dự đoán góc HXH bằng bao nhiêu?\n\nb) Phân tử nào phù hợp nhất với dự đoán đó? Phân tử nào cần đến thuyết lai hóa?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Góc giữa hai AO p (độ)?",
+          "correctAnswer": 90.0,
+          "tolerance": {
+            "absolute": 0.5
+          },
+          "explanation": "Các AO p (px, py, pz) vuông góc với nhau → góc dự đoán 90°.",
+          "unit": "°"
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Phân tử có góc gần dự đoán nhất:",
+          "options": [
+            {
+              "id": "a",
+              "text": "H₂S (92°)"
+            },
+            {
+              "id": "b",
+              "text": "H₂O (105,5°)"
+            },
+            {
+              "id": "c",
+              "text": "CH₄ (109,5°)"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "92° gần 90° nhất."
+        },
+        {
+          "id": "step-3",
+          "type": "multiple-choice",
+          "prompt": "Những phân tử nào thuyết VB thuần túy KHÔNG giải thích được góc liên kết?",
+          "options": [
+            {
+              "id": "h2o",
+              "text": "H₂O"
+            },
+            {
+              "id": "nh3",
+              "text": "NH₃"
+            },
+            {
+              "id": "ch4",
+              "text": "CH₄"
+            },
+            {
+              "id": "h2s",
+              "text": "H₂S"
+            }
+          ],
+          "correctAnswer": [
+            "h2o",
+            "nh3",
+            "ch4"
+          ],
+          "explanation": "Góc 105,5°, 107,3°, 109,5° khác xa 90°; đặc biệt CH₄ có 4 liên kết C–H giống hệt nhau — cần thuyết lai hóa sp³."
+        }
+      ],
+      "solution": "a) Hai AO p vuông góc nên thuyết VB thuần túy dự đoán góc **90°**.\n\nb) $\\mathrm{H_2S}$ (92°) gần đúng với dự đoán. $\\mathrm{H_2O}$, $\\mathrm{NH_3}$, $\\mathrm{CH_4}$ có góc gần 109,5° và CH₄ có 4 liên kết tương đương — thuyết VB thuần túy không giải thích được → cần **thuyết lai hóa** (sp³).",
+      "finalAnswer": "VB dự đoán 90°; phù hợp H₂S; H₂O, NH₃, CH₄ cần lai hóa.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          17
+        ],
+        "note": "Số liệu góc liên kết trang 17."
+      }
+    }
+  ]
+}

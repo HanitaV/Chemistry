@@ -1,0 +1,735 @@
+{
+  "exercises": [
+    {
+      "id": "c1-bohr-001",
+      "chapterId": "chapter-1",
+      "lessonId": "bohr-model",
+      "nodeIds": [
+        "energy-levels",
+        "absorption"
+      ],
+      "difficulty": "easy",
+      "title": "Nguyên tử H hấp thụ photon lên n = 4",
+      "skill": "Chuyển mức năng lượng (hấp thụ)",
+      "statement": "Nguyên tử H hấp thụ photon và nhảy lên trạng thái kích thích $n = 4$ (từ trạng thái cơ bản). Tính biến thiên năng lượng $\\Delta E$ và bước sóng của photon.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "formula-selection",
+          "prompt": "Chọn công thức tính ΔE khi electron chuyển mức trong nguyên tử H.",
+          "options": [
+            {
+              "id": "a",
+              "text": "$\\Delta E = -2{,}18\\times10^{-18}\\left(\\dfrac{1}{n_\\text{cuối}^2}-\\dfrac{1}{n_\\text{đầu}^2}\\right)$ J"
+            },
+            {
+              "id": "b",
+              "text": "$\\Delta E = 2{,}18\\times10^{-18}\\left(n_\\text{cuối}^2-n_\\text{đầu}^2\\right)$ J"
+            },
+            {
+              "id": "c",
+              "text": "$\\Delta E = h c \\lambda$"
+            },
+            {
+              "id": "d",
+              "text": "$\\Delta E = -13{,}6\\, n^2$ eV"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Mẫu Bohr: $E_n = -2{,}18\\times10^{-18}/n^2$ J (Z = 1), nên $\\Delta E = E_\\text{cuối} - E_\\text{đầu}$."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Xác định $n_\\text{đầu}$ và $n_\\text{cuối}$.",
+          "options": [
+            {
+              "id": "a",
+              "text": "$n_\\text{đầu} = 4$, $n_\\text{cuối} = 1$"
+            },
+            {
+              "id": "b",
+              "text": "$n_\\text{đầu} = 1$, $n_\\text{cuối} = 4$"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Nguyên tử ở trạng thái cơ bản ($n = 1$) hấp thụ photon để lên $n = 4$."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Tính ΔE.",
+          "correctAnswer": 2.04375e-18,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\Delta E = -2{,}18\\times10^{-18}(1/16 - 1) = 2{,}04\\times10^{-18}$ J (dương → hấp thụ).",
+          "unit": "J"
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Bước sóng photon (m)?",
+          "correctAnswer": 9.72624e-08,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\lambda = hc/\\Delta E = 9{,}73\\times10^{-8}$ m ≈ 97,3 nm (vùng UV).",
+          "unit": "m"
+        }
+      ],
+      "solution": "$$\\Delta E = -2{,}18\\times10^{-18}\\left(\\frac{1}{4^2}-\\frac{1}{1^2}\\right) = -2{,}18\\times10^{-18}\\left(\\frac{1}{16}-1\\right) = 2{,}04\\times10^{-18}\\ \\text{J}$$\n\n$$\\lambda = \\frac{hc}{\\Delta E} = \\frac{6{,}626\\times10^{-34}\\times3{,}00\\times10^8}{2{,}04\\times10^{-18}} = 9{,}73\\times10^{-8}\\ \\text{m} \\approx 97{,}3\\ \\text{nm}$$\n\n(Bài giảng làm tròn: $2{,}04\\times10^{-18}$ J và $9{,}74\\times10^{-8}$ m.)",
+      "finalAnswer": "ΔE = 2,04×10^-18 J; λ ≈ 97,3 nm.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          31
+        ],
+        "note": "Ví dụ 1 trang 31 bài giảng (có lời giải mẫu)."
+      }
+    },
+    {
+      "id": "c1-bohr-002",
+      "chapterId": "chapter-1",
+      "lessonId": "bohr-model",
+      "nodeIds": [
+        "energy-levels",
+        "absorption"
+      ],
+      "difficulty": "easy",
+      "title": "H hấp thụ photon lên n = 6 và n = 8",
+      "skill": "Chuyển mức năng lượng (hấp thụ)",
+      "statement": "Nguyên tử H ở trạng thái cơ bản hấp thụ photon và nhảy lên trạng thái kích thích:\n\na) $n = 6$; b) $n = 8$.\n\nTính $\\Delta E$ và bước sóng photon trong mỗi trường hợp.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "ΔE cho $1 \\to 6$?",
+          "correctAnswer": 2.11944e-18,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\Delta E = -2{,}18\\times10^{-18}(1/36 - 1) = 2{,}12\\times10^{-18}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Bước sóng cho $1 \\to 6$ (nm)?",
+          "correctAnswer": 93.7887,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\lambda = hc/\\Delta E = 93{,}8$ nm.",
+          "unit": "nm"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔE cho $1 \\to 8$?",
+          "correctAnswer": 2.14594e-18,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\Delta E = -2{,}18\\times10^{-18}(1/64 - 1) = 2{,}15\\times10^{-18}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Bước sóng cho $1 \\to 8$ (nm)?",
+          "correctAnswer": 92.6308,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\lambda = 92{,}6$ nm.",
+          "unit": "nm"
+        }
+      ],
+      "solution": "a) $\\Delta E = -2{,}18\\times10^{-18}\\left(\\tfrac{1}{36} - 1\\right) = 2{,}12\\times10^{-18}$ J; $\\lambda = 93{,}8$ nm.\n\nb) $\\Delta E = -2{,}18\\times10^{-18}\\left(\\tfrac{1}{64} - 1\\right) = 2{,}15\\times10^{-18}$ J; $\\lambda = 92{,}6$ nm.\n\n> **Lưu ý:** đề bài trong slide ghi “vùng IR” cho $n = 6$, nhưng chuyển mức xuất phát từ $n = 1$ luôn thuộc dãy Lyman (vùng tử ngoại, λ < 122 nm). Đề chỉ đúng vùng IR nếu xuất phát từ mức $n \\ge 3$.",
+      "finalAnswer": "n=6: ΔE=2,12×10^-18 J, λ≈93,8 nm; n=8: ΔE=2,15×10^-18 J, λ≈92,6 nm.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          32
+        ],
+        "note": "Bài 2 và 3 trang 32 bài giảng; giả định trạng thái đầu là n = 1 (theo ví dụ trang 31)."
+      }
+    },
+    {
+      "id": "c1-trans-001",
+      "chapterId": "chapter-1",
+      "lessonId": "electronic-transitions",
+      "nodeIds": [
+        "atomic-spectrum"
+      ],
+      "difficulty": "easy",
+      "title": "Bước sóng chuyển mức 1 ↔ 2 theo Rydberg",
+      "skill": "Công thức Rydberg",
+      "statement": "Dùng công thức Rydberg với $R = 1{,}096776\\times10^7$ m⁻¹, tính bước sóng ứng với chuyển mức giữa $n_1 = 1$ và $n_2 = 2$ của nguyên tử H.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "formula-selection",
+          "prompt": "Chọn công thức Rydberg.",
+          "options": [
+            {
+              "id": "a",
+              "text": "$\\dfrac{1}{\\lambda} = R\\left(\\dfrac{1}{n_1^2} - \\dfrac{1}{n_2^2}\\right)$"
+            },
+            {
+              "id": "b",
+              "text": "$\\lambda = R\\left(\\dfrac{1}{n_1^2} - \\dfrac{1}{n_2^2}\\right)$"
+            },
+            {
+              "id": "c",
+              "text": "$\\dfrac{1}{\\lambda} = R\\,(n_2^2 - n_1^2)$"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Công thức Rydberg cho nghịch đảo bước sóng; với $n_1 < n_2$ ta được $1/\\lambda > 0$."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Tính $1/\\lambda$ (m⁻¹).",
+          "correctAnswer": 8225820.0,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$1/\\lambda = 1{,}096776\\times10^7 \\times (1 - 1/4) = 8{,}2258\\times10^{6}$ m⁻¹.",
+          "unit": "m⁻¹"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Bước sóng (nm)?",
+          "correctAnswer": 121.568,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$\\lambda = 121{,}6$ nm.",
+          "unit": "nm"
+        }
+      ],
+      "solution": "$$\\frac{1}{\\lambda} = R\\left(\\frac{1}{1^2} - \\frac{1}{2^2}\\right) = 1{,}096776\\times10^7\\times\\frac{3}{4} = 8{,}2258\\times10^{6}\\ \\text{m}^{-1}$$\n\n$$\\lambda = 1{,}216\\times10^{-7}\\ \\text{m} = 121{,}6\\ \\text{nm}$$\n\nĐây là vạch đầu tiên của dãy Lyman (vùng tử ngoại).",
+      "finalAnswer": "λ ≈ 121,6 nm.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-theory",
+        "pages": [
+          24
+        ],
+        "note": "Câu hỏi trang 24 bài giảng."
+      }
+    },
+    {
+      "id": "c1-trans-002",
+      "chapterId": "chapter-1",
+      "lessonId": "electronic-transitions",
+      "nodeIds": [
+        "emission",
+        "energy-levels"
+      ],
+      "difficulty": "medium",
+      "title": "Phát xạ 3 → 2 của ion He⁺",
+      "skill": "Chuyển mức năng lượng (phát xạ), Z > 1",
+      "statement": "Tính bước sóng của ánh sáng phát xạ khi electron chuyển từ $n = 3$ về $n = 2$ trong nguyên tử He.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Mẫu Bohr $E_n = -2{,}18\\times10^{-18}Z^2/n^2$ áp dụng chính xác cho hệ nào?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mọi nguyên tử"
+            },
+            {
+              "id": "b",
+              "text": "Chỉ hệ một electron: H, He⁺, Li²⁺…"
+            },
+            {
+              "id": "c",
+              "text": "Chỉ nguyên tử H"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "Công thức Bohr đúng cho hệ một electron. Nguyên tử He có 2 electron nên ở đây ta hiểu đề bài theo mô hình ion giống hydro He⁺ (Z = 2), đúng ý đồ của bài tập."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Giá trị Z?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "He có điện tích hạt nhân Z = 2."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔE của quá trình $3 \\to 2$?",
+          "correctAnswer": -1.21111e-18,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\Delta E = -2{,}18\\times10^{-18}\\cdot 4\\,(1/4 - 1/9) = -1{,}21\\times10^{-18}$ J (âm → phát xạ).",
+          "unit": "J"
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Bước sóng phát xạ (nm)?",
+          "correctAnswer": 164.13,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$\\lambda = hc/|\\Delta E| = 164{,}1$ nm.",
+          "unit": "nm"
+        }
+      ],
+      "solution": "Áp dụng mẫu Bohr cho hệ một electron với $Z = 2$ (ion He⁺):\n\n$$\\Delta E = -2{,}18\\times10^{-18}\\cdot 2^2\\left(\\frac{1}{2^2}-\\frac{1}{3^2}\\right) = -1{,}21\\times10^{-18}\\ \\text{J}$$\n\n$$\\lambda = \\frac{hc}{|\\Delta E|} = 1{,}641\\times10^{-7}\\ \\text{m} \\approx 164{,}1\\ \\text{nm}$$\n\n> **Phạm vi áp dụng:** với nguyên tử He trung hòa (2 electron), lực đẩy giữa các electron làm các mức năng lượng khác mẫu Bohr; kết quả trên đúng cho **He⁺**.",
+      "finalAnswer": "λ ≈ 164,1 nm (He⁺).",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-exercises",
+        "pages": [
+          1
+        ],
+        "note": "Bài 1 tệp bài tập chương 1; lời giải diễn giải theo ion He⁺."
+      }
+    },
+    {
+      "id": "c1-trans-003",
+      "chapterId": "chapter-1",
+      "lessonId": "electronic-transitions",
+      "nodeIds": [
+        "emission",
+        "atomic-spectrum"
+      ],
+      "difficulty": "medium",
+      "title": "Tìm mức kích thích ban đầu từ bước sóng phát xạ",
+      "skill": "Tìm n từ bước sóng",
+      "statement": "Một nguyên tử H ở trạng thái kích thích phát xạ ánh sáng có bước sóng 1282,4 nm để trở về mức $n = 3$. Hỏi mức năng lượng kích thích ban đầu của nguyên tử H là bao nhiêu?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "formula-selection",
+          "prompt": "Chọn biểu thức để tìm $n_2$.",
+          "options": [
+            {
+              "id": "a",
+              "text": "$\\dfrac{1}{n_2^2} = \\dfrac{1}{3^2} - \\dfrac{1}{R\\lambda}$"
+            },
+            {
+              "id": "b",
+              "text": "$\\dfrac{1}{n_2^2} = \\dfrac{1}{3^2} + \\dfrac{1}{R\\lambda}$"
+            },
+            {
+              "id": "c",
+              "text": "$n_2 = 3 + R\\lambda$"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Từ $1/\\lambda = R(1/n_1^2 - 1/n_2^2)$ với $n_1 = 3$: $1/n_2^2 = 1/9 - 1/(R\\lambda)$."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Tính $1/(R\\lambda)$.",
+          "correctAnswer": 0.0710982,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$1/(1{,}096776\\times10^7\\times1{,}2824\\times10^{-6}) = 0{,}07110$."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Giá trị $n_2$ (số nguyên)?",
+          "correctAnswer": 5.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$1/n_2^2 = 0{,}1111 - 0{,}07110 = 0{,}04001$ → $n_2 = 5{,}00 \\approx 5$."
+        }
+      ],
+      "solution": "Dãy Paschen (về $n_1 = 3$):\n\n$$\\frac{1}{n_2^2} = \\frac{1}{9} - \\frac{1}{R\\lambda} = 0{,}1111 - \\frac{1}{1{,}096776\\times10^7\\times1{,}2824\\times10^{-6}} = 0{,}04001$$\n\n$$n_2 = 4{,}999 \\approx 5$$\n\nNguyên tử ban đầu ở mức **n = 5**.",
+      "finalAnswer": "n = 5.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-exercises",
+        "pages": [
+          3
+        ],
+        "note": "Bài 3 tệp bài tập chương 1."
+      }
+    },
+    {
+      "id": "c1-trans-004",
+      "chapterId": "chapter-1",
+      "lessonId": "electronic-transitions",
+      "nodeIds": [
+        "emission"
+      ],
+      "difficulty": "medium",
+      "title": "He⁺ từ n = 5 phát xạ về các mức thấp hơn",
+      "skill": "Chuyển mức năng lượng (phát xạ), Z > 1",
+      "statement": "Một ion He⁺ ở trạng thái kích thích $n = 5$ phát xạ ánh sáng có bước sóng bao nhiêu để trở về các mức: a) $n = 1$; b) $n = 4$; c) $n = 3$?\n\n(Đề trong tài liệu ghi “nguyên tử He”; mẫu Bohr chỉ áp dụng đúng cho ion một electron He⁺, $Z = 2$.)",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Bước sóng khi về $n = 1$ (nm)?",
+          "correctAnswer": 23.7457,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$|\\Delta E| = 2{,}18\\times10^{-18}\\cdot4\\,(1 - 1/25) = 8{,}37\\times10^{-18}$ J → $\\lambda = 23{,}75$ nm.",
+          "unit": "nm"
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Bước sóng khi về $n = 4$ (nm)?",
+          "correctAnswer": 1013.15,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$|\\Delta E| = 2{,}18\\times10^{-18}\\cdot4\\,(1/16 - 1/25) = 1{,}96\\times10^{-19}$ J → $\\lambda = 1013$ nm.",
+          "unit": "nm"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Bước sóng khi về $n = 3$ (nm)?",
+          "correctAnswer": 320.567,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$|\\Delta E| = 6{,}20\\times10^{-19}$ J → $\\lambda = 320{,}6$ nm.",
+          "unit": "nm"
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Chuyển mức nào phát ra photon năng lượng lớn nhất?",
+          "options": [
+            {
+              "id": "a",
+              "text": "5 → 1"
+            },
+            {
+              "id": "b",
+              "text": "5 → 4"
+            },
+            {
+              "id": "c",
+              "text": "5 → 3"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Khoảng cách năng lượng 5 → 1 lớn nhất nên photon có năng lượng lớn nhất và bước sóng ngắn nhất."
+        }
+      ],
+      "solution": "Với He⁺ ($Z = 2$): $|\\Delta E| = 2{,}18\\times10^{-18}\\cdot 4\\left(\\dfrac{1}{n_f^2} - \\dfrac{1}{25}\\right)$, $\\lambda = hc/|\\Delta E|$.\n\n| Chuyển mức | $|\\Delta E|$ (J) | λ (nm) |\n|---|---|---|\n| 5 → 1 | $8{,}37\\times10^{-18}$ | $23{,}75$ |\n| 5 → 4 | $1{,}96\\times10^{-19}$ | $1013$ |\n| 5 → 3 | $6{,}20\\times10^{-19}$ | $320{,}6$ |",
+      "finalAnswer": "5→1: 23,75 nm; 5→4: 1013 nm; 5→3: 320,6 nm",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-exercises",
+        "pages": [
+          4
+        ],
+        "note": "Bài 4 tệp bài tập chương 1; lời giải theo ion He⁺."
+      }
+    },
+    {
+      "id": "c1-trans-005",
+      "chapterId": "chapter-1",
+      "lessonId": "electronic-transitions",
+      "nodeIds": [
+        "atomic-spectrum",
+        "emission"
+      ],
+      "difficulty": "hard",
+      "title": "Dãy Lyman của H, D và He⁺",
+      "skill": "Dãy phổ – công thức Rydberg",
+      "statement": "Tính vị trí của 3 vạch đầu tiên và vạch giới hạn của dãy Lyman trong phổ phát xạ của H. Đối với nguyên tử đơteri (D) và ion He⁺ thì các vạch đó nằm ở đâu?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Dãy Lyman gồm các chuyển mức nào?",
+          "options": [
+            {
+              "id": "a",
+              "text": "$n \\to 1$"
+            },
+            {
+              "id": "b",
+              "text": "$n \\to 2$"
+            },
+            {
+              "id": "c",
+              "text": "$n \\to 3$"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Lyman: về $n_1 = 1$ (tử ngoại); Balmer: về 2 (nhìn thấy); Paschen: về 3 (hồng ngoại)."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Vạch đầu tiên ($2 \\to 1$) của H (nm)?",
+          "correctAnswer": 121.568,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$\\lambda = 1/[R(1 - 1/4)] = 121{,}6$ nm.",
+          "unit": "nm"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Vạch giới hạn ($\\infty \\to 1$) của H (nm)?",
+          "correctAnswer": 91.1763,
+          "tolerance": {
+            "relative": 0.005
+          },
+          "explanation": "$\\lambda = 1/R = 91{,}18$ nm.",
+          "unit": "nm"
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Với He⁺ ($Z = 2$), các vạch Lyman thay đổi thế nào?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bước sóng giảm 4 lần"
+            },
+            {
+              "id": "b",
+              "text": "Bước sóng tăng 4 lần"
+            },
+            {
+              "id": "c",
+              "text": "Không đổi"
+            },
+            {
+              "id": "d",
+              "text": "Bước sóng giảm 2 lần"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "$1/\\lambda = RZ^2(\\dots)$ → với $Z^2 = 4$, mọi bước sóng chia 4."
+        },
+        {
+          "id": "step-5",
+          "type": "single-choice",
+          "prompt": "Với đơteri D (Z = 1, hạt nhân nặng gấp đôi), các vạch:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Gần như trùng với H, lệch rất nhỏ về phía bước sóng ngắn"
+            },
+            {
+              "id": "b",
+              "text": "Chia 2"
+            },
+            {
+              "id": "c",
+              "text": "Nhân 2"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Cùng Z = 1; chỉ khác khối lượng rút gọn → hằng số Rydberg lớn hơn ~0,03%, vạch dịch ~0,03 nm về phía ngắn."
+        }
+      ],
+      "solution": "Công thức: $\\dfrac{1}{\\lambda} = R Z^2\\left(1 - \\dfrac{1}{n^2}\\right)$, $R_H = 1{,}096776\\times10^7$ m⁻¹.\n\n| Vạch | H (nm) | D (nm) | He⁺ (nm) |\n|---|---|---|---|\n| 2 → 1 | $121{,}6$ | $121{,}54$ | $30{,}39$ |\n| 3 → 1 | $102{,}6$ | $102{,}55$ | $25{,}64$ |\n| 4 → 1 | $97{,}25$ | $97{,}228$ | $24{,}31$ |\n| ∞ → 1 (giới hạn) | $91{,}18$ | $91{,}152$ | $22{,}79$ |\n\n- **He⁺:** $Z^2 = 4$ → mọi bước sóng nhỏ hơn 4 lần.\n- **D:** cùng $Z = 1$ nhưng hạt nhân nặng hơn nên hằng số Rydberg $R_D = R_\\infty/(1 + m_e/m_D) \\approx 1{,}09707\\times10^7$ m⁻¹ (lớn hơn $R_H$ khoảng 0,03%) → các vạch dịch rất ít (~0,03 nm) về phía sóng ngắn. Hiệu ứng này đã giúp phát hiện ra đơteri.\n\n> Phần đơteri dùng hiệu chỉnh khối lượng rút gọn — kiến thức mở rộng ngoài bài giảng.",
+      "finalAnswer": "H: 121,6; 102,6; 97,25 nm; giới hạn 91,18 nm. He⁺: chia 4. D: gần trùng H.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-exercises",
+        "pages": [
+          5
+        ],
+        "note": "Bài 5 tệp bài tập chương 1; phần đơteri dùng hiệu chỉnh khối lượng rút gọn (bổ sung)."
+      }
+    },
+    {
+      "id": "c1-trans-006",
+      "chapterId": "chapter-1",
+      "lessonId": "electronic-transitions",
+      "nodeIds": [
+        "emission",
+        "absorption"
+      ],
+      "difficulty": "medium",
+      "title": "Phân loại phát xạ – hấp thụ trên sơ đồ",
+      "skill": "Phân biệt phát xạ và hấp thụ",
+      "statement": "Sơ đồ (tệp bài tập chương 1, bài 6) biểu diễn các chuyển mức của electron trong nguyên tử H:\n\n![Sơ đồ chuyển mức bài 6](images/chapter-1/bt6-chuyen-muc.png)\n\nĐọc từ sơ đồ: **A**: 2 → 5; **B**: 6 → 1; **C**: 3 → 6; **D**: 1 → 5; **E**: 5 → 3; **F**: 4 → 1 (đầu mũi tên là mức cuối).\n\na) Chuyển mức nào là phát xạ, chuyển mức nào là hấp thụ (thu xạ)?\n\nb) Sắp xếp các quá trình phát xạ theo năng lượng tăng dần.\n\nc) Sắp xếp các quá trình hấp thụ theo bước sóng tăng dần.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "multiple-choice",
+          "prompt": "Chọn TẤT CẢ các chuyển mức phát xạ.",
+          "options": [
+            {
+              "id": "A",
+              "text": "A (2→5)"
+            },
+            {
+              "id": "B",
+              "text": "B (6→1)"
+            },
+            {
+              "id": "C",
+              "text": "C (3→6)"
+            },
+            {
+              "id": "D",
+              "text": "D (1→5)"
+            },
+            {
+              "id": "E",
+              "text": "E (5→3)"
+            },
+            {
+              "id": "F",
+              "text": "F (4→1)"
+            }
+          ],
+          "correctAnswer": [
+            "B",
+            "E",
+            "F"
+          ],
+          "explanation": "Phát xạ khi electron đi từ mức cao xuống mức thấp: B, E, F. Hấp thụ: A, C, D."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Thứ tự năng lượng phát xạ tăng dần?",
+          "options": [
+            {
+              "id": "a",
+              "text": "E < F < B"
+            },
+            {
+              "id": "b",
+              "text": "F < E < B"
+            },
+            {
+              "id": "c",
+              "text": "B < F < E"
+            },
+            {
+              "id": "d",
+              "text": "E < B < F"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "$|\\Delta E| \\propto 1/n_f^2 - 1/n_i^2$: E: $1/9 - 1/25 = 0{,}071$; F: $1 - 1/16 = 0{,}938$; B: $1 - 1/36 = 0{,}972$."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Thứ tự bước sóng hấp thụ tăng dần?",
+          "options": [
+            {
+              "id": "a",
+              "text": "D < A < C"
+            },
+            {
+              "id": "b",
+              "text": "C < A < D"
+            },
+            {
+              "id": "c",
+              "text": "A < D < C"
+            },
+            {
+              "id": "d",
+              "text": "D < C < A"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Năng lượng: D $1 - 1/25 = 0{,}96$; A $1/4 - 1/25 = 0{,}21$; C $1/9 - 1/36 = 0{,}083$. Bước sóng tỉ lệ nghịch năng lượng → D < A < C."
+        }
+      ],
+      "solution": "Hệ số năng lượng $k = \\left|\\dfrac{1}{n_\\text{thấp}^2} - \\dfrac{1}{n_\\text{cao}^2}\\right|$ (với H, $|\\Delta E| = 2{,}18\\times10^{-18}\\,k$ J):\n\n| Chuyển mức | Loại | $k$ |\n|---|---|---|\n| A: 2 → 5 | hấp thụ | $1/4 - 1/25 = 0{,}210$ |\n| B: 6 → 1 | phát xạ | $1 - 1/36 = 0{,}972$ |\n| C: 3 → 6 | hấp thụ | $1/9 - 1/36 = 0{,}083$ |\n| D: 1 → 5 | hấp thụ | $1 - 1/25 = 0{,}960$ |\n| E: 5 → 3 | phát xạ | $1/9 - 1/25 = 0{,}071$ |\n| F: 4 → 1 | phát xạ | $1 - 1/16 = 0{,}938$ |\n\na) Phát xạ: **B, E, F**; hấp thụ: **A, C, D**.\n\nb) Năng lượng phát xạ tăng dần: **E < F < B**.\n\nc) Bước sóng tỉ lệ nghịch với năng lượng → bước sóng hấp thụ tăng dần: **D < A < C**.",
+      "finalAnswer": "a) Phát xạ B, E, F; hấp thụ A, C, D. b) E < F < B. c) D < A < C.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-exercises",
+        "pages": [
+          6
+        ],
+        "note": "Bài 6 tệp bài tập chương 1; các chuyển mức được đọc từ hình vẽ."
+      }
+    },
+    {
+      "id": "c1-trans-007",
+      "chapterId": "chapter-1",
+      "lessonId": "electronic-transitions",
+      "nodeIds": [
+        "absorption",
+        "energy-levels"
+      ],
+      "difficulty": "medium",
+      "title": "Electron hấp thụ photon 97,2 nm",
+      "skill": "Tìm n từ năng lượng photon",
+      "statement": "Electron của nguyên tử H ở mức $n = 1$ hấp thụ một photon có bước sóng 97,2 nm. Electron này dịch chuyển lên mức năng lượng nào?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Năng lượng photon?",
+          "correctAnswer": 2.04506e-18,
+          "tolerance": {
+            "relative": 0.02
+          },
+          "explanation": "$E = hc/\\lambda = 2{,}05\\times10^{-18}$ J.",
+          "unit": "J"
+        },
+        {
+          "id": "step-2",
+          "type": "math-expression",
+          "prompt": "Viết biểu thức $1/n^2$ theo $E$ và $R_H = 2{,}18\\times10^{-18}$ J (gõ dạng `1 - E/RH`).",
+          "correctAnswer": "1 - E/RH",
+          "variables": [
+            "E",
+            "RH"
+          ],
+          "explanation": "$E = R_H(1 - 1/n^2)$ → $1/n^2 = 1 - E/R_H$.",
+          "placeholder": "ví dụ: 1 - E/RH"
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Mức n (số nguyên)?",
+          "correctAnswer": 4.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "$1/n^2 = 1 - 2{,}05\\times10^{-18}/2{,}18\\times10^{-18} = 0{,}0619$ → $n = 4{,}02 \\approx 4$."
+        }
+      ],
+      "solution": "$$E = \\frac{hc}{\\lambda} = \\frac{6{,}626\\times10^{-34}\\times3{,}00\\times10^8}{97{,}2\\times10^{-9}} = 2{,}05\\times10^{-18}\\ \\text{J}$$\n\n$$E = 2{,}18\\times10^{-18}\\left(1 - \\frac{1}{n^2}\\right) \\Rightarrow \\frac{1}{n^2} = 1 - \\frac{2{,}05\\times10^{-18}}{2{,}18\\times10^{-18}} = 0{,}0619 \\Rightarrow n \\approx 4$$\n\nElectron chuyển lên mức **n = 4**.",
+      "finalAnswer": "n = 4.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch1-exercises",
+        "pages": [
+          7
+        ],
+        "note": "Bài 7 tệp bài tập chương 1."
+      }
+    }
+  ]
+}

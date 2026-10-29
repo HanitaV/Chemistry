@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Website học tập tương tác Hóa học đại cương: bài học, sơ đồ kiến thức, video bài giảng, luyện tập từng bước và theo dõi tiến độ." />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Chemistry Learning Hub — Hóa học đại cương</title>
+    <script>
+      // Áp dụng giao diện sáng/tối trước khi React tải để tránh nháy màn hình.
+      (function () {
+        try {
+          var pref = localStorage.getItem("clh-theme") || "system";
+          var dark = pref === "dark" || (pref === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.classList.toggle("dark", dark);
+          var size = localStorage.getItem("clh-font-size");
+          if (size) document.documentElement.dataset.fontSize = size;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Website cần JavaScript để hoạt động.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

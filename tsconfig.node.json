@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "paths": { "@/*": ["./src/*"] }
+  },
+  "include": ["vite.config.ts", "scripts", "src/types/schema.ts", "src/lib/frontmatter.ts", "src/lib/math-expression.ts", "src/lib/grading.ts"]
+}

@@ -1,0 +1,560 @@
+{
+  "exercises": [
+    {
+      "id": "c3-hess-001",
+      "chapterId": "chapter-3",
+      "lessonId": "hess-law",
+      "nodeIds": [
+        "hess-law"
+      ],
+      "difficulty": "medium",
+      "title": "Graphit → kim cương",
+      "skill": "Định luật Hess – biểu thức",
+      "statement": "(Trang 16–19.) Cho:\n\n(1) $\\mathrm{C(graphit) + O_2(g) \\to CO_2(g)}$, $\\Delta H_1$\n\n(2) $\\mathrm{C(kim\\ cương) + O_2(g) \\to CO_2(g)}$, $\\Delta H_2$\n\na) Biểu diễn $\\Delta H_3$ của $\\mathrm{C(graphit) \\to C(kim\\ cương)}$ theo $\\Delta H_1$, $\\Delta H_2$.\n\nb) Với $\\Delta H_1 = -393{,}5$ kJ, $\\Delta H_2 = -395{,}4$ kJ, tính $\\Delta H_3$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "math-expression",
+          "prompt": "Nhập biểu thức của ΔH₃ theo H1, H2 (ví dụ: H1 + H2).",
+          "correctAnswer": "H1 - H2",
+          "variables": [
+            "H1",
+            "H2"
+          ],
+          "explanation": "(3) = (1) − (2) → $\\Delta H_3 = \\Delta H_1 - \\Delta H_2$.",
+          "placeholder": "H1 - H2 ..."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔH₃ (kJ)?",
+          "correctAnswer": 1.9,
+          "tolerance": {
+            "absolute": 0.05
+          },
+          "explanation": "$-393{,}5 - (-395{,}4) = +1{,}9$ kJ.",
+          "unit": "kJ"
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Ý nghĩa:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Graphit bền hơn kim cương về enthalpy (chuyển thành kim cương phải thu nhiệt)"
+            },
+            {
+              "id": "b",
+              "text": "Kim cương bền hơn graphit"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "ΔH₃ > 0: kim cương có enthalpy cao hơn graphit."
+        }
+      ],
+      "solution": "Lấy (1) − (2):\n\n$$\\mathrm{C(graphit) - C(kim\\ cương) \\to 0} \\;\\Rightarrow\\; \\mathrm{C(graphit) \\to C(kim\\ cương)}$$\n\n$$\\Delta H_3 = \\Delta H_1 - \\Delta H_2 = -393{,}5 - (-395{,}4) = +1{,}9\\ \\text{kJ}$$\n\nBài giảng trình bày ba cách (sơ đồ vòng, đảo chiều, cộng trừ phương trình) đều cho cùng kết quả — minh họa định luật Hess.\n\n> Số liệu ở câu b là số liệu tham khảo bổ sung.",
+      "finalAnswer": "ΔH₃ = ΔH₁ − ΔH₂ = +1,9 kJ.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          16,
+          17,
+          18,
+          19
+        ],
+        "note": "Phần a trích bài giảng; số liệu phần b bổ sung."
+      }
+    },
+    {
+      "id": "c3-hess-002",
+      "chapterId": "chapter-3",
+      "lessonId": "hess-law",
+      "nodeIds": [
+        "hess-law"
+      ],
+      "difficulty": "easy",
+      "title": "Ví dụ 1: tính ΔH tạo SO₃ từ S",
+      "skill": "Định luật Hess – tổ hợp phương trình",
+      "statement": "(Ví dụ 1, trang 21.) Cho:\n\n(1) $\\mathrm{S(s) + O_2(g) \\to SO_2(g)}$, $\\Delta H_1 = -296{,}8$ kJ\n\n(2) $\\mathrm{2SO_2(g) + O_2(g) \\to 2SO_3(g)}$, $\\Delta H_2 = -198{,}4$ kJ\n\nTính $\\Delta H_3$ của $\\mathrm{S(s) + \\tfrac32 O_2(g) \\to SO_3(g)}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Tổ hợp nào cho phương trình (3)?",
+          "options": [
+            {
+              "id": "a",
+              "text": "(3) = (1) + ½(2)"
+            },
+            {
+              "id": "b",
+              "text": "(3) = (1) + (2)"
+            },
+            {
+              "id": "c",
+              "text": "(3) = (1) − ½(2)"
+            },
+            {
+              "id": "d",
+              "text": "(3) = 2(1) + (2)"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Cần 1 SO₃ → lấy ½(2); SO₂ trung gian triệt tiêu khi cộng với (1)."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔH₃ (kJ)?",
+          "correctAnswer": -396.0,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$-296{,}8 + \\tfrac12(-198{,}4) = -396{,}0$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "$$(1) + \\tfrac12(2):\\ \\mathrm{S + O_2 + SO_2 + \\tfrac12O_2 \\to SO_2 + SO_3} \\;\\Rightarrow\\; \\mathrm{S + \\tfrac32 O_2 \\to SO_3}$$\n\n$$\\Delta H_3 = \\Delta H_1 + \\tfrac12\\Delta H_2 = -296{,}8 + \\tfrac12(-198{,}4) = -396{,}0\\ \\text{kJ}$$",
+      "finalAnswer": "ΔH₃ = −396,0 kJ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          21,
+          22,
+          23
+        ],
+        "note": "Ví dụ 1 trang 21–23 bài giảng."
+      }
+    },
+    {
+      "id": "c3-hess-003",
+      "chapterId": "chapter-3",
+      "lessonId": "hess-law",
+      "nodeIds": [
+        "hess-law"
+      ],
+      "difficulty": "medium",
+      "title": "Ví dụ 2: CO + NO → CO₂ + ½N₂",
+      "skill": "Định luật Hess – tổ hợp phương trình",
+      "statement": "(Ví dụ 2, trang 21.) Tính ΔH của $\\mathrm{CO(g) + NO(g) \\to CO_2(g) + \\tfrac12 N_2(g)}$, biết:\n\n(1) $\\mathrm{CO(g) + \\tfrac12O_2(g) \\to CO_2(g)}$, $\\Delta H_1 = -283{,}0$ kJ\n\n(2) $\\mathrm{N_2(g) + O_2(g) \\to 2NO(g)}$, $\\Delta H_2 = 180{,}6$ kJ",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Tổ hợp:",
+          "options": [
+            {
+              "id": "a",
+              "text": "(1) − ½(2)"
+            },
+            {
+              "id": "b",
+              "text": "(1) + ½(2)"
+            },
+            {
+              "id": "c",
+              "text": "(1) − (2)"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "NO là chất đầu → đảo chiều (2) và nhân ½: NO → ½N₂ + ½O₂ (ΔH = −90,3 kJ); ½O₂ triệt tiêu với (1)."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔH (kJ)?",
+          "correctAnswer": -373.3,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$-283{,}0 - \\tfrac12(180{,}6) = -373{,}3$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "$$\\mathrm{NO \\to \\tfrac12N_2 + \\tfrac12O_2}\\qquad \\Delta H = -\\tfrac12(180{,}6) = -90{,}3\\ \\text{kJ}$$\n\n$$\\mathrm{CO + \\tfrac12O_2 \\to CO_2}\\qquad \\Delta H = -283{,}0\\ \\text{kJ}$$\n\nCộng lại: $\\Delta H = -283{,}0 - 90{,}3 = -373{,}3$ kJ.",
+      "finalAnswer": "ΔH = −373,3 kJ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          21
+        ],
+        "note": "Ví dụ 2 trang 21 bài giảng (không có lời giải)."
+      }
+    },
+    {
+      "id": "c3-hess-004",
+      "chapterId": "chapter-3",
+      "lessonId": "hess-law",
+      "nodeIds": [
+        "hess-law"
+      ],
+      "difficulty": "medium",
+      "title": "Bài 1: tạo CaCO₃ từ Ca, O₂, CO₂",
+      "skill": "Định luật Hess – tổ hợp phương trình",
+      "statement": "(Bài 1, trang 37.) Cho:\n\n(1) $\\mathrm{Ca(s) + \\tfrac12O_2(g) \\to CaO(s)}$, $\\Delta H = -635{,}1$ kJ\n\n(2) $\\mathrm{CaCO_3(s) \\to CaO(s) + CO_2(g)}$, $\\Delta H = 178{,}3$ kJ\n\nTính ΔH của $\\mathrm{Ca(s) + \\tfrac12O_2(g) + CO_2(g) \\to CaCO_3(s)}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Tổ hợp:",
+          "options": [
+            {
+              "id": "a",
+              "text": "(1) − (2)"
+            },
+            {
+              "id": "b",
+              "text": "(1) + (2)"
+            },
+            {
+              "id": "c",
+              "text": "(2) − (1)"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "CaCO₃ là sản phẩm → đảo chiều (2): CaO + CO₂ → CaCO₃ (ΔH = −178,3 kJ); CaO triệt tiêu."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔH (kJ)?",
+          "correctAnswer": -813.4,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$-635{,}1 - 178{,}3 = -813{,}4$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "$$\\Delta H = \\Delta H_1 - \\Delta H_2 = -635{,}1 - 178{,}3 = -813{,}4\\ \\text{kJ}$$",
+      "finalAnswer": "ΔH = −813,4 kJ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          37
+        ],
+        "note": "Bài 1 trang 37 bài giảng."
+      }
+    },
+    {
+      "id": "c3-hess-005",
+      "chapterId": "chapter-3",
+      "lessonId": "hess-law",
+      "nodeIds": [
+        "hess-law"
+      ],
+      "difficulty": "medium",
+      "title": "Bài 2: phân hủy NOCl",
+      "skill": "Định luật Hess – tổ hợp phương trình",
+      "statement": "(Bài 2, trang 37.) Cho:\n\n(1) $\\mathrm{\\tfrac12N_2(g) + \\tfrac12O_2(g) \\to NO(g)}$, $\\Delta H = 90{,}3$ kJ\n\n(2) $\\mathrm{NO(g) + \\tfrac12Cl_2(g) \\to NOCl(g)}$, $\\Delta H = -38{,}6$ kJ\n\nTính ΔH của $\\mathrm{2NOCl(g) \\to N_2(g) + O_2(g) + Cl_2(g)}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Tổ hợp:",
+          "options": [
+            {
+              "id": "a",
+              "text": "−2(1) − 2(2)"
+            },
+            {
+              "id": "b",
+              "text": "2(1) + 2(2)"
+            },
+            {
+              "id": "c",
+              "text": "−(1) − (2)"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Phản ứng cần tìm là ngược lại của 2[(1) + (2)]."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔH (kJ)?",
+          "correctAnswer": -103.4,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$-2(90{,}3) - 2(-38{,}6) = -180{,}6 + 77{,}2 = -103{,}4$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "(1) + (2): $\\mathrm{\\tfrac12N_2 + \\tfrac12O_2 + \\tfrac12Cl_2 \\to NOCl}$, $\\Delta H = 90{,}3 - 38{,}6 = 51{,}7$ kJ.\n\nPhản ứng cần tìm = $-2\\times$ phản ứng trên:\n\n$$\\Delta H = -2 \\times 51{,}7 = -103{,}4\\ \\text{kJ}$$",
+      "finalAnswer": "ΔH = −103,4 kJ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          37
+        ],
+        "note": "Bài 2 trang 37 bài giảng."
+      }
+    },
+    {
+      "id": "c3-hess-006",
+      "chapterId": "chapter-3",
+      "lessonId": "hess-law",
+      "nodeIds": [
+        "hess-law"
+      ],
+      "difficulty": "hard",
+      "title": "Bài 3: khử Fe₂O₃ bằng CO",
+      "skill": "Định luật Hess – tổ hợp nhiều phương trình",
+      "statement": "(Bài 3, trang 38.) Tính ΔH của phản ứng (đã cân bằng) $\\mathrm{Fe_2O_3(s) + 3CO(g) \\to 2Fe(s) + 3CO_2(g)}$, biết:\n\n(1) $\\mathrm{3Fe_2O_3(s) + CO(g) \\to 2Fe_3O_4(s) + CO_2(g)}$, $\\Delta H^\\circ = -48{,}5$ kJ\n\n(2) $\\mathrm{Fe(s) + CO_2(g) \\to FeO(s) + CO(g)}$, $\\Delta H^\\circ = -11{,}0$ kJ\n\n(3) $\\mathrm{Fe_3O_4(s) + CO(g) \\to 3FeO(s) + CO_2(g)}$, $\\Delta H^\\circ = 22$ kJ",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Hệ số của (1) để có 1 Fe₂O₃ ở vế trái?",
+          "correctAnswer": 0.333333,
+          "tolerance": {
+            "relative": 0.01
+          },
+          "explanation": "Nhân (1) với ⅓."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Hệ số của (3) để triệt tiêu ⅔ Fe₃O₄?",
+          "correctAnswer": 0.666667,
+          "tolerance": {
+            "relative": 0.01
+          },
+          "explanation": "⅓·(1) tạo ⅔ Fe₃O₄ → nhân (3) với ⅔."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Hệ số của (2) để chuyển 2 FeO thành 2 Fe?",
+          "correctAnswer": -2.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "Đảo chiều (2) và nhân 2: 2FeO + 2CO → 2Fe + 2CO₂."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "ΔH (kJ)?",
+          "correctAnswer": 20.5,
+          "tolerance": {
+            "absolute": 0.2
+          },
+          "explanation": "$\\tfrac13(-48{,}5) + \\tfrac23(22) - 2(-11{,}0) = -16{,}17 + 14{,}67 + 22{,}0 = 20{,}5$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "$$\\tfrac13(1):\\ \\mathrm{Fe_2O_3 + \\tfrac13CO \\to \\tfrac23Fe_3O_4 + \\tfrac13CO_2}\\quad \\Delta H = -16{,}17\\ \\text{kJ}$$\n\n$$\\tfrac23(3):\\ \\mathrm{\\tfrac23Fe_3O_4 + \\tfrac23CO \\to 2FeO + \\tfrac23CO_2}\\quad \\Delta H = +14{,}67\\ \\text{kJ}$$\n\n$$-2(2):\\ \\mathrm{2FeO + 2CO \\to 2Fe + 2CO_2}\\quad \\Delta H = +22{,}0\\ \\text{kJ}$$\n\nCộng lại: $\\mathrm{Fe_2O_3 + 3CO \\to 2Fe + 3CO_2}$, $\\Delta H = -16{,}17 + 14{,}67 + 22{,}0 = +20{,}5$ kJ.\n\n> Phương trình trong slide chưa cân bằng; lời giải dùng phương trình đã cân bằng. Kết quả phụ thuộc số liệu đề bài cho (giá trị tra bảng thực nghiệm có thể khác).",
+      "finalAnswer": "ΔH ≈ +20,5 kJ (theo số liệu đề bài).",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          38
+        ],
+        "note": "Bài 3 trang 38 bài giảng; phương trình được cân bằng lại."
+      }
+    },
+    {
+      "id": "c3-hess-007",
+      "chapterId": "chapter-3",
+      "lessonId": "hess-law",
+      "nodeIds": [
+        "hess-law"
+      ],
+      "difficulty": "hard",
+      "title": "Bài 4: ClF + F₂ → ClF₃",
+      "skill": "Định luật Hess – tổ hợp nhiều phương trình",
+      "statement": "(Bài 4, trang 38.) Tính ΔH của $\\mathrm{ClF(g) + F_2(g) \\to ClF_3(l)}$, biết:\n\n(1) $\\mathrm{2ClF(g) + O_2(g) \\to Cl_2O(g) + OF_2(g)}$, $\\Delta H^\\circ = 167{,}5$ kJ\n\n(2) $\\mathrm{2F_2(g) + O_2(g) \\to 2OF_2(g)}$, $\\Delta H^\\circ = -43{,}5$ kJ\n\n(3) $\\mathrm{2ClF_3(l) + 2O_2(g) \\to Cl_2O(g) + 3OF_2(g)}$, $\\Delta H^\\circ = 394{,}1$ kJ",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "math-expression",
+          "prompt": "Biểu diễn ΔH theo H1, H2, H3.",
+          "correctAnswer": "(H1 + H2 - H3)/2",
+          "variables": [
+            "H1",
+            "H2",
+            "H3"
+          ],
+          "explanation": "Phản ứng cần tìm = ½(1) + ½(2) − ½(3) → $\\Delta H = \\tfrac12(\\Delta H_1 + \\Delta H_2 - \\Delta H_3)$.",
+          "hint": "ClF₃ là sản phẩm nên (3) phải đảo chiều; mỗi phương trình nhân ½."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "ΔH (kJ)?",
+          "correctAnswer": -135.05,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$\\tfrac12(167{,}5 - 43{,}5 - 394{,}1) = -135{,}05$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "$$\\tfrac12(1):\\ \\mathrm{ClF + \\tfrac12O_2 \\to \\tfrac12Cl_2O + \\tfrac12OF_2}\\quad +83{,}75\\ \\text{kJ}$$\n\n$$\\tfrac12(2):\\ \\mathrm{F_2 + \\tfrac12O_2 \\to OF_2}\\quad -21{,}75\\ \\text{kJ}$$\n\n$$-\\tfrac12(3):\\ \\mathrm{\\tfrac12Cl_2O + \\tfrac32OF_2 \\to ClF_3 + O_2}\\quad -197{,}05\\ \\text{kJ}$$\n\nCộng lại: $\\mathrm{ClF + F_2 \\to ClF_3}$, $\\Delta H = 83{,}75 - 21{,}75 - 197{,}05 = -135{,}05 \\approx -135{,}1$ kJ.",
+      "finalAnswer": "ΔH ≈ −135,1 kJ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          38
+        ],
+        "note": "Bài 4 trang 38 bài giảng."
+      }
+    },
+    {
+      "id": "c3-hess-008",
+      "chapterId": "chapter-3",
+      "lessonId": "hess-law",
+      "nodeIds": [
+        "hess-law"
+      ],
+      "difficulty": "hard",
+      "title": "Bài 5: N₂O₃ + N₂O₅(s) → 2N₂O₄",
+      "skill": "Định luật Hess – tổ hợp nhiều phương trình",
+      "statement": "(Bài 5, trang 39.) Tính ΔH của $\\mathrm{N_2O_3(g) + N_2O_5(s) \\to 2N_2O_4(g)}$, biết:\n\n(1) $\\mathrm{NO + NO_2 \\to N_2O_3}$, $-39{,}8$ kJ\n\n(2) $\\mathrm{NO + NO_2 + O_2 \\to N_2O_5(g)}$, $-112{,}5$ kJ\n\n(3) $\\mathrm{2NO_2 \\to N_2O_4}$, $-57{,}2$ kJ\n\n(4) $\\mathrm{2NO + O_2 \\to 2NO_2}$, $-114{,}2$ kJ\n\n(5) $\\mathrm{N_2O_5(s) \\to N_2O_5(g)}$, $54{,}1$ kJ",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "multiple-choice",
+          "prompt": "Những phương trình nào cần ĐẢO CHIỀU?",
+          "options": [
+            {
+              "id": "1",
+              "text": "(1)"
+            },
+            {
+              "id": "2",
+              "text": "(2)"
+            },
+            {
+              "id": "3",
+              "text": "(3)"
+            },
+            {
+              "id": "4",
+              "text": "(4)"
+            },
+            {
+              "id": "5",
+              "text": "(5)"
+            }
+          ],
+          "correctAnswer": [
+            "1",
+            "2"
+          ],
+          "explanation": "N₂O₃ là chất đầu → đảo (1); N₂O₅(g) sinh ra từ (5) phải bị tiêu thụ → đảo (2)."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Hệ số của (3)?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "Cần 2 N₂O₄ → 2 × (3)."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔH (kJ)?",
+          "correctAnswer": -22.2,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$-(-39{,}8) - (-112{,}5) + 2(-57{,}2) + (-114{,}2) + 54{,}1 = -22{,}2$ kJ.",
+          "unit": "kJ"
+        }
+      ],
+      "solution": "Tổ hợp: $-(1) - (2) + 2(3) + (4) + (5)$\n\n| Phương trình | Biến đổi | ΔH (kJ) |\n|---|---|---|\n| $\\mathrm{N_2O_3 \\to NO + NO_2}$ | −(1) | +39,8 |\n| $\\mathrm{N_2O_5(g) \\to NO + NO_2 + O_2}$ | −(2) | +112,5 |\n| $\\mathrm{4NO_2 \\to 2N_2O_4}$ | 2×(3) | −114,4 |\n| $\\mathrm{2NO + O_2 \\to 2NO_2}$ | (4) | −114,2 |\n| $\\mathrm{N_2O_5(s) \\to N_2O_5(g)}$ | (5) | +54,1 |\n\nKiểm tra: NO, NO₂, O₂, N₂O₅(g) đều triệt tiêu. Tổng: $\\Delta H = 39{,}8 + 112{,}5 - 114{,}4 - 114{,}2 + 54{,}1 = -22{,}2$ kJ.",
+      "finalAnswer": "ΔH = −22,2 kJ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          39
+        ],
+        "note": "Bài 5 trang 39 bài giảng."
+      }
+    },
+    {
+      "id": "c3-hess-009",
+      "chapterId": "chapter-3",
+      "lessonId": "formation-enthalpy",
+      "nodeIds": [
+        "hess-law",
+        "formation-enthalpy"
+      ],
+      "difficulty": "hard",
+      "title": "Bài 6: nhiệt tạo thành của HCl(g)",
+      "skill": "Nhiệt tạo thành bằng định luật Hess",
+      "statement": "(Bài 6, trang 39.) Tính nhiệt tạo thành của $\\mathrm{HCl(g)}$, biết:\n\n(1) $\\mathrm{N_2(g) + 3H_2(g) \\to 2NH_3(g)}$, $-91{,}8$ kJ\n\n(2) $\\mathrm{N_2(g) + 4H_2(g) + Cl_2(g) \\to 2NH_4Cl(s)}$, $-628{,}8$ kJ\n\n(3) $\\mathrm{NH_3(g) + HCl(g) \\to NH_4Cl(s)}$, $-176{,}2$ kJ",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Phương trình nhiệt tạo thành HCl(g):",
+          "options": [
+            {
+              "id": "a",
+              "text": "½H₂(g) + ½Cl₂(g) → HCl(g)"
+            },
+            {
+              "id": "b",
+              "text": "H₂(g) + Cl₂(g) → 2HCl(g)"
+            },
+            {
+              "id": "c",
+              "text": "H(g) + Cl(g) → HCl(g)"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Nhiệt tạo thành: tạo **1 mol** chất từ đơn chất bền ở trạng thái chuẩn."
+        },
+        {
+          "id": "step-2",
+          "type": "math-expression",
+          "prompt": "ΔH°f(HCl) theo H1, H2, H3?",
+          "correctAnswer": "-H1/2 + H2/2 - H3",
+          "variables": [
+            "H1",
+            "H2",
+            "H3"
+          ],
+          "explanation": "Tổ hợp −½(1) + ½(2) − (3)."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "ΔH°f(HCl) (kJ/mol)?",
+          "correctAnswer": -92.3,
+          "tolerance": {
+            "absolute": 0.1
+          },
+          "explanation": "$45{,}9 - 314{,}4 + 176{,}2 = -92{,}3$ kJ/mol.",
+          "unit": "kJ/mol"
+        }
+      ],
+      "solution": "$$-\\tfrac12(1):\\ \\mathrm{NH_3 \\to \\tfrac12N_2 + \\tfrac32H_2}\\quad +45{,}9\\ \\text{kJ}$$\n\n$$\\tfrac12(2):\\ \\mathrm{\\tfrac12N_2 + 2H_2 + \\tfrac12Cl_2 \\to NH_4Cl}\\quad -314{,}4\\ \\text{kJ}$$\n\n$$-(3):\\ \\mathrm{NH_4Cl \\to NH_3 + HCl}\\quad +176{,}2\\ \\text{kJ}$$\n\nCộng lại: $\\mathrm{\\tfrac12H_2 + \\tfrac12Cl_2 \\to HCl}$,\n\n$$\\Delta H^\\circ_f(\\mathrm{HCl}) = 45{,}9 - 314{,}4 + 176{,}2 = -92{,}3\\ \\text{kJ/mol}$$",
+      "finalAnswer": "ΔH°f(HCl, g) = −92,3 kJ/mol.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch3-theory",
+        "pages": [
+          39
+        ],
+        "note": "Bài 6 trang 39 bài giảng."
+      }
+    }
+  ]
+}

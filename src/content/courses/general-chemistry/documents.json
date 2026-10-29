@@ -1,0 +1,44 @@
+{
+  "documents": [
+    {
+      "id": "doc-ch1-theory",
+      "courseId": "general-chemistry",
+      "chapterId": "chapter-1",
+      "title": "Bài giảng Chương 1 — Cấu tạo nguyên tử",
+      "kind": "theory",
+      "path": "documents/chapter-1/chuong-1-cau-tao-nguyen-tu.pdf",
+      "pageCount": 38,
+      "description": "Slide bài giảng: vật chất, nguyên tố, cấu tạo nguyên tử, cấu hình electron, orbital, ánh sáng, phổ nguyên tử, mẫu Bohr, ứng dụng và bài tập."
+    },
+    {
+      "id": "doc-ch1-exercises",
+      "courseId": "general-chemistry",
+      "chapterId": "chapter-1",
+      "title": "Bài tập Chương 1",
+      "kind": "exercises",
+      "path": "documents/chapter-1/bai-tap-chuong-1.pdf",
+      "pageCount": 8,
+      "description": "8 bài tập về bước sóng phát xạ, năng lượng ion hóa, dãy Lyman và chuyển mức năng lượng."
+    },
+    {
+      "id": "doc-ch2-theory",
+      "courseId": "general-chemistry",
+      "chapterId": "chapter-2",
+      "title": "Bài giảng Chương 2 — Cấu tạo phân tử và liên kết hóa học",
+      "kind": "theory",
+      "path": "documents/chapter-2/chuong-2-cau-tao-phan-tu.pdf",
+      "pageCount": 41,
+      "description": "Khái niệm liên kết, liên kết ion, liên kết cộng hóa trị (Lewis), thuyết VB, lai hóa, thuyết MO và bài tập MO."
+    },
+    {
+      "id": "doc-ch3-theory",
+      "courseId": "general-chemistry",
+      "chapterId": "chapter-3",
+      "title": "Bài giảng Chương 3 — Nhiệt động hóa học",
+      "kind": "theory",
+      "path": "documents/chapter-3/chuong-3-nhiet-dong-hoc.pdf",
+      "pageCount": 47,
+      "description": "Hệ nhiệt động, năng lượng và nội năng, enthalpy, định luật Hess, entropy, năng lượng tự do Gibbs, hằng số cân bằng và bài tập."
+    }
+  ]
+}

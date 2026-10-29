@@ -1,0 +1,151 @@
+{
+  "exercises": [
+    {
+      "id": "c2-geo-001",
+      "chapterId": "chapter-2",
+      "lessonId": "molecular-geometry",
+      "nodeIds": [
+        "molecular-geometry",
+        "hybridization"
+      ],
+      "difficulty": "medium",
+      "title": "Hình học phân tử SO₂",
+      "skill": "Dự đoán hình học phân tử",
+      "statement": "Dự đoán trạng thái lai hóa của S và hình học phân tử $\\mathrm{SO_2}$ (S trung tâm, có một cặp electron tự do).",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Giá trị T của S?",
+          "correctAnswer": 3.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "2 nguyên tử O + 1 cặp electron tự do = 3."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "Trạng thái lai hóa của S?",
+          "options": [
+            {
+              "id": "a",
+              "text": "sp"
+            },
+            {
+              "id": "b",
+              "text": "sp²"
+            },
+            {
+              "id": "c",
+              "text": "sp³"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "T = 3 → sp²."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Hình học phân tử SO₂?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Thẳng"
+            },
+            {
+              "id": "b",
+              "text": "Chữ V (góc)"
+            },
+            {
+              "id": "c",
+              "text": "Tam giác phẳng"
+            }
+          ],
+          "correctAnswer": "b",
+          "explanation": "3 orbital sp² nhưng chỉ 2 nguyên tử O → phân tử dạng AB₂ chữ V (bảng trang 22), góc ~119°."
+        }
+      ],
+      "solution": "S: 2 nguyên tử liên kết + 1 cặp electron tự do → $T = 3$ → lai hóa **sp²**. Ba vùng electron phân bố tam giác phẳng, nhưng một vùng là cặp tự do nên phân tử có dạng **chữ V** (bài giảng xếp $\\mathrm{SO_2}$ vào loại $\\mathrm{AB_2}$ chữ V của lai hóa sp²).",
+      "finalAnswer": "S lai hóa sp²; SO₂ dạng chữ V.",
+      "source": {
+        "kind": "adapted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          22
+        ],
+        "note": "SO₂ được nêu trong bảng trang 22."
+      }
+    },
+    {
+      "id": "c2-pol-001",
+      "chapterId": "chapter-2",
+      "lessonId": "molecular-geometry",
+      "nodeIds": [
+        "polarity",
+        "molecular-geometry"
+      ],
+      "difficulty": "medium",
+      "title": "Phân tử phân cực hay không phân cực?",
+      "skill": "Xác định độ phân cực phân tử",
+      "statement": "Trong các phân tử: $\\mathrm{CO_2}$, $\\mathrm{H_2O}$, $\\mathrm{BF_3}$, $\\mathrm{NH_3}$, $\\mathrm{CH_4}$ — phân tử nào phân cực?",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Phân tử CO₂ có liên kết C=O phân cực. Phân tử CO₂ có phân cực không?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Không — phân tử thẳng, hai moment lưỡng cực triệt tiêu"
+            },
+            {
+              "id": "b",
+              "text": "Có — vì liên kết phân cực"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Hình học đối xứng (thẳng 180°) làm tổng moment lưỡng cực bằng 0."
+        },
+        {
+          "id": "step-2",
+          "type": "multiple-choice",
+          "prompt": "Chọn TẤT CẢ phân tử phân cực.",
+          "options": [
+            {
+              "id": "co2",
+              "text": "CO₂"
+            },
+            {
+              "id": "h2o",
+              "text": "H₂O"
+            },
+            {
+              "id": "bf3",
+              "text": "BF₃"
+            },
+            {
+              "id": "nh3",
+              "text": "NH₃"
+            },
+            {
+              "id": "ch4",
+              "text": "CH₄"
+            }
+          ],
+          "correctAnswer": [
+            "h2o",
+            "nh3"
+          ],
+          "explanation": "H₂O (chữ V) và NH₃ (tháp) không đối xứng → phân cực; CO₂ (thẳng), BF₃ (tam giác phẳng), CH₄ (tứ diện đều) đối xứng → không phân cực."
+        }
+      ],
+      "solution": "Phân tử phân cực khi **tổng vectơ moment lưỡng cực ≠ 0**, phụ thuộc vào cả độ phân cực liên kết và hình học:\n\n| Phân tử | Hình học | Phân cực? |\n|---|---|---|\n| $\\mathrm{CO_2}$ | thẳng | không |\n| $\\mathrm{H_2O}$ | chữ V | **có** |\n| $\\mathrm{BF_3}$ | tam giác phẳng | không |\n| $\\mathrm{NH_3}$ | tháp tam giác | **có** |\n| $\\mathrm{CH_4}$ | tứ diện đều | không |",
+      "finalAnswer": "Phân cực: H₂O, NH₃.",
+      "source": {
+        "kind": "supplementary",
+        "note": "Nội dung độ phân cực phân tử là bổ sung (video Polarity)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "exercises": [
+    {
+      "id": "c2-mo-001",
+      "chapterId": "chapter-2",
+      "lessonId": "mo-theory",
+      "nodeIds": [
+        "bond-order",
+        "mo-configuration"
+      ],
+      "difficulty": "easy",
+      "title": "H₂⁺, H₂⁻, He₂⁺, He₂ có tồn tại không?",
+      "skill": "Bậc liên kết – sự tồn tại phân tử",
+      "statement": "Bài giảng (trang 30–32) vẽ giản đồ MO của $\\mathrm{H_2}$, $\\mathrm{H_2^+}$, $\\mathrm{H_2^-}$, $\\mathrm{He_2^+}$, $\\mathrm{He_2}$. Tính bậc liên kết và cho biết tiểu phân nào tồn tại.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "formula-selection",
+          "prompt": "Công thức bậc liên kết theo thuyết MO:",
+          "options": [
+            {
+              "id": "a",
+              "text": "$N = \\dfrac{n_\\text{lk} - n_\\text{plk}}{2}$"
+            },
+            {
+              "id": "b",
+              "text": "$N = n_\\text{lk} + n_\\text{plk}$"
+            },
+            {
+              "id": "c",
+              "text": "$N = \\dfrac{n_\\text{lk}}{n_\\text{plk}}$"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "$N$ = (số e trên MO liên kết − số e trên MO phản liên kết)/2."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của H₂⁺ ($\\sigma_{1s}^1$)?",
+          "correctAnswer": 0.5,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "$(1 - 0)/2 = 0{,}5$."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của H₂⁻ ($\\sigma_{1s}^2\\sigma_{1s}^{*1}$)?",
+          "correctAnswer": 0.5,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "$(2 - 1)/2 = 0{,}5$."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của He₂ ($\\sigma_{1s}^2\\sigma_{1s}^{*2}$)?",
+          "correctAnswer": 0.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "$(2 - 2)/2 = 0$ → không tồn tại."
+        },
+        {
+          "id": "step-5",
+          "type": "multiple-choice",
+          "prompt": "Chọn TẤT CẢ tiểu phân có thể tồn tại.",
+          "options": [
+            {
+              "id": "h2p",
+              "text": "H₂⁺"
+            },
+            {
+              "id": "h2m",
+              "text": "H₂⁻"
+            },
+            {
+              "id": "he2p",
+              "text": "He₂⁺"
+            },
+            {
+              "id": "he2",
+              "text": "He₂"
+            }
+          ],
+          "correctAnswer": [
+            "h2p",
+            "h2m",
+            "he2p"
+          ],
+          "explanation": "Bậc liên kết > 0 thì tồn tại được (H₂⁺, H₂⁻, He₂⁺ đều có N = 0,5); He₂ có N = 0."
+        }
+      ],
+      "solution": "| Tiểu phân | Số e | Cấu hình MO | N | Tồn tại? | Từ tính |\n|---|---|---|---|---|---|\n| $\\mathrm{H_2}$ | 2 | $(\\sigma_{1s})^2$ | 1 | có | nghịch từ |\n| $\\mathrm{H_2^+}$ | 1 | $(\\sigma_{1s})^1$ | 0,5 | có | thuận từ |\n| $\\mathrm{H_2^-}$ | 3 | $(\\sigma_{1s})^2(\\sigma^*_{1s})^1$ | 0,5 | có | thuận từ |\n| $\\mathrm{He_2^+}$ | 3 | $(\\sigma_{1s})^2(\\sigma^*_{1s})^1$ | 0,5 | có | thuận từ |\n| $\\mathrm{He_2}$ | 4 | $(\\sigma_{1s})^2(\\sigma^*_{1s})^2$ | 0 | **không** | — |\n\nThuyết MO giải thích được sự tồn tại của các tiểu phân có số lẻ electron ($\\mathrm{H_2^+}$, $\\mathrm{He_2^+}$) — điều mà quy tắc bát tử không làm được.",
+      "finalAnswer": "H₂⁺, H₂⁻, He₂⁺: N = 0,5, tồn tại; He₂: N = 0, không tồn tại.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          30,
+          31,
+          32
+        ],
+        "note": "Giản đồ MO trang 30–32 bài giảng."
+      }
+    },
+    {
+      "id": "c2-mo-002",
+      "chapterId": "chapter-2",
+      "lessonId": "mo-bond-order",
+      "nodeIds": [
+        "bond-order",
+        "magnetism",
+        "mo-configuration"
+      ],
+      "difficulty": "medium",
+      "title": "Họ O₂: O₂, O₂⁺, O₂⁻, O₂²⁻",
+      "skill": "Cấu hình MO – bậc liên kết – từ tính",
+      "statement": "(Trích Bài 1, trang 41.) Viết cấu hình electron MO (electron hóa trị), tính bậc liên kết và xác định tính thuận từ/nghịch từ của $\\mathrm{O_2}$, $\\mathrm{O_2^+}$, $\\mathrm{O_2^-}$, $\\mathrm{O_2^{2-}}$. Sắp xếp theo độ bền liên kết giảm dần.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "O₂ thuộc nhóm nào trong giản đồ MO (trang 34–35)?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Không có tương tác 2s–2p: σ2p thấp hơn π2p"
+            },
+            {
+              "id": "b",
+              "text": "Có tương tác 2s–2p: π2p thấp hơn σ2p"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "O₂, F₂, Ne₂: không có tương tác 2s–2p ⇒ thứ tự σ2s < σ*2s < σ2p < π2p < π*2p < σ*2p."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Số electron hóa trị của O₂?",
+          "correctAnswer": 12.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "Mỗi O có 6 electron hóa trị (2s²2p⁴)."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của O₂?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "e liên kết: σ2s² σ2p² π2p⁴ = 8; e phản liên kết: σ*2s² π*2p² = 4 → $(8-4)/2 = 2$."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Số electron độc thân của O₂?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "2 electron trên hai MO π*2p (cùng năng lượng) xếp theo quy tắc Hund → 2 e độc thân → O₂ thuận từ."
+        },
+        {
+          "id": "step-5",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của O₂⁺?",
+          "correctAnswer": 2.5,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "Bớt 1 e trên π* → $(8-3)/2 = 2{,}5$."
+        },
+        {
+          "id": "step-6",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của O₂²⁻?",
+          "correctAnswer": 1.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "Thêm 2 e vào π* → $(8-6)/2 = 1$."
+        },
+        {
+          "id": "step-7",
+          "type": "single-choice",
+          "prompt": "Thứ tự độ bền liên kết giảm dần:",
+          "options": [
+            {
+              "id": "a",
+              "text": "O₂⁺ > O₂ > O₂⁻ > O₂²⁻"
+            },
+            {
+              "id": "b",
+              "text": "O₂²⁻ > O₂⁻ > O₂ > O₂⁺"
+            },
+            {
+              "id": "c",
+              "text": "O₂ > O₂⁺ > O₂⁻ > O₂²⁻"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Bậc liên kết: 2,5 > 2 > 1,5 > 1."
+        }
+      ],
+      "solution": "Thứ tự MO (O₂, F₂, Ne₂ — không tương tác 2s–2p): $\\sigma_{2s} < \\sigma^*_{2s} < \\sigma_{2p} < \\pi_{2p} < \\pi^*_{2p} < \\sigma^*_{2p}$.\n\n| Tiểu phân | e hóa trị | Cấu hình MO | Bậc liên kết | e độc thân | Từ tính |\n|---|---|---|---|---|---|\n| O₂ | 12 | $(\\sigma_{2s})^2(\\sigma^*_{2s})^2(\\sigma_{2p})^2(\\pi_{2p})^4(\\pi^*_{2p})^2$ | 2 | 2 | thuận từ |\n| O₂⁺ | 11 | $\\dots(\\pi_{2p})^4(\\pi^*_{2p})^1$ | 2,5 | 1 | thuận từ |\n| O₂⁻ | 13 | $\\dots(\\pi_{2p})^4(\\pi^*_{2p})^3$ | 1,5 | 1 | thuận từ |\n| O₂²⁻ | 14 | $\\dots(\\pi_{2p})^4(\\pi^*_{2p})^4$ | 1 | 0 | nghịch từ |\n\nĐộ bền liên kết (theo bậc liên kết): $\\mathrm{O_2^+ > O_2 > O_2^- > O_2^{2-}}$. Tính thuận từ của $\\mathrm{O_2}$ (dòng O₂ lỏng bị giữ lại trong từ trường — trang 39) là bằng chứng nổi bật ủng hộ thuyết MO.",
+      "finalAnswer": "O₂: N=2, thuận từ; O₂⁺: 2,5, thuận từ; O₂⁻: 1,5, thuận từ; O₂²⁻: 1, nghịch từ. Bền: O₂⁺ > O₂ > O₂⁻ > O₂²⁻.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          41,
+          37,
+          38
+        ],
+        "note": "Bài 1 trang 41; giản đồ và bảng cấu hình trang 34–38."
+      }
+    },
+    {
+      "id": "c2-mo-003",
+      "chapterId": "chapter-2",
+      "lessonId": "mo-bond-order",
+      "nodeIds": [
+        "bond-order",
+        "magnetism",
+        "mo-energy-diagram"
+      ],
+      "difficulty": "medium",
+      "title": "Họ N₂: N₂, N₂⁺, N₂⁻",
+      "skill": "Cấu hình MO – bậc liên kết – từ tính",
+      "statement": "(Trích Bài 1, trang 41.) Viết cấu hình MO, tính bậc liên kết và xác định từ tính của $\\mathrm{N_2}$, $\\mathrm{N_2^+}$, $\\mathrm{N_2^-}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "single-choice",
+          "prompt": "Thứ tự MO dùng cho N₂ (có tương tác 2s–2p):",
+          "options": [
+            {
+              "id": "a",
+              "text": "σ2s < σ*2s < π2p < σ2p < π*2p < σ*2p"
+            },
+            {
+              "id": "b",
+              "text": "σ2s < σ*2s < σ2p < π2p < π*2p < σ*2p"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "B₂, C₂, N₂: tương tác 2s–2p đẩy σ2p lên cao hơn π2p (trang 35, 36)."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của N₂?",
+          "correctAnswer": 3.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "e liên kết: σ2s² π2p⁴ σ2p² = 8; e phản liên kết: σ*2s² = 2 → $(8-2)/2 = 3$."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "N₂ thuận từ hay nghịch từ?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nghịch từ"
+            },
+            {
+              "id": "b",
+              "text": "Thuận từ"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Mọi electron đã ghép đôi."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của N₂⁺?",
+          "correctAnswer": 2.5,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "Mất 1 e ở σ2p (MO liên kết) → $(7-2)/2 = 2{,}5$."
+        },
+        {
+          "id": "step-5",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của N₂⁻?",
+          "correctAnswer": 2.5,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "Thêm 1 e vào π*2p → $(8-3)/2 = 2{,}5$."
+        }
+      ],
+      "solution": "Thứ tự MO (B₂, C₂, N₂): $\\sigma_{2s} < \\sigma^*_{2s} < \\pi_{2p} < \\sigma_{2p} < \\pi^*_{2p} < \\sigma^*_{2p}$.\n\n| Tiểu phân | e hóa trị | Cấu hình MO | Bậc liên kết | e độc thân | Từ tính |\n|---|---|---|---|---|---|\n| N₂ | 10 | $(\\sigma_{2s})^2(\\sigma^*_{2s})^2(\\pi_{2p})^4(\\sigma_{2p})^2$ | 3 | 0 | nghịch từ |\n| N₂⁺ | 9 | $\\dots(\\pi_{2p})^4(\\sigma_{2p})^1$ | 2,5 | 1 | thuận từ |\n| N₂⁻ | 11 | $\\dots(\\pi_{2p})^4(\\sigma_{2p})^2(\\pi^*_{2p})^1$ | 2,5 | 1 | thuận từ |\n\n$\\mathrm{N_2}$ có bậc liên kết 3 (liên kết ba) — là một trong những phân tử hai nguyên tử bền nhất. Cả $\\mathrm{N_2^+}$ và $\\mathrm{N_2^-}$ đều có bậc 2,5 nhưng vì lý do khác nhau: N₂⁺ mất electron liên kết, N₂⁻ thêm electron phản liên kết.",
+      "finalAnswer": "N₂: N=3, nghịch từ; N₂⁺: 2,5, thuận từ; N₂⁻: 2,5, thuận từ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          41,
+          38
+        ],
+        "note": "Bài 1 trang 41; giản đồ và bảng cấu hình trang 35–38."
+      }
+    },
+    {
+      "id": "c2-mo-004",
+      "chapterId": "chapter-2",
+      "lessonId": "mo-bond-order",
+      "nodeIds": [
+        "bond-order",
+        "magnetism"
+      ],
+      "difficulty": "medium",
+      "title": "Phân tử nào tồn tại: Li₂, Be₂, B₂, C₂, F₂, Ne₂, Ne₂²⁺?",
+      "skill": "Bậc liên kết – sự tồn tại phân tử",
+      "statement": "(Trích Bài 1, trang 41.) Tính bậc liên kết, xác định từ tính và cho biết phân tử/ion nào tồn tại được: $\\mathrm{Li_2}$, $\\mathrm{Be_2}$, $\\mathrm{B_2}$, $\\mathrm{C_2}$, $\\mathrm{F_2}$, $\\mathrm{Ne_2}$, $\\mathrm{Ne_2^{2+}}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "multiple-choice",
+          "prompt": "Chọn TẤT CẢ tiểu phân KHÔNG tồn tại (N = 0).",
+          "options": [
+            {
+              "id": "li2",
+              "text": "Li₂"
+            },
+            {
+              "id": "be2",
+              "text": "Be₂"
+            },
+            {
+              "id": "b2",
+              "text": "B₂"
+            },
+            {
+              "id": "c2",
+              "text": "C₂"
+            },
+            {
+              "id": "f2",
+              "text": "F₂"
+            },
+            {
+              "id": "ne2",
+              "text": "Ne₂"
+            },
+            {
+              "id": "ne22",
+              "text": "Ne₂²⁺"
+            }
+          ],
+          "correctAnswer": [
+            "be2",
+            "ne2"
+          ],
+          "explanation": "Be₂: (2−2)/2 = 0; Ne₂: (8−8)/2 = 0. Các tiểu phân khác có N > 0."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "B₂ (6 e hóa trị) thuận từ hay nghịch từ?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Thuận từ"
+            },
+            {
+              "id": "b",
+              "text": "Nghịch từ"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Với tương tác 2s–2p, 2 electron cuối vào hai MO π2p suy biến → 2 e độc thân (Hund) → thuận từ. Đây là bằng chứng cho thứ tự π2p < σ2p."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của C₂?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "σ2s² σ*2s² π2p⁴: $(6-2)/2 = 2$."
+        }
+      ],
+      "solution": "| Tiểu phân | e hóa trị | Cấu hình (rút gọn) | N | Tồn tại? | Từ tính |\n|---|---|---|---|---|---|\n| Li₂ | 2 | $(\\sigma_{2s})^2$ | 1 | có | nghịch từ |\n| Be₂ | 4 | $(\\sigma_{2s})^2(\\sigma^*_{2s})^2$ | 0 | không | — |\n| B₂ | 6 | $\\dots(\\pi_{2p})^2$ | 1 | có | thuận từ |\n| C₂ | 8 | $\\dots(\\pi_{2p})^4$ | 2 | có | nghịch từ |\n| F₂ | 14 | $\\dots(\\pi^*_{2p})^4$ | 1 | có | nghịch từ |\n| Ne₂ | 16 | $\\dots(\\pi^*_{2p})^4(\\sigma^*_{2p})^2$ | 0 | không | — |\n| Ne₂²⁺ | 14 | $\\dots(\\pi^*_{2p})^4$ | 1 | có | nghịch từ |\n\nLi₂ … N₂ dùng thứ tự có tương tác 2s–2p; O₂ … Ne₂ dùng thứ tự không tương tác (trang 37–38).",
+      "finalAnswer": "Không tồn tại: Be₂, Ne₂. B₂ thuận từ; Li₂, C₂, F₂, Ne₂²⁺ nghịch từ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          41
+        ],
+        "note": "Bài 1 trang 41 (một phần danh sách)."
+      }
+    },
+    {
+      "id": "c2-mo-005",
+      "chapterId": "chapter-2",
+      "lessonId": "mo-bond-order",
+      "nodeIds": [
+        "bond-order",
+        "magnetism",
+        "mo-energy-diagram"
+      ],
+      "difficulty": "hard",
+      "title": "Phân tử dị hạch: CO, CN⁻, NO⁺, NO",
+      "skill": "MO của phân tử hai nguyên tử khác loại",
+      "statement": "(Trích Bài 1, trang 41.) Bài giảng (trang 40) dùng một giản đồ năng lượng chung cho $\\mathrm{CO}$, $\\mathrm{NO^+}$, $\\mathrm{CN^-}$. Xác định bậc liên kết và từ tính của $\\mathrm{CO}$, $\\mathrm{CO^+}$, $\\mathrm{CN}$, $\\mathrm{CN^-}$, $\\mathrm{NO^+}$, $\\mathrm{NO}$, $\\mathrm{NO^-}$.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Số electron hóa trị của CO?",
+          "correctAnswer": 10.0,
+          "tolerance": {
+            "absolute": 0
+          },
+          "explanation": "C: 4 + O: 6 = 10."
+        },
+        {
+          "id": "step-2",
+          "type": "single-choice",
+          "prompt": "CO, CN⁻, NO⁺ có điểm chung gì?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Cùng 10 electron hóa trị (đẳng electron với N₂) → bậc liên kết 3"
+            },
+            {
+              "id": "b",
+              "text": "Cùng khối lượng"
+            },
+            {
+              "id": "c",
+              "text": "Cùng điện tích"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Ba tiểu phân đẳng electron với N₂ nên có cấu hình MO và bậc liên kết giống N₂."
+        },
+        {
+          "id": "step-3",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của NO (11 e hóa trị)?",
+          "correctAnswer": 2.5,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "Electron thứ 11 vào π* → $(8-3)/2 = 2{,}5$."
+        },
+        {
+          "id": "step-4",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của NO⁻ (12 e)?",
+          "correctAnswer": 2.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "2 e trên π* → $(8-4)/2 = 2$ (đẳng electron với O₂)."
+        },
+        {
+          "id": "step-5",
+          "type": "single-choice",
+          "prompt": "NO⁻ thuận từ hay nghịch từ?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Thuận từ (2 e độc thân như O₂)"
+            },
+            {
+              "id": "b",
+              "text": "Nghịch từ"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Hai electron trên hai MO π* suy biến → 2 e độc thân."
+        }
+      ],
+      "solution": "Phân tử dị hạch có thể suy ra từ phân tử đồng hạch **đẳng electron** (cùng số electron hóa trị):\n\n| Tiểu phân | e hóa trị | Đẳng e với | N | Từ tính |\n|---|---|---|---|---|\n| CO | 10 | N₂ | 3 | nghịch từ |\n| CO⁺ | 9 | N₂⁺/N₂⁻ | 2,5 | thuận từ |\n| CN⁻ | 10 | N₂ | 3 | nghịch từ |\n| CN | 9 | N₂⁺/N₂⁻ | 2,5 | thuận từ |\n| NO⁺ | 10 | N₂ | 3 | nghịch từ |\n| NO | 11 | N₂⁺/N₂⁻ | 2,5 | thuận từ |\n| NO⁻ | 12 | O₂ | 2 | thuận từ |\n\n> Lưu ý: với phân tử dị hạch, các AO của nguyên tử âm điện hơn (O) có năng lượng thấp hơn nên MO không đối xứng (trang 40); bậc liên kết vẫn tính bằng cùng công thức.",
+      "finalAnswer": "CO, CN⁻, NO⁺: N=3, nghịch từ; CO⁺, CN, NO: 2,5, thuận từ; NO⁻: 2, thuận từ.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          41,
+          40
+        ],
+        "note": "Bài 1 trang 41 (một phần danh sách); giản đồ AB trang 40."
+      }
+    },
+    {
+      "id": "c2-mo-006",
+      "chapterId": "chapter-2",
+      "lessonId": "mo-bond-order",
+      "nodeIds": [
+        "bond-strength-comparison",
+        "bond-order"
+      ],
+      "difficulty": "medium",
+      "title": "Vì sao O₂⁺ bền hơn O₂ và F₂⁺ bền hơn F₂?",
+      "skill": "So sánh độ bền liên kết bằng thuyết MO",
+      "statement": "(Bài 2, trang 41.) Cho năng lượng liên kết:\n\n| Phân tử (ion) | O₂ | O₂⁺ | F₂ | F₂⁺ |\n|---|---|---|---|---|\n| $E_{lk}$ (kJ/mol) | −498 | −664 | −159 | −310 |\n\nBằng thuyết MO, hãy so sánh và giải thích các dữ kiện đó.",
+      "steps": [
+        {
+          "id": "step-1",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của F₂?",
+          "correctAnswer": 1.0,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "14 e hóa trị: liên kết 8, phản liên kết 6 → $(8-6)/2 = 1$."
+        },
+        {
+          "id": "step-2",
+          "type": "numeric",
+          "prompt": "Bậc liên kết của F₂⁺?",
+          "correctAnswer": 1.5,
+          "tolerance": {
+            "absolute": 0.01
+          },
+          "explanation": "Mất 1 e ở π* → $(8-5)/2 = 1{,}5$."
+        },
+        {
+          "id": "step-3",
+          "type": "single-choice",
+          "prompt": "Khi tách 1 electron khỏi O₂ hoặc F₂, electron bị tách ra từ:",
+          "options": [
+            {
+              "id": "a",
+              "text": "MO phản liên kết π*2p"
+            },
+            {
+              "id": "b",
+              "text": "MO liên kết σ2p"
+            },
+            {
+              "id": "c",
+              "text": "AO 1s"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "Electron có năng lượng cao nhất (HOMO) của O₂ và F₂ nằm trên π*2p."
+        },
+        {
+          "id": "step-4",
+          "type": "single-choice",
+          "prompt": "Kết luận:",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mất electron phản liên kết làm bậc liên kết tăng → liên kết bền hơn (|E| lớn hơn)"
+            },
+            {
+              "id": "b",
+              "text": "Ion dương luôn kém bền hơn phân tử trung hòa"
+            }
+          ],
+          "correctAnswer": "a",
+          "explanation": "O₂ (2) → O₂⁺ (2,5): |E| 498 → 664; F₂ (1) → F₂⁺ (1,5): |E| 159 → 310."
+        }
+      ],
+      "solution": "| Tiểu phân | Bậc liên kết | $|E_{lk}|$ (kJ/mol) |\n|---|---|---|\n| $\\mathrm{O_2}$ | 2 | 498 |\n| $\\mathrm{O_2^+}$ | 2,5 | 664 |\n| $\\mathrm{F_2}$ | 1 | 159 |\n| $\\mathrm{F_2^+}$ | 1,5 | 310 |\n\nElectron bị tách khi tạo $\\mathrm{O_2^+}$, $\\mathrm{F_2^+}$ là electron trên MO **phản liên kết** $\\pi^*_{2p}$. Mất electron phản liên kết làm bậc liên kết tăng 0,5 → liên kết bền hơn, năng lượng liên kết (về độ lớn) tăng — đúng như số liệu.",
+      "finalAnswer": "Tách e từ π* làm bậc liên kết tăng (O₂ 2→2,5; F₂ 1→1,5) nên O₂⁺, F₂⁺ bền hơn.",
+      "source": {
+        "kind": "extracted",
+        "documentId": "doc-ch2-theory",
+        "pages": [
+          41
+        ],
+        "note": "Bài 2 trang 41 bài giảng."
+      }
+    }
+  ]
+}

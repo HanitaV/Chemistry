@@ -1,0 +1,41 @@
+{
+  "id": "chapter-2",
+  "courseId": "general-chemistry",
+  "order": 2,
+  "title": "Cấu tạo phân tử và liên kết hóa học",
+  "description": "Khái niệm liên kết, liên kết ion, liên kết cộng hóa trị và công thức Lewis, thuyết VB, lai hóa, hình học phân tử, thuyết MO.",
+  "lessonIds": [
+    "bond-concepts",
+    "ionic-bond",
+    "covalent-lewis",
+    "vb-theory",
+    "hybridization",
+    "molecular-geometry",
+    "mo-theory",
+    "mo-bond-order"
+  ],
+  "exerciseIds": [
+    "c2-bond-001",
+    "c2-bond-002",
+    "c2-lewis-001",
+    "c2-lewis-002",
+    "c2-lewis-003",
+    "c2-hyb-001",
+    "c2-hyb-002",
+    "c2-ionic-001",
+    "c2-ionic-002",
+    "c2-mo-001",
+    "c2-mo-002",
+    "c2-mo-003",
+    "c2-mo-004",
+    "c2-mo-005",
+    "c2-mo-006",
+    "c2-geo-001",
+    "c2-pol-001",
+    "c2-vb-001",
+    "c2-vb-002"
+  ],
+  "sourceIds": [
+    "doc-ch2-theory"
+  ]
+}
